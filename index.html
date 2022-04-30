@@ -13,12 +13,63 @@
   <link rel="stylesheet" href="./sass/base.css">
 </head>
 <body>
-  
+
+<header class="header-content">
+  <div class="bucket flex-row-btn">
+    <nav class="navbar navbar-expand-md navbar-light ">
+
+
+      <!-- Brand -->
+      <div class="brand d-flex justify-content-center align-items-center">
+          <img src="./resources/brand/logo-dark.svg" width="50"  alt="name-logo" class="img-fluid m-2" > 
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+
+            <ul class="navbar-nav  justify-content-end align-items-center">
+                                
+                <li class="nav-item "><a href="#home" class="nav-link active-item px-2">Home <a></li>
+
+                <li class="nav-item"><a href="#services" class="nav-link px-2">Services <a></li>
+
+                <li class="nav-item"><a href="#about" class="nav-link px-2 "> About</a></li>
+                    
+                <li class="nav-item"><a href="#background" class="nav-link px-2 ">Background</a></li>
+
+                <li class="nav-item dropdown"><a href="#projects" class="nav-link px-2 ">Projects</a></li>
+
+                <li class="nav-item dropdown"><a href="#blog" class="nav-link px-2 ">Blog</a></li>
+
+                <li class="nav-item dropdown"><a href="#testimonials" class="nav-link px-2 ">Testimonials</a></li>
+
+                <li class="nav-item d-lg-none d-md-none"><a href="#contact" class="nav-link px-2 link-light ">Contact</a></li>
+                                
+            </ul>
+              
+          </div> 
+      </div>
+
+      <!-- Toggler/collapsable Button -->
+      <button class="navbar-toggler collapsed d-flex d-lg-none d-md-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          
+          <span class="toggler-icon top-bar"></span>
+                          
+          <span class="toggler-icon middle-bar"></span>
+                          
+          <span class="toggler-icon bottom-bar"></span>
+                      
+      </button>
+
+
+    </nav>
+    <div class="button_accent d-lg-inline-block d-none"><a href="#contact">Contact</a></div> 
+  </div>
+</header>  
 
 <main>
-
+  <div class="space-bar"><span>. . . </span></div>
   <section class="home" id="home">
     <div class="bucket">
+        
         <div class="flex-column-start home-data-basket"> 
           <p class="text-tag-hello">Hello there, I'm</p>
                             
@@ -389,16 +440,16 @@
                 
               <li class="project-tabs__tab project-tab__tab--selected links" role="tab" id="project-tabs-0"  tabindex="0" onclick="openPortTab(event, 'project-tabs-web')" >Frontend Web </li>
                                                                           
-              <li class="project-tabs__tab links" role="tab" id="project-tabs-1" aria-selected="false" aria-disabled="false" aria-controls="port-tabs-3" data-rttab="true" onclick="openPortTab(event, 'project-tabs-android')">Android</li>
+              <li class="project-tabs__tab links" role="tab" id="project-tabs-1" aria-selected="false" aria-disabled="false" aria-controls="project-tabs-1" data-rttab="true" onclick="openPortTab(event, 'project-tabs-android')">Android</li>
                                                                           
-              <li class="project-tabs__tab links" role="tab" id="project-tabs-2" aria-selected="false" aria-disabled="false" aria-controls="port-tabs-5" data-rttab="true" onclick="openPortTab(event, 'project-tabs-analytics')">Analytics</li>
+              <li class="project-tabs__tab links" role="tab" id="project-tabs-2" aria-selected="false" aria-disabled="false" aria-controls="project-tabs-2" data-rttab="true" onclick="openPortTab(event, 'project-tabs-analytics')">Analytics</li>
                                                                           
             </ul>
             
             <!-- Content for tabs: Frontend -->
-            <div class="port-tabs__tab-panel project-tabs__tab-panel--selected my-3" role="tabpanel" id="port-tabs-web" aria-labelledby="port-tabs-0">
+            <div class="project-tabs__tab-panel project-tabs__tab-panel--selected my-3" role="tabpanel" id="project-tabs-web" aria-labelledby="port-tabs-0">
 
-            <div class="single-port-content">
+            <div class="single-project-content">
 
             <div class="row row-cols-3 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
                 
@@ -407,10 +458,10 @@
               <div class="port-card ">
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Lorem ipsum dolor sit.</h5>
+                <h5 class="project-title">Dropstori</h5>
                 <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
 
-                <span class="button-primary">View Details</span>
+                <span class="button_project">View Details</span>
 
               </div>
 
@@ -421,10 +472,10 @@
               <div class="port-card ">
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Lorem ipsum dolor sit.</h5>
+                <h5 class="project-title">Sunnyside</h5>
                 <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
 
-                <span class="button-primary">View Details</span>
+                <span class="button_project">View Details</span>
 
               </div>
 
@@ -432,13 +483,13 @@
 
             <div class="col">
             
-            <div class="port-card ">
+                <div class="port-card ">
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Lorem ipsum dolor sit.</h5>
+                <h5 class="project-title">Portfolio</h5>
                 <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
 
-                <span class="button-learnmore">View Details</span>
+                <span class="button_project">View Details</span>
 
                 </div>
 
@@ -449,259 +500,245 @@
               <div class="port-card ">
 
                   <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                  <h5 class="project-title">Lorem ipsum dolor sit.</h5>
+                  <h5 class="project-title">Shed96</h5>
                   <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
 
-                  <span class="button-primary">View Details</span>
+                  <span class="button_project">View Details</span>
 
               </div>
 
             </div>
 
             <div class="col">
+
               <div class="port-card ">
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Lorem ipsum dolor sit.</h5>
+                <h5 class="project-title">Classnadie</h5>
                 <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
 
-                <span class="button-primary">View Details</span>
+                <span class="button_project">View Details</span>
 
               </div>
+
             </div>
 
             <div class="col">
+
               <div class="port-card ">
                     
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <p class="project-title">Lorem ipsum dolor sit.</p>
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img" id="closedImage">
+                <h5 class="project-title">MathEntrepreneur</h5>
                 <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
 
-                <span class="button_secondary">View Details</span>
+                <span class="button_project">View Details</span>
 
               </div>
-            </div>
 
             </div>
 
-            </div><!-- end of single port content (Frontend)-->        
+            </div>
 
+            </div>
+            
+            <!-- end of single port content (Frontend)-->        
             </div>
   
             <!-- Content for tabs: Android -->
-            <div class="port-tabs__tab-panel my-3" role="tabpanel" id="port-tabs-android" aria-labelledby="port-tabs-1">
+            <div class="project-tabs__tab-panel my-3" role="tabpanel" id="project-tabs-android" aria-labelledby="project-tabs-1">
 
-            <div class="single-port-content">
+            <div class="single-project-content">
 
             <div class="row row-cols-3 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
                 
             <div class="col">
             
-            <div class="port-card  ">
-                  
-                <div class="port-item-body my-2 d-flex justify-content-between align-items-center">
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Lotum</h5>
+                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
 
-                    <img src="./resources/icons/management.svg" width="34px" alt="" class="img-fluid project-img"> 
-                </div>
-                <h5 class="project-title minor">Lorem ipsum dolor sit amet consectetur.</h5>
-                
-                        
-                
-            </div>
+                <span class="button_project">View Details</span>
+
+              </div>
 
             </div> 
 
             <div class="col">
             
-            <div class="port-card  ">
-                  
-                <div class="port-item-body my-2 d-flex justify-content-between align-items-center">
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Jinyuy</h5>
+                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
 
-                    <img src="./resources/icons/management.svg" width="34px" alt="" class="img-fluid project-img"> 
-                </div>
-                <h5 class="project-title minor">Lorem ipsum dolor sit amet consectetur.</h5>
-                
-                        
-                
-            </div>
+                <span class="button_project">View Details</span>
+
+              </div>
 
             </div>
 
             <div class="col">
             
-            <div class="port-card  ">
-                  
-                <div class="port-item-body my-2 d-flex justify-content-between align-items-center">
+                <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Youkaris</h5>
+                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
 
-                    <img src="./resources/icons/management.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <span class="button_project">View Details</span>
+
                 </div>
-                <h5 class="project-title minor">Lorem ipsum dolor sit amet consectetur.</h5>
-                
-                        
-                
-            </div>
 
             </div>
 
             <div class="col">
             
-            <div class="port-card  ">
-                  
-                <div class="port-item-body my-2 d-flex justify-content-between align-items-center">
+              <div class="port-card ">
 
-                    <img src="./resources/icons/management.svg" width="34px" alt="" class="img-fluid project-img"> 
-                </div>
-                <h5 class="project-title minor">Lorem ipsum dolor sit amet consectetur.</h5>
-                
-                        
-                
-            </div>
+                  <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                  <h5 class="project-title">Datalie</h5>
+                  <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
+
+                  <span class="button_project">View Details</span>
+
+              </div>
 
             </div>
 
             <div class="col">
-            
-            <div class="port-card  ">
-                  
-                <div class="port-item-body my-2 d-flex justify-content-between align-items-center">
 
-                    <img src="./resources/icons/management.svg" width="34px" alt="" class="img-fluid project-img"> 
-                </div>
-                <h5 class="project-title minor">Lorem ipsum dolor sit amet consectetur.</h5>
-                
-                        
-                
-            </div>
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">MoshTings</h5>
+                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
+
+                <span class="button_project">View Details</span>
+
+              </div>
 
             </div>
 
             <div class="col">
-            
-            <div class="port-card  ">
-                  
-                <div class="port-item-body my-2 d-flex justify-content-between align-items-center">
 
-                    <img src="./resources/icons/management.svg" width="34px" alt="" class="img-fluid project-img"> 
-                </div>
-                <h5 class="project-title minor">Lorem ipsum dolor sit amet consectetur.</h5>
-                
-                        
-                
-            </div>
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Shed96</h5>
+                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
+
+                <span class="button_project">View Details</span>
+
+              </div>
 
             </div>
 
             </div>
 
-            </div><!-- end of single port content (Frontend)-->        
+            </div>
+            <!-- end of single port content (Android)-->        
 
             </div>
+
+
+
             <!-- Content for tabs: Analytics -->
-            <div class="port-tabs__tab-panel my-3" role="tabpanel" id="port-tabs-analytics" aria-labelledby="port-tabs-1">
+            <div class="project-tabs__tab-panel my-3" role="tabpanel" id="project-tabs-analytics" aria-labelledby="project-tabs-1">
 
-            <div class="single-port-content">
+            <div class="single-project-content">
 
             <div class="row row-cols-3 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
                 
             <div class="col">
             
-            <div class="port-card  ">
-                  
-                <div class="port-item-body my-2 d-flex justify-content-between align-items-center">
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Price Prediction</h5>
+                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
 
-                    <img src="./resources/icons/management.svg" width="34px" alt="" class="img-fluid project-img"> 
-                </div>
-                <h5 class="project-title minor">Lorem ipsum dolor sit amet consectetur.</h5>
-                
-                        
-                
-            </div>
+                <span class="button_project">View Details</span>
+
+              </div>
 
             </div> 
 
             <div class="col">
             
-            <div class="port-card  ">
-                  
-                <div class="port-item-body my-2 d-flex justify-content-between align-items-center">
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Credit Scoring</h5>
+                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
 
-                    <img src="./resources/icons/management.svg" width="34px" alt="" class="img-fluid project-img"> 
-                </div>
-                <h5 class="project-title minor">Lorem ipsum dolor sit amet consectetur.</h5>
-                
-                        
-                
-            </div>
+                <span class="button_project">View Details</span>
+
+              </div>
 
             </div>
 
             <div class="col">
             
-            <div class="port-card  ">
-                  
-                <div class="port-item-body my-2 d-flex justify-content-between align-items-center">
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Olympics</h5>
+                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
 
-                    <img src="./resources/icons/management.svg" width="34px" alt="" class="img-fluid project-img"> 
-                </div>
-                <h5 class="project-title minor">Lorem ipsum dolor sit amet consectetur.</h5>
-                
-                        
-                
-            </div>
+                <span class="button_project">View Details</span>
+
+              </div>
 
             </div>
 
             <div class="col">
             
-            <div class="port-card  ">
-                  
-                <div class="port-item-body my-2 d-flex justify-content-between align-items-center">
+              <div class="port-card ">
 
-                    <img src="./resources/icons/management.svg" width="34px" alt="" class="img-fluid project-img"> 
-                </div>
-                <h5 class="project-title minor">Lorem ipsum dolor sit amet consectetur.</h5>
-                
-                        
-                
-            </div>
+                  <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                  <h5 class="project-title">Weather Forecast</h5>
+                  <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
+
+                  <span class="button_project">View Details</span>
+
+              </div>
 
             </div>
 
             <div class="col">
-            
-            <div class="port-card  ">
-                  
-                <div class="port-item-body my-2 d-flex justify-content-between align-items-center">
 
-                    <img src="./resources/icons/management.svg" width="34px" alt="" class="img-fluid project-img"> 
-                </div>
-                <h5 class="project-title minor">Lorem ipsum dolor sit amet consectetur.</h5>
-                
-                        
-                
-            </div>
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Mortgage Applications</h5>
+                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
+
+                <span class="button-project">View Details</span>
+
+              </div>
 
             </div>
 
             <div class="col">
-            
-            <div class="port-card  ">
-                  
-                <div class="port-item-body my-2 d-flex justify-content-between align-items-center">
 
-                    <img src="./resources/icons/management.svg" width="34px" alt="" class="img-fluid project-img"> 
-                </div>
-                <h5 class="project-title minor">Lorem ipsum dolor sit amet consectetur.</h5>
-                
-                        
-                
-            </div>
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">College Output</p>
+                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
+
+                <span class="button_project">View Details</span>
+
+              </div>
 
             </div>
 
             </div>
 
-            </div><!-- end of single port content (Frontend)-->        
+            </div>
+            <!-- end of single port content (Analytics)-->        
 
             </div>   
 
@@ -712,14 +749,16 @@
   </section>
 
 
-  <section class="ongoing" id="ongoing">
+  <section class="Blog" id="blog">
     <div class="bucket">
-      <div> <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A laboriosam alias sunt laborum officia accusamus quasi, in incidunt eos? Molestiae.</p> 
+      <!-- use a bootstrap container to avoid having to write media querries for this-->
+      <div class="container">
+        <div class="row"></div>
       </div>
     </div>
   </section>
 
-  <section class="blog" id="blog">
+  <section class="Testimonials" id="testimonials">
     <div class="bucket">
       <div> <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A laboriosam alias sunt laborum officia accusamus quasi, in incidunt eos? Molestiae.</p> 
       </div>
@@ -732,7 +771,7 @@
         <div class="cdb-left">
           <p class="section-label contact-tag">Contact <br> <hr class="col-5"> </p>
           <h5 class="display-6" >Every good conversation</h5>
-          <p>begins with a hello, and the person who cannot wait to talk says it first. So  here is my Hello! Hope you are well.</p>
+          <p>begins with a hello, and the person who cannot wait to talk says it first. So  here is my Hello! Hope you are well.</p> 
         </div>
 
         <div class="cdb-right">
@@ -779,6 +818,54 @@
 
 
 
+<footer>
+  <div class="bucket">
+    <div class="foot-data-basket">
+      <div class="foot_wrapper flex-row-btn">
+      <div class="ft_left">
+        <img src="./resources/brand/logo-dark.svg" alt="james njong logo" class="img-fluid ft_left_brand">
+      </div>
+      <div class="ft-center">
+
+        <div class="row row-cols-3 row-cols-md-3 row-cols-xl-3 g-2 justify-content-center align-items-center">
+          <div class="col"><a href="#">Home</a></div> 
+          <div class="col"><a href="#">Services</a></div> 
+          <div class="col"><a href="#">About</a></div>
+
+          <div class="col"><a href="#">Background</a></div> 
+          <div class="col"><a href="#">Projects</a></div> 
+          <div class="col"><a href="#">Blog</a></div>
+
+          <div class="col"><a href="#">Blog</a></div> 
+          <div class="col"><a href="#">Testimonials</a></div> 
+          <div class="col"><a href="#">Contact</a></div>
+        </div>
+        
+         
+      </div>
+      <div class="ft_left">
+        <img src="./resources/icons/icon-arrow-down.svg" width="30" alt="icon up" class="img-fluid ft_left_brand">
+      </div>
+    </div>
+    <div class="foot-signature">
+      <hr>
+        <div class="ft_center_icons flex-row-btn">
+        <div class="left_icons">
+          <img src="./resources/icons/icon-twitter.svg" width="30" alt="twitter icon" class="img-fluid ft_left_brand ">
+          <img src="./resources/icons/icon-linkedin.svg" width="30" alt="linkedIn icon" class="img-fluid ft_left_brand mx-5">
+        </div>
+        <div class="signature">
+          <img src="./resources/icons/signature.svg" width="130" alt="twitter icon" class="img-fluid ft_left_brand"> 
+        </div>
+        <div class="right_icons">
+          <img src="./resources/icons/icon-github.svg" width="30" alt="twitter icon" class="img-fluid ft_left_brand mx-5">
+          <img src="./resources/icons/icon-email.svg" width="30" alt="linkedIn icon" class="img-fluid ft_left_brand">
+        </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</footer>
 
 
 

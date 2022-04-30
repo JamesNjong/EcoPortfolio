@@ -33,7 +33,7 @@ section {
           flex-direction: column;
 }
 
-section .bucket {
+.bucket {
   width: 80%;
   margin: 0 auto;
   padding: 2rem auto;
@@ -139,7 +139,9 @@ button {
   border-radius: 0.3rem;
   background: #ff4c29;
   padding: 0 auto;
-  width: 120px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,6 +160,10 @@ button {
 .button_accent a {
   text-decoration: none;
   text-align: center;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 10px;
   color: white;
   font-family: "Fira Code", monospace;
 }
@@ -233,6 +239,59 @@ button {
 
 .my-bg-primary {
   background-color: #ff4c29;
+}
+
+.space-bar {
+  min-height: 70px;
+}
+
+header {
+  background: #000c1d;
+  font-family: "Fira Code", monospace;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 6;
+  padding-top: 20px;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar-nav {
+  letter-spacing: 0.1rem;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
+header .nav-link {
+  color: white !important;
+}
+
+header .active-item {
+  color: #ff4c29 !important;
+}
+
+header .nav-link:hover {
+  color: #ff4c29 !important;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 
 .home .home-data-basket {
@@ -505,9 +564,9 @@ button {
   text-align: start;
 }
 
-.projects .project-tabbed .project-tabs .single-port-content .port-card {
+.projects .project-tabbed .project-tabs .single-project-content .port-card {
   background: #334756;
-  border-radius: 1rem;
+  border-radius: 10px;
   padding: 1rem;
   height: 300px;
   display: -webkit-box;
@@ -523,21 +582,45 @@ button {
   gap: 5px;
 }
 
-.projects .project-tabbed .project-tabs .single-port-content .port-card:hover {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#ff4c24), color-stop(#ff4b23), color-stop(#ff4a23), color-stop(#ff4822), color-stop(#ff4722), color-stop(#ff4924), color-stop(#ff4a27), color-stop(#ff4c29), color-stop(#ff512f), color-stop(#ff5635), color-stop(#fe5a3b), to(#fe5f40));
-  background-image: linear-gradient(to right top, #ff4c24, #ff4b23, #ff4a23, #ff4822, #ff4722, #ff4924, #ff4a27, #ff4c29, #ff512f, #ff5635, #fe5a3b, #fe5f40);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.projects .project-tabbed .project-tabs .single-project-content .port-card .button_project {
+  border: 1px solid white;
+  border-radius: 3px;
+  color: #334756;
+  display: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 10px 10px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.projects .project-tabbed .project-tabs .single-project-content .port-card h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.projects .project-tabbed .project-tabs .single-project-content .port-card:hover {
+  background-color: #000c1d;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+  border-radius: 0px;
 }
 
-.projects .project-tabbed .project-tabs .single-port-content .port-card:hover h5 {
-  color: white !important;
+.projects .project-tabbed .project-tabs .single-project-content .port-card:hover .button_project {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
 }
 
-.projects .project-tabbed .project-tabs .single-port-content .port-card:hover .project-img {
-  content: attr("./resources");
+.projects .project-tabbed .project-tabs .single-project-content .port-card:hover .project-img {
+  content: url("../resources/icons/open_project.svg");
 }
 
 .contact .cdb-right {
@@ -549,7 +632,7 @@ button {
 }
 
 .contact .contact-form {
-  background-color: #334756;
+  background-color: #000c1d;
   border-radius: 10px;
 }
 
@@ -582,6 +665,19 @@ button {
 .contact .contact-form .email-text a {
   color: #ff4c29;
   font-family: "Arimo", sans-serif;
+}
+
+footer {
+  background-color: #000c1d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ff4c29;
+  font-size: 16px;
+  line-height: 2px;
 }
 
 /* Custom, iPhone Retina */

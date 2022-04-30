@@ -3,6 +3,8 @@
 // 1. Portfolio Fonts : Lato fonts [google fonts]
 @import url("https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script&family=Fira+Code:wght@300&family=Forum&family=Stardos+Stencil:wght@400;700&display=swap");
 
+
+
 $arimo-font-family: "Arimo", sans-serif; //paragraphs
 $ds-font-family: "Dancing Script", cursive; // decorative text
 $fira-font-family: "Fira Code", monospace; // links
@@ -50,13 +52,12 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  .bucket {
+}
+.bucket {
     width: 80%;
     margin: 0 auto;
     padding: 2rem auto;
   }
-}
 
 h2,
 h3,
@@ -115,7 +116,7 @@ button {
   border-radius: 0.3rem;
   background: $color-accent;
   padding: 0 auto;
-  width: 120px;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,6 +125,10 @@ button {
   a {
     text-decoration: none;
     text-align: center;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
     color: $color-text;
     font-family: $fira-font-family;
   }
@@ -181,6 +186,53 @@ button {
 
 .my-bg-primary {
   background-color: $color-accent;
+}
+
+.space-bar{
+//this element create needed space between the navigation bar and the first section. I just hade adding padding  ;lol
+min-height: 70px;
+}
+
+//Navigation : header styling 
+
+header{
+  background: $box-card-rest-color;
+  font-family: $fira-font-family;
+  color: $color-text;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  //overflow: auto;
+  z-index: 6;
+  padding-top: 20px;
+
+    // item styles
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-nav {
+    letter-spacing: 0.1rem;
+    transition: 0.7s ease-in-out;
+    
+  }
+
+  .nav-link {
+    color: $color-text !important;
+  }
+  .active-item{
+      color: $color-accent !important;
+    }
+   
+  .nav-link:hover {
+    color: $color-accent !important;
+    transition: 0.7s ease-in-out;
+    //border-bottom: 1px solid $color-accent;
+  }
 }
 
 // Home section styling
@@ -422,27 +474,48 @@ button {
         }
       }
 
-      .single-port-content {
-  
+      .single-project-content { 
         .port-card {
           background: $color-extra;
-          border-radius: 1rem;
+          border-radius: 10px;
           padding: 1rem;
           height: 300px;
           display: flex;
           flex-direction:column; 
           justify-content:center;
           gap: 5px;
+
+          .button_project{
+            border: 1px solid white;
+            border-radius:3px; 
+            color: $color-extra; 
+            display:none; 
+            width: fit-content;
+            padding:10px 10px 10px 10px;
+            box-sizing: border-box;
+          }
+          h5{
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
         }
         .port-card:hover {
-          background-image: linear-gradient(to right top, #ff4c24, #ff4b23, #ff4a23, #ff4822, #ff4722, #ff4924, #ff4a27, #ff4c29, #ff512f, #ff5635, #fe5a3b, #fe5f40);
-          transform: scale(1.05);
+          //background-image: linear-gradient(to right top, #ff4c24, #ff4b23, #ff4a23, #ff4822, #ff4722, #ff4924, #ff4a27, #ff4c29, #ff512f, #ff5635, #fe5a3b, #fe5f40);
+          //transform: scale(1.05);
+          background-color: $box-card-rest-color;
+          transform: translateY(-10px);
           transition: 0.4s ease-in-out;
-          h5 { 
-            color: white !important;
+          border-radius:0px;
+          .button_project{
+            border: 1px solid white;
+            border-radius:5px; 
+            color: white; 
+            display:flex; 
+            cursor: pointer;
+
           }
           .project-img{
-            content: attr('./resources');
+            content: url('../resources/icons/open_project.svg');
           }
         }
       }
@@ -464,7 +537,7 @@ button {
     }
   }
   .contact-form { 
-    background-color: $color-extra;
+    background-color: $box-card-rest-color;
     border-radius: 10px;
     label {
       text-align: start;
@@ -501,7 +574,17 @@ button {
 }
 
 
-
+footer{
+  background-color:$box-card-rest-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  a{
+    text-decoration: none;
+    color: $color-accent;
+    font-size: 16px;
+    line-height:2px; 
+  }
+}
 
 
 // MEDIA QUERRIES

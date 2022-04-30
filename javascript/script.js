@@ -64,23 +64,23 @@ function openPortTab(evt, tabName) {
   var i, tabcontent, tablinks;
 
   // Get all elements with class="react-tabs__tab-panel" and hide them
-  tabcontent = document.getElementsByClassName("port-tabs__tab-panel");
+  tabcontent = document.getElementsByClassName("project-tabs__tab-panel");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
   // Get all elements with class="react-tabs__tab" and remove the class "active"
-  tablinks = document.getElementsByClassName(" port-tabs__tab");
+  tablinks = document.getElementsByClassName(" project-tabs__tab");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(
-      " port-tab__tab--selected",
+      " project-tab__tab--selected",
       ""
     );
   }
 
   // Show the current tab, and add an "active" class to the link that opened the tab
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " port-tab__tab--selected";
+  evt.currentTarget.className += " project-tab__tab--selected";
 }
 
 //could you do this without calling the function ? Yea checkout this idea: get all views without the selected class and just set the display to none.
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const li = document.getElementById("react-tabs-0");
   li.className += " react-tab__tab--selected";
 
-  openPortTab(event, "port-tabs-web");
-  const po = document.getElementById("port-tabs-0");
-  po.className += " port-tab__tab--selected";
+  openPortTab(event, "project-tabs-web");
+  const po = document.getElementById("project-tabs-0");
+  po.className += " project-tab__tab--selected";
 });
