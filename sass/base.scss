@@ -1,0 +1,570 @@
+//styels for the portfolio pageYOffset
+
+// 1. Portfolio Fonts : Lato fonts [google fonts]
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script&family=Fira+Code:wght@300&family=Forum&family=Stardos+Stencil:wght@400;700&display=swap");
+
+$arimo-font-family: "Arimo", sans-serif; //paragraphs
+$ds-font-family: "Dancing Script", cursive; // decorative text
+$fira-font-family: "Fira Code", monospace; // links
+$forum-font-family: "Forum", cursive; //h3,h4,h5,h6 text
+$stardos-font-family: "Stardos Stencil", cursive; // h1, h2 text
+
+$fs-nav: 15px;
+
+// paragraphs are allowed the default browser weights from
+
+// 2. Portfolio Palettes : One dark theme and one light theme [color hunt help]
+
+$color-primary: #082032;
+$color-secondary: #2c394b;
+$color-accent: #ff4c29;
+$color-text: white;
+$color-extra: #334756;
+
+$header-background: #082032;
+$box-card-rest-color: #000c1d;
+
+//base code
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  background-color: $color-primary;
+  font-family: $arimo-font-family;
+  color: $color-text;
+}
+
+section {
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 6rem auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .bucket {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem auto;
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+.text-tag {
+  font-family: $forum-font-family;
+}
+
+.section-label {
+  color: $color-accent;
+  font-family: $stardos-font-family;
+}
+
+a,
+button {
+  font-family: $fira-font-family;
+  cursor: pointer;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+.flex-row-start{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap:20px; 
+}
+.flex-row-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.flex-row-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button_accent {
+  border: none;
+  border-radius: 0.3rem;
+  background: $color-accent;
+  padding: 0 auto;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    color: $color-text;
+    font-family: $fira-font-family;
+  }
+}
+
+.button_primary {
+  border: none;
+  border-radius: 0.3rem;
+  background: none;
+  border: 1px solid $color-accent;
+  padding: 0 auto;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: $color-text;
+    font-family: $fira-font-family;
+  }
+}
+
+.button_primary:hover {
+  background-color: $color-accent;
+  color: white;
+}
+
+.button_secondary {
+  border: none;
+  border-radius: 0.3rem;
+  background: $color-secondary;
+  padding: 0 auto;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: $color-text;
+    font-family: $fira-font-family;
+  }
+}
+.button_secondary:hover {
+  background-color: $color-accent;
+  color: white;
+}
+
+.my-bg-primary {
+  background-color: $color-accent;
+}
+
+// Home section styling
+
+.home {
+  .home-data-basket {
+    width: 70%;
+
+    .text-tag-hello {
+      color: $color-accent;
+    }
+
+    .text-tag-name {
+      color: white;
+      font-family: $stardos-font-family;
+    }
+
+    .text-tag-problem {
+      color: rgb(182, 179, 179);
+      font-family: $forum-font-family;
+    }
+
+    .text-tag-pitch {
+      color: rgb(235, 232, 232);
+    }
+  }
+}
+
+// Services section styling
+
+.service-items {
+  width: 100%;
+  margin-top: 20px;
+  .service-item-card {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+
+    .service-item-box {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      bottom: 10px;
+      left: 10px;
+      background: $box-card-rest-color;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      transition: 0.5s;
+      .service-item-content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        overflow: hidden;
+
+        h3 {
+          font-size: 1.8em;
+          z-index: 1;
+          transition: 0.5s;
+          margin-bottom: 20px;
+          color: $color-accent;
+        }
+
+        p {
+          z-index: 1;
+          transition: 0.5s;
+          width: 90%;
+        }
+        .service-item-tools {
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          .tool-item::before {
+            content: ">> ";
+            color: $color-accent;
+          }
+        }
+      }
+    }
+  }
+
+  .service-item .service-item-card:hover .service-item-box {
+    transform: translateX(-25px);
+    box-shadow: 0 10px 40px rgba(14, 13, 13, 0.4);
+    transition: 0.7s;
+    border-radius: 0;
+    z-index: 20;
+  }
+  .service-item-card:hover {
+    transition: 0.7s;
+    border-radius: 0;
+  }
+}
+
+// About section styling
+
+.about {
+  .about-data-basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .about-feature-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 1rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Background section styling
+
+.background {
+  .background-data-basket {
+    //naming here is different html code forged from TryDo and styled to fit our purpose
+    .react-tabs {
+      padding-left: 0;
+      margin: 0;
+      .tab-style {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: 0px;
+        transition: 0.7 ease-in-out;
+
+        li {
+          display: inline;
+          cursor: pointer;
+          text-align: start;
+          padding: 12px 22px 2px 2px;
+          border-bottom: 1px solid grey;
+          margin-right: 20px;
+          font-family: $forum-font-family; 
+        }
+
+        .react-tab__tab--selected {
+          color: $color-accent;
+          border-bottom: 2px solid $color-accent;
+          text-align: start;
+        }
+      }
+
+      .single-tab-content {
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+          margin: 0;
+        }
+        .tag-1::before {
+          content: ">> ";
+          color: $color-accent;
+        }
+
+        .tag-1 {
+          line-height: 1rem;
+          color: $color-accent;
+          padding: 0px;
+          margin-bottom: 10px;
+          margin-top: 2rem;
+          font-family: $forum-font-family; 
+        }
+        .tag-2 {
+          color: #a8a8a6;
+          line-height: 3px;
+          padding: 0px;
+          margin-bottom: 5px;
+          font-family: $fira-font-family;
+        }
+        .tag-3 {
+          padding: 0px;
+          margin-bottom: 5px;
+          max-width: 75%;
+        }
+      }
+    }
+  }
+}
+
+
+
+// Project Styling 
+.projects{
+  margin-top: 250px;
+  .pdb-left{
+    width: 40%;
+  }
+  .pdb-right{
+    width: 60%;
+  }
+
+
+  .project-tabbed {
+    .project-tabs {  
+
+      .project-tab-style { 
+        list-style-type: none; 
+        margin: 10px 10px 10px 0px;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: 0px;
+        transition: 0.7 ease-in-out;
+        width: fit-content;
+        align-self: start;
+        background-color: $color-extra; 
+        border-radius: 10px;
+        padding: 0px 0px 0px 0px; 
+
+        li {
+          display: inline;
+          cursor: pointer;
+          text-align: start;  
+          width: 150px;
+          margin: 3px 5px 3px 3px; 
+          padding:3px 10px 3px 10px; 
+        }
+
+        .project-tab__tab--selected{
+          background-image: linear-gradient(to right top, #ff4c24, #ff4b23, #ff4a23, #ff4822, #ff4722, #ff4924, #ff4a27, #ff4c29, #ff512f, #ff5635, #fe5a3b, #fe5f40);
+          border-radius: 0.4rem;
+          text-align: center; 
+        }
+        li:hover {
+          background-image: linear-gradient(to right top, #ff4c24, #ff4b23, #ff4a23, #ff4822, #ff4722, #ff4924, #ff4a27, #ff4c29, #ff512f, #ff5635, #fe5a3b, #fe5f40);
+          border-radius: 0.4rem;
+          text-align: start; 
+        }
+      }
+
+      .single-port-content {
+  
+        .port-card {
+          background: $color-extra;
+          border-radius: 1rem;
+          padding: 1rem;
+          height: 300px;
+          display: flex;
+          flex-direction:column; 
+          justify-content:center;
+          gap: 5px;
+        }
+        .port-card:hover {
+          background-image: linear-gradient(to right top, #ff4c24, #ff4b23, #ff4a23, #ff4822, #ff4722, #ff4924, #ff4a27, #ff4c29, #ff512f, #ff5635, #fe5a3b, #fe5f40);
+          transform: scale(1.05);
+          transition: 0.4s ease-in-out;
+          h5 { 
+            color: white !important;
+          }
+          .project-img{
+            content: attr('./resources');
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// Contact styling
+
+.contact{
+  .cdb-right{
+    width : 70%; 
+  }
+  .cdb-left{
+    p{
+      width: 70%;
+    }
+  }
+  .contact-form { 
+    background-color: $color-extra;
+    border-radius: 10px;
+    label {
+      text-align: start;
+      padding: 12px 12px 2px 0;
+      display: inline-block;
+      color: $color-primary;
+    }
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 4px;
+      border: 1px solid #ccc;
+      border-radius: 0;
+      border-top-left-radius: 0;
+      resize: vertical;
+      background: none; 
+      margin-bottom: 1rem;
+      height: 40px;
+      color: white;
+    }
+
+    .btn-send{
+      color: white;
+    }
+
+    .email-text a{
+      color: $color-accent;
+      font-family: $arimo-font-family;
+    }
+  }
+
+  
+}
+
+
+
+
+
+// MEDIA QUERRIES
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  section {
+    padding: 6rem auto;
+
+    .bucket {
+      width: 90%;
+      margin: 0 auto;
+      padding: 2rem auto;
+      border: 2px solid rgb(255, 127, 136);
+
+      div {
+        min-height: 100%;
+      }
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  section {
+    padding: 6rem auto;
+
+    .bucket {
+      width: 80%;
+      margin: 0 auto;
+      padding: 2rem auto;
+      border: 2px solid rgb(60, 188, 71);
+
+      div {
+        min-height: 100%;
+      }
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) and(max-width: 992px) {
+  section {
+    padding: 6rem auto;
+
+    .bucket {
+      width: 80%;
+      margin: 0 auto;
+      padding: 2rem auto;
+      border: 2px solid rgb(41, 2, 172);
+
+      div {
+        min-height: 100%;
+      }
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  // use a max-with command to manage this
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}
