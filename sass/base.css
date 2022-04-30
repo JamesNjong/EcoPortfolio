@@ -623,6 +623,30 @@ header .nav-link:hover {
   content: url("../resources/icons/open_project.svg");
 }
 
+.Blog .bdb-post-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.Blog .bdb-post {
+  border-radius: 10px;
+  height: 300px;
+  position: relative;
+}
+
+.Blog .bdb-post .bdb-post-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .contact .cdb-right {
   width: 70%;
 }
