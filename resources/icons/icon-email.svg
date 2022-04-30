@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72.4" height="72.331" viewBox="0 0 72.4 72.331">
+  <g id="email" transform="matrix(0.999, -0.035, 0.035, 0.999, 0, 2.44)">
+    <ellipse id="Ellipse_277" data-name="Ellipse 277" cx="34.967" cy="34.967" rx="34.967" ry="34.967" fill="#386895"/>
+    <path id="Path_4671" data-name="Path 4671" d="M58.438,6.822,51.616,0,31.229,3.889,0,21.593,21.1,42.7c.776.051,1.558.08,2.346.08a35,35,0,0,0,35-35Q58.451,7.3,58.438,6.822Z" transform="translate(11.549 27.222)" fill="#273b7a"/>
+    <path id="Path_4672" data-name="Path 4672" d="M40.774,12.546,26.718.246a.975.975,0,0,0-1.626.589V6.273H1.647A1.555,1.555,0,0,0,0,7.715v9.663a1.555,1.555,0,0,0,1.647,1.442H25.092v5.438a.975.975,0,0,0,1.626.589Z" transform="translate(22.391 14.676)" fill="#fff"/>
+    <rect id="Rectangle_170" data-name="Rectangle 170" width="32.389" height="21.592" transform="translate(11.549 27.222)" fill="#fee187"/>
+    <rect id="Rectangle_171" data-name="Rectangle 171" width="16.205" height="21.592" transform="translate(27.734 27.222)" fill="#ffc61b"/>
+    <path id="Path_4673" data-name="Path 4673" d="M32.389,0,16.195,10.8,0,0Z" transform="translate(11.549 27.222)" fill="#e59413"/>
+    <path id="Path_4674" data-name="Path 4674" d="M16.205,0H0V10.789l.011.007Z" transform="translate(27.733 27.222)" fill="#d48b07"/>
+  </g>
+</svg>

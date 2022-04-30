@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="159" height="150" viewBox="0 0 159 150">
+  <defs>
+    <filter id="Ellipse_14" x="0" y="0" width="159" height="150" filterUnits="userSpaceOnUse">
+      <feOffset dx="22" dy="13" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_27" data-name="Group 27" transform="translate(-738 -220)">
+    <g transform="matrix(1, 0, 0, 1, 738, 220)" filter="url(#Ellipse_14)">
+      <circle id="Ellipse_14-2" data-name="Ellipse 14" cx="64" cy="64" r="64" fill="#151d3b"/>
+    </g>
+    <g id="Group_25" data-name="Group 25" transform="translate(751.664 245.527)">
+      <path id="Path_28" data-name="Path 28" d="M5.332,0a5.859,5.859,0,0,1,5.559,5.812l1.2,59.826a5.308,5.308,0,0,1-5.331,5.584A5.859,5.859,0,0,1,1.2,65.411L0,5.585A5.308,5.308,0,0,1,5.332,0Z" transform="translate(25.524 3.357) rotate(21)" fill="#fff"/>
+      <path id="Path_29" data-name="Path 29" d="M5.817,0a6.392,6.392,0,0,1,6.064,6.34l1.176,58.79a5.791,5.791,0,0,1-5.815,6.091,6.392,6.392,0,0,1-6.064-6.34L0,6.093A5.791,5.791,0,0,1,5.817,0Z" transform="translate(88.806 2.914) rotate(21)" fill="#fff"/>
+      <path id="Path_30" data-name="Path 30" d="M7.855,0a5.193,5.193,0,0,1,5.361,5.454L11.051,79.77a5.984,5.984,0,0,1-5.688,5.782A5.193,5.193,0,0,1,0,80.1L2.167,5.784A5.984,5.984,0,0,1,7.855,0Z" transform="translate(8.816 8.944) rotate(-37)" fill="#fff"/>
+      <path id="Path_31" data-name="Path 31" d="M7.855,0a5.193,5.193,0,0,1,5.361,5.454L11.051,79.77a5.984,5.984,0,0,1-5.688,5.782A5.193,5.193,0,0,1,0,80.1L2.167,5.784A5.984,5.984,0,0,1,7.855,0Z" transform="translate(29.684 7.955) rotate(-37)" fill="#fff"/>
+      <path id="Path_32" data-name="Path 32" d="M5.332,0a5.859,5.859,0,0,1,5.559,5.812l1.2,59.826a5.308,5.308,0,0,1-5.331,5.584A5.859,5.859,0,0,1,1.2,65.411L0,5.585A5.308,5.308,0,0,1,5.332,0Z" transform="translate(46.393 2.368) rotate(21)" fill="#fff"/>
+      <path id="Path_33" data-name="Path 33" d="M5.817,0a6.392,6.392,0,0,1,6.064,6.34l1.176,58.79a5.791,5.791,0,0,1-5.815,6.091,6.392,6.392,0,0,1-6.064-6.34L0,6.093A5.791,5.791,0,0,1,5.817,0Z" transform="translate(67.938 3.903) rotate(21)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
