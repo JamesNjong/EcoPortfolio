@@ -230,8 +230,7 @@ header{
    
   .nav-link:hover {
     color: $color-accent !important;
-    transition: 0.7s ease-in-out;
-    //border-bottom: 1px solid $color-accent;
+    transition: 0.7s ease-in-out; 
   }
 }
 
@@ -531,22 +530,59 @@ header{
   .bdb-post-wrapper{
     display:grid; 
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 35px;
   }
   .bdb-post{
     border-radius: 10px;
-    height: 300px;
-    position:relative; 
-    .bdb-post-image{
-      position: absolute;
-      left:0; 
-      right: 0;
-      top: 0;
-      bottom: 0;
-      object-fit: cover;
+    height: 520px; 
+    border-radius: 10px;
+    background-color: $box-card-rest-color;
+    display:flex;
+    flex-direction: column; 
+    justify-content:space-between;
+
+    .bdb-post-image{  
+      border-radius: 10px;
+      height: 250px; 
+      max-height: 250px;
+      width:96%; 
+      margin: 10px auto;
     }
 
+    .bdb-content{ 
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction:column; 
+      justify-content: flex-end;  
+
+      .button_post{
+        width:fit-content; 
+        border: 1px solid $color-accent;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius:4px;  
+        height: 40px; 
+        display: flex;
+        justify-content:center; 
+        align-items:center; 
+        flex-direction: column; 
+
+        a{
+          text-decoration: none;
+          color: white;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 40px;
+          padding-bottom: 40px;
+          box-sizing: border-box;
+        }
+      }
+    }
   }
+
+
 
 }
 
