@@ -15,53 +15,58 @@
 <body>
 
 <header class="header-content">
-  <div class="bucket flex-row-btn">
-    <nav class="navbar navbar-expand-md navbar-light ">
+  <div class="bucket">
+    
+    <div class="header-data-basket">
+        <nav class="navbar navbar-expand-md navbar-light flex-row-btn">
 
-
-      <!-- Brand -->
-      <div class="brand d-flex justify-content-center align-items-center">
-          <img src="./resources/brand/logo-dark.svg" width="50"  alt="name-logo" class="img-fluid m-2" > 
-          <!-- Navbar links -->
-          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-
-            <ul class="navbar-nav  justify-content-end align-items-center">
-                                
-                <li class="nav-item "><a href="#home" class="nav-link active-item px-2">Home <a></li>
-
-                <li class="nav-item"><a href="#services" class="nav-link px-2">Services <a></li>
-
-                <li class="nav-item"><a href="#about" class="nav-link px-2 "> About</a></li>
-                    
-                <li class="nav-item"><a href="#background" class="nav-link px-2 ">Background</a></li>
-
-                <li class="nav-item dropdown"><a href="#projects" class="nav-link px-2 ">Projects</a></li>
-
-                <li class="nav-item dropdown"><a href="#blog" class="nav-link px-2 ">Blog</a></li>
-
-                <li class="nav-item dropdown"><a href="#testimonials" class="nav-link px-2 ">Testimonials</a></li>
-
-                <li class="nav-item d-lg-none d-md-none"><a href="#contact" class="nav-link px-2 link-light ">Contact</a></li>
-                                
-            </ul>
-              
-          </div> 
-      </div>
-
-      <!-- Toggler/collapsable Button -->
-      <button class="navbar-toggler collapsed d-flex d-lg-none d-md-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- Toggler/collapsable Button -->
+          <button class="navbar-toggler collapsed d-flex d-lg-none d-md-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              
+              <span class="toggler-icon top-bar"></span>
+                              
+              <span class="toggler-icon middle-bar"></span>
+                              
+              <span class="toggler-icon bottom-bar"></span>
                           
-          <span class="toggler-icon top-bar"></span>
-                          
-          <span class="toggler-icon middle-bar"></span>
-                          
-          <span class="toggler-icon bottom-bar"></span>
-                      
-      </button>
+          </button>
 
+        <!-- Brand -->
+          <div class="brand d-flex justify-content-center align-items-center">
+            <img src="./resources/brand/logo-dark.svg" width="50"  alt="name-logo" class="img-fluid d-lg-inline-block d-none m-2" > 
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
 
-    </nav>
-    <div class="button_accent d-lg-inline-block d-none"><a href="#contact">Contact</a></div> 
+              <ul class="navbar-nav  justify-content-end align-items-md-end">
+                                  
+                  <li class="nav-item "><a href="#home" class="nav-link active-item px-2">Home <a></li>
+
+                  <li class="nav-item"><a href="#services" class="nav-link px-2">Services <a></li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#about">Profile</a></li>
+                      <li><a class="dropdown-item" href="#background">Background</a></li> 
+                    </ul>
+                  </li> 
+
+                  <li class="nav-item dropdown"><a href="#projects" class="nav-link px-2 ">Projects</a></li>
+
+                  <li class="nav-item dropdown"><a href="#blog" class="nav-link px-2 ">Blog</a></li>
+
+                  <li class="nav-item dropdown"><a href="#testimonials" class="nav-link px-2 ">Testimonials</a></li> 
+
+                  
+                                  
+              </ul>
+                
+            </div> 
+          </div>
+      </nav>
+      <div class="button_accent d-lg-inline-block"><a href="#contact">Contact</a></div> 
+    </div>
+
   </div>
 </header>  
 
@@ -94,12 +99,12 @@
   <section class="services" id="services">
     <div class="bucket">
       <div class="flex-column-start service-data-basket">
-        <p class="section-label">Services.</p> 
-        <p class="section_pitch col-8">
+        <p class="section-label service-label">Services.</p> 
+        <p class="section_pitch ">
         Solving problems around software development, data driven decision making and project management comes easy to me. In this space, there is more fun than work,  using advanced or basic quantitative approaches to design and deliver solutions that meet the needs of all stakeholders.</p> 
 
 
-        <div class="service-items flex-row-btn">
+        <div class="service-items ">
           <div class="service-item">
             <div class="service-item-card">
               <div class="service-item-box">
@@ -178,22 +183,28 @@
               <div class="about-feature-icon flex-column-center my-bg-primary bg-gradient">
                 <img class="bi" width="50" height="50" src="resources/icons/about_destination.svg"/>
               </div>
-              <h2>Outlook</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit tenetur vel consectetur modi, repellendus odit et cumque quasi. In, alias.</p>
+              <div>
+                <h2>Outlook</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit tenetur vel consectetur modi, repellendus odit et cumque quasi. In, alias.</p>
+              </div>
             </div>
             <div class="feature col">
               <div class="about-feature-icon flex-column-center my-bg-primary bg-gradient">
                 <img class="bi" width="50" height="50" src="resources/icons/about_background.svg"/>
               </div>
-              <h2>Throwback</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit tenetur vel consectetur modi, repellendus odit et cumque quasi. In, alias.</p>
+              <div>
+                <h2>Throwback</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit tenetur vel consectetur modi, repellendus odit et cumque quasi. In, alias.</p>
+              </div>
             </div>
             <div class="feature col">
               <div class="about-feature-icon flex-column-center my-bg-primary bg-gradient">
                 <img class="bi" width="50" height="50" src="resources/icons/about_connecting.svg"/>
               </div>
-              <h2>Motivation</h2>
+              <div>
+                <h2>Motivation</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit tenetur vel consectetur modi, repellendus odit et cumque quasi. In, alias.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -918,9 +929,9 @@
 
   <section class="contact" id="contact">
     <div class="bucket">
-      <div class="contact-data-basket flex-row-center"> 
+      <div class="contact-data-basket flex-row-to-column-center"> 
         <div class="cdb-left">
-          <p class="section-label contact-tag">Contact <br> <hr class="col-5"> </p>
+          <p class="section-label contact-tag">Contact <br> <hr class="cdb-left-rule"> </p>
           <h5 class="display-6" >Every good conversation</h5>
           <p>begins with a hello, and the person who cannot wait to talk says it first. So  here is my Hello! Hope you are well.</p> 
         </div>
