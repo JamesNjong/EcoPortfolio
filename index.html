@@ -15,58 +15,63 @@
 <body>
 
 <header class="header-content">
-  <div class="bucket flex-row-btn">
-    <nav class="navbar navbar-expand-md navbar-light ">
+  <div class="bucket">
+    
+    <div class="header-data-basket">
+        <nav class="navbar navbar-expand-md navbar-light flex-row-btn">
 
-
-      <!-- Brand -->
-      <div class="brand d-flex justify-content-center align-items-center">
-          <img src="./resources/brand/logo-dark.svg" width="50"  alt="name-logo" class="img-fluid m-2" > 
-          <!-- Navbar links -->
-          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-
-            <ul class="navbar-nav  justify-content-end align-items-center">
-                                
-                <li class="nav-item "><a href="#home" class="nav-link active-item px-2">Home <a></li>
-
-                <li class="nav-item"><a href="#services" class="nav-link px-2">Services <a></li>
-
-                <li class="nav-item"><a href="#about" class="nav-link px-2 "> About</a></li>
-                    
-                <li class="nav-item"><a href="#background" class="nav-link px-2 ">Background</a></li>
-
-                <li class="nav-item dropdown"><a href="#projects" class="nav-link px-2 ">Projects</a></li>
-
-                <li class="nav-item dropdown"><a href="#blog" class="nav-link px-2 ">Blog</a></li>
-
-                <li class="nav-item dropdown"><a href="#testimonials" class="nav-link px-2 ">Testimonials</a></li>
-
-                <li class="nav-item d-lg-none d-md-none"><a href="#contact" class="nav-link px-2 link-light ">Contact</a></li>
-                                
-            </ul>
-              
-          </div> 
-      </div>
-
-      <!-- Toggler/collapsable Button -->
-      <button class="navbar-toggler collapsed d-flex d-lg-none d-md-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- Toggler/collapsable Button -->
+          <button class="navbar-toggler collapsed d-flex d-lg-none d-md-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              
+              <span class="toggler-icon top-bar"></span>
+                              
+              <span class="toggler-icon middle-bar"></span>
+                              
+              <span class="toggler-icon bottom-bar"></span>
                           
-          <span class="toggler-icon top-bar"></span>
-                          
-          <span class="toggler-icon middle-bar"></span>
-                          
-          <span class="toggler-icon bottom-bar"></span>
-                      
-      </button>
+          </button>
 
+        <!-- Brand -->
+          <div class="brand d-flex justify-content-center align-items-center">
+            <img src="./resources/brand/logo-dark.svg" width="50"  alt="name-logo" class="img-fluid d-lg-inline-block d-none m-2" > 
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
 
-    </nav>
-    <div class="button_accent d-lg-inline-block d-none"><a href="#contact">Contact</a></div> 
+              <ul class="navbar-nav  justify-content-end align-items-md-end">
+                                  
+                  <li class="nav-item "><a href="#home" class="nav-link active-item px-2">Home <a></li>
+
+                  <li class="nav-item"><a href="#services" class="nav-link px-2">Services <a></li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#about">Profile</a></li>
+                      <li><a class="dropdown-item" href="#background">Background</a></li> 
+                    </ul>
+                  </li> 
+
+                  <li class="nav-item dropdown"><a href="#projects" class="nav-link px-2 ">Projects</a></li>
+
+                  <li class="nav-item dropdown"><a href="#blog" class="nav-link px-2 ">Blog</a></li>
+
+                  <li class="nav-item dropdown"><a href="#testimonials" class="nav-link px-2 ">Testimonials</a></li> 
+
+                  
+                                  
+              </ul>
+                
+            </div> 
+          </div>
+      </nav>
+      <div class="button_accent d-lg-inline-block"><a href="#contact">Contact</a></div> 
+    </div>
+
   </div>
 </header>  
 
 <main>
-  <div class="space-bar"><span>. . . </span></div>
+  <div class="space-bar"><span></span></div>
   <section class="home" id="home">
     <div class="bucket">
         
@@ -94,12 +99,12 @@
   <section class="services" id="services">
     <div class="bucket">
       <div class="flex-column-start service-data-basket">
-        <p class="section-label">Services.</p> 
-        <p class="section_pitch col-8">
+        <p class="section-label service-label">Services.</p> 
+        <p class="section_pitch ">
         Solving problems around software development, data driven decision making and project management comes easy to me. In this space, there is more fun than work,  using advanced or basic quantitative approaches to design and deliver solutions that meet the needs of all stakeholders.</p> 
 
 
-        <div class="service-items flex-row-btn">
+        <div class="service-items ">
           <div class="service-item">
             <div class="service-item-card">
               <div class="service-item-box">
@@ -178,22 +183,28 @@
               <div class="about-feature-icon flex-column-center my-bg-primary bg-gradient">
                 <img class="bi" width="50" height="50" src="resources/icons/about_destination.svg"/>
               </div>
-              <h2>Outlook</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit tenetur vel consectetur modi, repellendus odit et cumque quasi. In, alias.</p>
+              <div>
+                <h2>Outlook</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit tenetur vel consectetur modi, repellendus odit et cumque quasi. In, alias.</p>
+              </div>
             </div>
             <div class="feature col">
               <div class="about-feature-icon flex-column-center my-bg-primary bg-gradient">
                 <img class="bi" width="50" height="50" src="resources/icons/about_background.svg"/>
               </div>
-              <h2>Throwback</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit tenetur vel consectetur modi, repellendus odit et cumque quasi. In, alias.</p>
+              <div>
+                <h2>Throwback</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit tenetur vel consectetur modi, repellendus odit et cumque quasi. In, alias.</p>
+              </div>
             </div>
             <div class="feature col">
               <div class="about-feature-icon flex-column-center my-bg-primary bg-gradient">
                 <img class="bi" width="50" height="50" src="resources/icons/about_connecting.svg"/>
               </div>
-              <h2>Motivation</h2>
+              <div>
+                <h2>Motivation</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit tenetur vel consectetur modi, repellendus odit et cumque quasi. In, alias.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -753,10 +764,16 @@
     <div class="bucket">
       <!-- use a bootstrap container to avoid having to write media querries for this-->
       <div class="blod-data-basket">
+        <div class="bdb-tags flex-column-center my-5">
+          <p class="section-label">Blog</p> 
+          <p class="tag display-3">Events and Stories</p>
+          <p class="tag-line">Here is space for my thoughts and my tales, you sure will find something worthwhile.</p>
+          <hr class="col-4">
+        </div>
         <div class=" bdb-post-wrapper">
           
           <div class="bdb-post ">
-            <img src="./resources/images/image-1.jpg" height="300px" alt="" class="img-fluid bdb-post-image">
+            <img src="./resources/images/image-1.jpg" loading="lazy" alt="" class="img-fluid bdb-post-image">
 
             <div class="bdb-content">
               <h4 class="bdb-content-title">
@@ -770,7 +787,7 @@
           </div>
 
           <div class="bdb-post">
-            <img src="./resources/images/image-2.jpg" height="300px" alt="" class="img-fluid bdb-post-image">
+            <img src="./resources/images/image-2.jpg" loading="lazy"  alt="" class="img-fluid bdb-post-image">
             <div class="bdb-content">
               <h4 class="bdb-content-title">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -783,7 +800,7 @@
           </div>
 
           <div class="bdb-post ">
-            <img src="./resources/images/image-3.jpg" height="300px" alt="" class="img-fluid bdb-post-image">
+            <img src="./resources/images/image-3.jpg" loading="lazy"  alt="" class="img-fluid bdb-post-image">
             <div class="bdb-content">
               <h4 class="bdb-content-title">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -794,96 +811,10 @@
               </div>
             </div>
           </div>
-
-          <div class="bdb-post ">
-            <img src="./resources/images/image-4.jpg" height="300px" alt="" class="img-fluid bdb-post-image">
-            <div class="bdb-content">
-              <h4 class="bdb-content-title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h4>
-              <p class="bdb-content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nobis ipsum ullam obcaecati expedita ex alias delectus culpa fugiat quo?</p>
-              <div class="button_post">
-                <a href="#" class="bdb-content-link">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="bdb-post ">
-            <img src="./resources/images/image-5.jpg" height="300px" alt="" class="img-fluid bdb-post-image">
-            <div class="bdb-content">
-              <h4 class="bdb-content-title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h4>
-              <p class="bdb-content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nobis ipsum ullam obcaecati expedita ex alias delectus culpa fugiat quo?</p>
-              <div class="button_post">
-                <a href="#" class="bdb-content-link">Read More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="bdb-post ">
-            <img src="./resources/images/image-6.jpg" loading="lazy" alt="" class="img-fluid bdb-post-image">
-            <div class="bdb-content">
-              <h4 class="bdb-content-title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h4>
-              <p class="bdb-content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nobis ipsum ullam obcaecati expedita ex alias delectus culpa fugiat quo?</p>
-              <div class="button_post">
-                <a href="#" class="bdb-content-link">Read More</a>
-              </div>
-            </div>
-          </div>
-
-
-          
 
         </div>
-        <div class="bdb-post-wrapper-hidden my-5">
-          <div class="flex-column-center">
-            <button class="button_primary" onclick="open">Show More</button>
-
-            <div class="bdb-post-hidden-wrapper my-5">
-              <div class="bdb-post ">
-                <img src="./resources/images/image-7.jpg" height="300px" alt="" class="img-fluid bdb-post-image">
-                <div class="bdb-content">
-                  <h4 class="bdb-content-title">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </h4>
-                  <p class="bdb-content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nobis ipsum ullam obcaecati expedita ex alias delectus culpa fugiat quo?</p>
-                  <div class="button_post">
-                    <a href="#" class="bdb-content-link">Read More</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="bdb-post ">
-                <img src="./resources/images/image-8.jpg" height="300px" alt="" class="img-fluid bdb-post-image">
-                <div class="bdb-content">
-                  <h4 class="bdb-content-title">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </h4>
-                  <p class="bdb-content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nobis ipsum ullam obcaecati expedita ex alias delectus culpa fugiat quo?</p>
-                  <div class="button_post">
-                    <a href="#" class="bdb-content-link">Read More</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="bdb-post ">
-                <img src="./resources/images/image-9.jpg" loading="lazy" alt="" class="img-fluid bdb-post-image">
-                <div class="bdb-content">
-                  <h4 class="bdb-content-title">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </h4>
-                  <p class="bdb-content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nobis ipsum ullam obcaecati expedita ex alias delectus culpa fugiat quo?</p>
-                  <div class="button_post">
-                    <a href="#" class="bdb-content-link">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
+        <div class="flex-column-center blog-more">
+          <div class="button_accent"><a href="blogs.html">See More </a></div> 
         </div>
       </div>
     </div>
@@ -891,16 +822,116 @@
 
   <section class="Testimonials" id="testimonials">
     <div class="bucket">
-      <div> <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A laboriosam alias sunt laborum officia accusamus quasi, in incidunt eos? Molestiae.</p> 
+
+      <div>
+        <p class="section-label flex-column-center">Testimonials</p>     
+    </div>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        
+        <div class="flex-column-center">
+              <!-- Testimonial Items-->
+            <div class="carousel-inner testim-items">
+
+              <div class="carousel-item active">
+                
+                <div class="testim-data flex-column-center">
+                  <img src="./resources/images/person.jpg"  alt="" class="img-fluid testim-img">
+                  <div class="testim flex-column-center">
+                    <h2 class="testim-name">1. Lorem, ipsum dolor.</h2>
+                    <p class="testim-affiliation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, asperiores.</p>
+                  </div>
+                  <p class="testim-comments">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugiat omnis optio, vero pariatur repellat repellendus beatae, odit at velit laboriosam expedita consectetur earum laudantium, labore doloribus maiores deserunt voluptatum cupiditate ex quo sequi provident porro! Ad id sed similique!</p>
+                </div> 
+              </div>
+
+              <div class="carousel-item">
+
+                <div class="testim-data flex-column-center">
+                  <img src="./resources/images/person.jpg"  alt="" class="img-fluid testim-img">
+                  <div class="testim flex-column-center">
+                    <h2 class="testim-name">2. Lorem, ipsum dolor.</h2>
+                    <p class="testim-affiliation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, asperiores.</p>
+                  </div>
+                  <p class="testim-comments">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugiat omnis optio, vero pariatur repellat repellendus beatae, odit at velit laboriosam expedita consectetur earum laudantium, labore doloribus maiores deserunt voluptatum cupiditate ex quo sequi provident porro! Ad id sed similique!</p>
+                </div>
+                
+
+              </div>
+
+              <div class="carousel-item"> 
+                
+                <div class="testim-data flex-column-center">
+                  <img src="./resources/images/person.jpg"  alt="" class="img-fluid testim-img">
+                  <div class="testim flex-column-center">
+                    <h2 class="testim-name">3. Lorem, ipsum dolor.</h2>
+                    <p class="testim-affiliation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, asperiores.</p>
+                  </div>
+                  <p class="testim-comments">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugiat omnis optio, vero pariatur repellat repellendus beatae, odit at velit laboriosam expedita consectetur earum laudantium, labore doloribus maiores deserunt voluptatum cupiditate ex quo sequi provident porro! Ad id sed similique!</p>
+                </div>
+
+              </div>
+
+              <div class="carousel-item">
+
+                <div class="testim-data flex-column-center">
+                  <img src="./resources/images/person.jpg"  alt="" class="img-fluid testim-img">
+                  <div class="testim flex-column-center">
+                    <h2 class="testim-name">4.Lorem, ipsum dolor.</h2>
+                    <p class="testim-affiliation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, asperiores.</p>
+                  </div>
+                  <p class="testim-comments">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugiat omnis optio, vero pariatur repellat repellendus beatae, odit at velit laboriosam expedita consectetur earum laudantium, labore doloribus maiores deserunt voluptatum cupiditate ex quo sequi provident porro! Ad id sed similique!</p>
+                </div>
+
+              </div>
+
+              <div class="carousel-item"> 
+                
+                <div class="testim-data flex-column-center">
+                  <img src="./resources/images/person.jpg"  alt="" class="img-fluid testim-img">
+                  <div class="testim flex-column-center">
+                    <h2 class="testim-name">6. Lorem, ipsum dolor.</h2>
+                    <p class="testim-affiliation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, asperiores.</p>
+                  </div>
+                  <p class="testim-comments">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugiat omnis optio, vero pariatur repellat repellendus beatae, odit at velit laboriosam expedita consectetur earum laudantium, labore doloribus maiores deserunt voluptatum cupiditate ex quo sequi provident porro! Ad id sed similique!</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Carousel indicators-->
+            <div class="carousel-indicators  testim-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+
+        </div>
+
+
+        <!-- Carousel controls-->
+        <button class="carousel-control-prev d-none" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next d-none" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
     </div>
   </section>
 
   <section class="contact" id="contact">
     <div class="bucket">
-      <div class="contact-data-basket flex-row-center"> 
+      <div class="contact-data-basket flex-row-to-column-center"> 
         <div class="cdb-left">
-          <p class="section-label contact-tag">Contact <br> <hr class="col-5"> </p>
+          <p class="section-label contact-tag">Contact <br> <hr class="cdb-left-rule"> </p>
           <h5 class="display-6" >Every good conversation</h5>
           <p>begins with a hello, and the person who cannot wait to talk says it first. So  here is my Hello! Hope you are well.</p> 
         </div>
@@ -959,23 +990,24 @@
       <div class="ft-center">
 
         <div class="row row-cols-3 row-cols-md-3 row-cols-xl-3 g-2 justify-content-center align-items-center">
-          <div class="col"><a href="#">Home</a></div> 
-          <div class="col"><a href="#">Services</a></div> 
-          <div class="col"><a href="#">About</a></div>
+          <div class="col"><a href="#home">Home</a></div> 
+          <div class="col"><a href="#services">Services</a></div> 
+          <div class="col"><a href="#about">About</a></div>
 
-          <div class="col"><a href="#">Background</a></div> 
-          <div class="col"><a href="#">Projects</a></div> 
-          <div class="col"><a href="#">Blog</a></div>
+          <div class="col"><a href="#background">Background</a></div> 
+          <div class="col"><a href="#projects">Projects</a></div> 
+          <div class="col"><a href="#blog">Blog</a></div>
 
-          <div class="col"><a href="#">Blog</a></div> 
-          <div class="col"><a href="#">Testimonials</a></div> 
-          <div class="col"><a href="#">Contact</a></div>
+          
+          <div class="col"><a href="#testimonials">Testimonials</a></div> 
+          <div class="col"><a href="#contact">Contact</a></div>
+          <div class="col"><a href="#"></a></div> 
         </div>
         
          
       </div>
       <div class="ft_left">
-        <img src="./resources/icons/icon-arrow-down.svg" width="30" alt="icon up" class="img-fluid ft_left_brand">
+        <a href="#home"><img src="./resources/icons/icon-arrow-down.svg" width="30" alt="icon up" class="img-fluid ft_left_brand"></a>
       </div>
     </div>
     <div class="foot-signature">
