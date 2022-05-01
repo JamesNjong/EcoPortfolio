@@ -83,6 +83,30 @@ function openPortTab(evt, tabName) {
   evt.currentTarget.className += " project-tab__tab--selected";
 }
 
+
+
+// show hidden blogs 
+const hideWrapper = true; 
+
+function showHiddenBlogs(event, itemName) { 
+  console.log("we got this far");
+
+  const hiddenWrapper = document.getElementsById("hidden-wrapper");
+  const blogState = document.querySelector("button .blog-post-toggler").innerText();
+
+  if (blogState == "See More") {
+    hiddenWrapper.style.display = "inline-block";
+    blogState.innerHTML = "See Less";
+  } else { 
+    hiddenWrapper.style.display = "none";
+    blogState.innerHTML = "See More";
+  }
+ 
+}
+
+
+
+
 //could you do this without calling the function ? Yea checkout this idea: get all views without the selected class and just set the display to none.
 document.addEventListener("DOMContentLoaded", function () {
   openTab(event, "react-tabs-exp");
@@ -92,4 +116,10 @@ document.addEventListener("DOMContentLoaded", function () {
   openPortTab(event, "project-tabs-web");
   const po = document.getElementById("project-tabs-0");
   po.className += " project-tab__tab--selected";
+
+
+  showHiddenBlogs(event, "hidden-wrapper");
 });
+
+
+
