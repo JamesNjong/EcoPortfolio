@@ -42,20 +42,14 @@
                   <li class="nav-item "><a href="#home" class="nav-link active-item px-2">Home <a></li>
 
                   <li class="nav-item"><a href="#services" class="nav-link px-2">Services <a></li>
-
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#about">Profile</a></li>
-                      <li><a class="dropdown-item" href="#background">Background</a></li> 
-                    </ul>
-                  </li> 
+                  <li class="nav-item"><a href="#about" class="nav-link px-2">About <a></li>
+                  <li class="nav-item"><a href="#background" class="nav-link px-2">Background <a></li>
 
                   <li class="nav-item dropdown"><a href="#projects" class="nav-link px-2 ">Projects</a></li>
 
                   <li class="nav-item dropdown"><a href="#blog" class="nav-link px-2 ">Blog</a></li>
 
-                  <li class="nav-item dropdown"><a href="#testimonials" class="nav-link px-2 ">Testimonials</a></li> 
+                  <li class="nav-item dropdown d-none"><a href="#testimonials" class="nav-link px-2 ">Testimonials</a></li> 
 
                   
                                   
@@ -79,14 +73,14 @@
           <p class="text-tag-hello">Hello there, I'm</p>
                             
           <h1>
-            <p class="display-1 fw-bold lh-1 mb-3 text-tag-name major">James J. Njong</p>
-            <p class="display-4 fw-bold text-tag-problem minor">a versatile problem solver </p>  
+            <p class="display-1 fw-bold lh-1 mb-3 text-tag-name">James J. Njong</p>
+            <p class="display-4 fw-bold text-tag-problem">a versatile problem solver</p>  
           </h1>
     
           <p class="text-tag-pitch">whom beyond an excellent ability to communicate, thrives on task that help people and organizations set and achieve audacious goals, by using a variety of quantitative analytics tools to support decision making, and/or building the technology required to enhance value creation both inside and outside the organization.</p>
                             
                                
-          <div class="flex-row-center my-4 "> 
+          <div class="home_buttons "> 
             <span class="button_primary "><a href="#services">Learn more</a></span> 
             <span class="button_secondary"><a href="#">Download CV</a></span> 
           </div> 
@@ -113,7 +107,7 @@
 
                   <p class="service-item-text">Using a flair of standard tools, I am able to transform designs into fully functional software that helps people and organisations advance their agenda in the corporate space. My tools for work in this space include</p>
 
-                  <ul class="service-item-tools">
+                  <ul class="service-item-tools d-none">
                 
                     <li class="tool-item">HTML, CSS and JavaScript</li>
       
@@ -136,7 +130,7 @@
                     
                   <p class="skill-text">Leaning on tools form math, computer science and often a mix of both, I help people and organisations refine business strategies by translating data into actionable insights using predominantly: </p>
 
-                  <ul class="service-item-tools">
+                  <ul class="service-item-tools d-none">
                     <li class="tool-item">R, Python or Excel</li>
                     <li class="tool-item">Financial Ratio Analysis</li>
                     <li class="tool-item">Mathematical Optimization</li>
@@ -155,7 +149,7 @@
                         
                     <p class="skill-text">With minimal oversight, I help implement, and continuously improves M&E systems for  project activities, by ensuring the information collected is accurate, timely and disseminated appropriately in high quality reports.</p>
 
-                      <ul class="service-item-tools">
+                      <ul class="service-item-tools d-none">
                         <li class="tool-item">Asana, Slack</li>
                         <li class="tool-item">MS 365</li>
                         <li class="tool-item">G Suite</li>
@@ -177,7 +171,7 @@
       <div class="about-data-basket "> 
         <div class="container py-5" id="featured-3">
           <p class="section-label">About.</p> 
-          <p class="pb-2 border-bottom col-lg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sit aperiam ab quibusdam at sequi asperiores eveniet? Amet, dolores. Maxime.</p>
+          <p class="pb-2 border-bottom col-lg-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sit aperiam ab quibusdam at sequi asperiores eveniet? Amet, dolores. Maxime.</p>
           <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div class="feature col">
               <div class="about-feature-icon flex-column-center my-bg-primary bg-gradient">
@@ -442,14 +436,14 @@
       <div class="project-data-basket "> 
         <div class="pdb-left">
           <p class="section-label flex-column-start">Projects</p>     
-          <p class="lead">Curated list of projects from web through to project concept notes and implementation strategy outlines.</p>
+          <p >Curated list of projects from web through to project concept notes and implementation strategy outlines.</p>
         </div>
 
         <div class="project-tabbed">
           <div class="project-tabs flex-column-start">
             <ul class="project-tab-style" role="tablist">
                 
-              <li class="project-tabs__tab project-tab__tab--selected links" role="tab" id="project-tabs-0"  tabindex="0" onclick="openPortTab(event, 'project-tabs-web')" >Frontend Web </li>
+              <li class="project-tabs__tab project-tab__tab--selected links" role="tab" id="project-tabs-0"  tabindex="0" onclick="openPortTab(event, 'project-tabs-web')" ><span id="frontend_span">Frontend</span> Web </li>
                                                                           
               <li class="project-tabs__tab links" role="tab" id="project-tabs-1" aria-selected="false" aria-disabled="false" aria-controls="project-tabs-1" data-rttab="true" onclick="openPortTab(event, 'project-tabs-android')">Android</li>
                                                                           
@@ -462,7 +456,7 @@
 
             <div class="single-project-content">
 
-            <div class="row row-cols-3 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
                 
             <div class="col">
             
@@ -560,7 +554,7 @@
 
             <div class="single-project-content">
 
-            <div class="row row-cols-3 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
                 
             <div class="col">
             
@@ -660,7 +654,7 @@
 
             <div class="single-project-content">
 
-            <div class="row row-cols-3 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
                 
             <div class="col">
             
@@ -726,7 +720,7 @@
                 <h5 class="project-title">Mortgage Applications</h5>
                 <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
 
-                <span class="button-project">View Details</span>
+                <span class="button_project">View Details</span>
 
               </div>
 
@@ -765,9 +759,9 @@
       <!-- use a bootstrap container to avoid having to write media querries for this-->
       <div class="blod-data-basket">
         <div class="bdb-tags flex-column-center my-5">
-          <p class="section-label">Blog</p> 
-          <p class="tag display-3">Events and Stories</p>
-          <p class="tag-line">Here is space for my thoughts and my tales, you sure will find something worthwhile.</p>
+          <p class="section-label text-center d-block">Blog</p> 
+          <p class="tag display-3 text-center">Events and Stories</p>
+          <p class="tag-line text-center">Here is space for my thoughts and my tales, you sure will find something worthwhile.</p>
           <hr class="col-4">
         </div>
         <div class=" bdb-post-wrapper">
@@ -820,7 +814,7 @@
     </div>
   </section>
 
-  <section class="Testimonials" id="testimonials">
+  <section class="Testimonials d-none" id="testimonials">
     <div class="bucket">
 
       <div>
@@ -836,9 +830,9 @@
               <div class="carousel-item active">
                 
                 <div class="testim-data flex-column-center">
-                  <img src="./resources/images/person.jpg"  alt="" class="img-fluid testim-img">
+                  <img src="./resources/images/person2.jpg"  alt="" class="img-fluid testim-img">
                   <div class="testim flex-column-center">
-                    <h2 class="testim-name">1. Lorem, ipsum dolor.</h2>
+                    <h5 class="testim-name">1. Lorem, ipsum dolor.</h5>
                     <p class="testim-affiliation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, asperiores.</p>
                   </div>
                   <p class="testim-comments">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugiat omnis optio, vero pariatur repellat repellendus beatae, odit at velit laboriosam expedita consectetur earum laudantium, labore doloribus maiores deserunt voluptatum cupiditate ex quo sequi provident porro! Ad id sed similique!</p>
@@ -983,13 +977,13 @@
 <footer>
   <div class="bucket">
     <div class="foot-data-basket">
-      <div class="foot_wrapper flex-row-btn">
+      <div class="foot_wrapper">
       <div class="ft_left">
-        <img src="./resources/brand/logo-dark.svg" alt="james njong logo" class="img-fluid ft_left_brand">
+        <img src="./resources/brand/logo-dark.svg" width="100" alt="james njong logo" class="img-fluid ft_left_brand">
       </div>
       <div class="ft-center">
 
-        <div class="row row-cols-3 row-cols-md-3 row-cols-xl-3 g-2 justify-content-center align-items-center">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 g-2 justify-content-center align-items-center">
           <div class="col"><a href="#home">Home</a></div> 
           <div class="col"><a href="#services">Services</a></div> 
           <div class="col"><a href="#about">About</a></div>
@@ -1013,17 +1007,22 @@
     <div class="foot-signature">
       <hr>
         <div class="ft_center_icons flex-row-btn">
-        <div class="left_icons">
-          <img src="./resources/icons/icon-twitter.svg" width="30" alt="twitter icon" class="img-fluid ft_left_brand ">
-          <img src="./resources/icons/icon-linkedin.svg" width="30" alt="linkedIn icon" class="img-fluid ft_left_brand mx-5">
-        </div>
+        
         <div class="signature">
-          <img src="./resources/icons/signature.svg" width="130" alt="twitter icon" class="img-fluid ft_left_brand"> 
+          <img src="./resources/icons/signature.svg" width="130" alt="twitter icon" class="img-fluid ft_sig"> 
+          <p  class="text-center">© Copywrite 2022</p>
         </div>
-        <div class="right_icons">
-          <img src="./resources/icons/icon-github.svg" width="30" alt="twitter icon" class="img-fluid ft_left_brand mx-5">
-          <img src="./resources/icons/icon-email.svg" width="30" alt="linkedIn icon" class="img-fluid ft_left_brand">
+        <div class="social-media">
+          <div class="left_icons">
+            <img src="./resources/icons/icon-twitter.svg" width="30" alt="twitter icon" class="img-fluid ft_left_brand ">
+            <img src="./resources/icons/icon-linkedin.svg" width="30" alt="linkedIn icon" class="img-fluid ft_left_brand">
+          </div>
+          <div class="right_icons">
+            <img src="./resources/icons/icon-github.svg" width="30" alt="twitter icon" class="img-fluid ft_left_brand">
+            <img src="./resources/icons/icon-email.svg" width="30" alt="linkedIn icon" class="img-fluid ft_left_brand">
+          </div>
         </div>
+
         </div>
     </div>
     </div>

@@ -1,0 +1,78 @@
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  section {
+    padding: 6rem auto;
+  }
+  .bucket {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem auto;
+    background-color: red;
+  }
+  .service-data-basket .service-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
+  .service-data-basket .service-item-card {
+    position: relative;
+    width: 400px;
+    height: 430px;
+  }
+  .service-data-basket .section_pitch,
+  .service-data-basket .service-label {
+    max-width: 100% !important;
+    text-align: center;
+  }
+  .contact .contact-data-basket {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
+  .contact .contact-data-basket .cdb-left {
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .contact-data-basket .cdb-left p {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/*# sourceMappingURL=large.css.map */
