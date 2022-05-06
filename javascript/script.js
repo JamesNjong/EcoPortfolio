@@ -84,28 +84,40 @@ function openPortTab(evt, tabName) {
 }
 
 
-
-// show hidden blogs 
-const hideWrapper = true; 
-
-function showHiddenBlogs(event, itemName) { 
-  console.log("we got this far");
-
-  const hiddenWrapper = document.getElementsById("hidden-wrapper");
-  const blogState = document.querySelector("button .blog-post-toggler").innerText();
-
-  if (blogState == "See More") {
-    hiddenWrapper.style.display = "inline-block";
-    blogState.innerHTML = "See Less";
-  } else { 
-    hiddenWrapper.style.display = "none";
-    blogState.innerHTML = "See More";
-  }
  
+
+
+//scroll animations 
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal"); 
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
 }
+window.addEventListener("scroll", reveal);
+
+// To check the scroll position on page load
+reveal();
 
 
 
+
+function highlighter(event) {
+
+  var tabcontent = document.getElementsByClassName("active-item");
+
+  tabcontent[0].className = tabcontent[0].className.replace("active-item", "");
+  console.log(tabcontent[0]); 
+  event.currentTarget.className += " active-item";
+}
 
 //could you do this without calling the function ? Yea checkout this idea: get all views without the selected class and just set the display to none.
 document.addEventListener("DOMContentLoaded", function () {
@@ -119,7 +131,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   showHiddenBlogs(event, "hidden-wrapper");
+
+
+  
+
 });
+
+
 
 
 

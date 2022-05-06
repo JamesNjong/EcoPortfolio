@@ -79,6 +79,7 @@ a,
 button {
   font-family: $fira-font-family;
   cursor: pointer;
+  
 }
 .flex-row-to-column-center {
   display: flex;
@@ -213,7 +214,7 @@ header {
   text-align: start;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   z-index: 26;
-  //padding: 3rem 6rem 3rem 6rem;
+  padding: 3rem 0rem 3rem 0rem;
   background-color: $color-primary;
   min-height: 100px;
 
@@ -242,7 +243,6 @@ header {
 
   .nav-link {
     color: $color-text !important;
-    font-family: $stardos-font-family !important;
   }
   .active-item {
     color: $color-accent !important;
@@ -394,7 +394,7 @@ header {
       .service-item-card {
         position: relative;
         width: 320px;
-        height: 340px;
+        height: 350px;
         box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
           inset -5px -5px 15px rgba(255, 255, 255, 0.1),
           5px 5px 15px rgba(0, 0, 0, 0.3),
@@ -407,7 +407,7 @@ header {
           right: 10px;
           bottom: 10px;
           left: 10px;
-          background: $box-card-rest-color;
+          background: $color-primary;
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
           border-radius: 0px;
           transition: 0.5s;
@@ -429,8 +429,7 @@ header {
 
             p {
               z-index: 1;
-              transition: 0.5s;
-              width: 90%;
+              transition: 0.5s; 
             }
             .service-item-tools {
               padding: 0;
@@ -574,18 +573,19 @@ header {
         align-self: start;
         background-color: $color-extra;
         border-radius: 10px;
-        padding: 0px 0px 0px 0px;
+        padding: 2px 2px 2px 2px;
 
         li {
           display: inline;
           cursor: pointer;
           text-align: start;
           width: 150px;
-          margin: 3px px 3px 3px;
+          margin: 3px 3px 3px 3px;
           padding: 3px 10px 3px 10px;
         }
 
         .project-tab__tab--selected {
+          transition: all 0.5s ease-in-out; 
           background-image: linear-gradient(
             to right top,
             #ff4c24,
@@ -605,6 +605,7 @@ header {
           text-align: center;
         }
         li:hover {
+          transition: all 0.5s ease-in-out; 
           background-image: linear-gradient(
             to right top,
             #ff4c24,
@@ -690,12 +691,12 @@ header {
   }
   .bdb-post {
     border-radius: 10px;
-    height: 520px;
+    height: 550px;
     border-radius: 10px;
     background-color: $box-card-rest-color;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    //justify-content: space-between;
 
     .bdb-post-image {
       border-radius: 10px;
@@ -710,8 +711,9 @@ header {
       padding-right: 10px;
       padding-bottom: 20px;
       display: flex;
+      height: 300px; 
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: space-between;
 
       .button_post {
         width: fit-content;
@@ -776,37 +778,79 @@ header {
 
 //Testimonials section
 .Testimonials {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  .testim-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 1px solid $color-secondary;
-  }
-
-  .testim-indicators {
-    button {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      border: 1px solid $color-accent;
-      background: none;
-      margin-top: 50px;
+  .testim-data-basket{
+    .testim-call-to-view {
+      width: fit-content;
+      border-bottom: 1px solid grey;
+      padding-bottom: 10px;
     }
-    .active {
-      background-color: $color-accent;
+
+    .testim-tabs{
+
+      .testim-tab-list{
+        list-style-type: none;
+        margin: 10px 10px 10px 0px;
+        display: flex;
+        flex-direction: row; 
+        transition: 0.7 ease-in-out;
+        width: fit-content;
+        align-self: start;
+        background-color: $color-secondary;
+        border-radius: 1rem;
+        padding: 2px 10px 2px 10px;
+
+        li {
+          display: inline;
+          cursor: pointer;
+          text-align: start;
+          width: fit-content;
+          margin: 3px 3px 3px 3px;
+          padding: 3px 5px 3px 5px;
+        }
+
+        .testim-tab__tab--selected{
+          border: 1px solid $color-accent;
+          border-radius: 1rem;
+        }
+      }
+      .testim-tab-row{
+        display:grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
+
+        .testim-testim{
+          .tt-header{
+            display: flex;
+            justify-content:center; 
+            align-items: center;
+            gap: 15px;
+            border: 1px solid $color-accent;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-bottom: 10px;
+
+            .tt-header-image{
+              max-width:100px; 
+              max-height:100px; 
+              border-radius: 20px;
+            }
+            .tt-header-details-name,tt-header-details-affiliate{
+              margin: 0;
+              padding: 0;
+            }
+          }
+
+          .tt-body{
+            margin-top:10px; 
+            border: 1px solid $color-accent;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+
+        }
+      }
     }
-  }
 
-  .testim-items {
-    width: 80%;
-    padding: 30px 30px 40px 30px;
-    text-align: center;
-  }
-
-  .testim-data {
-    gap: 20px;
   }
 }
 
@@ -867,6 +911,8 @@ header {
 
 footer {
   background-color: $box-card-rest-color;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
   .foot_wrapper {
     display: flex;
     flex-direction: row;
@@ -881,7 +927,29 @@ footer {
       line-height: 2px;
     }
   }
+
+  .social-media {
+    display: grid;
+    grid-template-columns: repeat(2, 2rem);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+  }
 }
+
+// scroll animations
+.reveal {
+  position: relative;
+  transform: translateX(150px);
+  transform: translateY(-15px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+ 
 
 //Media QUERIES
 

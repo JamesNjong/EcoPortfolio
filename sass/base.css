@@ -270,6 +270,7 @@ header {
   -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   z-index: 26;
+  padding: 3rem 0rem 3rem 0rem;
   background-color: #082032;
   min-height: 100px;
   /* Color of 3 lines */
@@ -322,7 +323,6 @@ header .navbar-nav {
 
 header .nav-link {
   color: white !important;
-  font-family: "Stardos Stencil", cursive !important;
 }
 
 header .active-item {
@@ -485,7 +485,7 @@ header .navbar-toggler.collapsed .bottom-bar {
 .services .service-data-basket .service-items .service-item-card {
   position: relative;
   width: 320px;
-  height: 340px;
+  height: 350px;
   -webkit-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
           box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
   border-radius: 0px;
@@ -497,7 +497,7 @@ header .navbar-toggler.collapsed .bottom-bar {
   right: 10px;
   bottom: 10px;
   left: 10px;
-  background: #000c1d;
+  background: #082032;
   -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   border-radius: 0px;
@@ -533,7 +533,6 @@ header .navbar-toggler.collapsed .bottom-bar {
   z-index: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  width: 90%;
 }
 
 .services .service-data-basket .service-items .service-item-card .service-item-box .service-item-content .service-item-tools {
@@ -702,7 +701,7 @@ header .navbar-toggler.collapsed .bottom-bar {
       align-self: start;
   background-color: #334756;
   border-radius: 10px;
-  padding: 0px 0px 0px 0px;
+  padding: 2px 2px 2px 2px;
 }
 
 .projects .project-tabbed .project-tabs .project-tab-style li {
@@ -710,11 +709,13 @@ header .navbar-toggler.collapsed .bottom-bar {
   cursor: pointer;
   text-align: start;
   width: 150px;
-  margin: 3px px 3px 3px;
+  margin: 3px 3px 3px 3px;
   padding: 3px 10px 3px 10px;
 }
 
 .projects .project-tabbed .project-tabs .project-tab-style .project-tab__tab--selected {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#ff4c24), color-stop(#ff4b23), color-stop(#ff4a23), color-stop(#ff4822), color-stop(#ff4722), color-stop(#ff4924), color-stop(#ff4a27), color-stop(#ff4c29), color-stop(#ff512f), color-stop(#ff5635), color-stop(#fe5a3b), to(#fe5f40));
   background-image: linear-gradient(to right top, #ff4c24, #ff4b23, #ff4a23, #ff4822, #ff4722, #ff4924, #ff4a27, #ff4c29, #ff512f, #ff5635, #fe5a3b, #fe5f40);
   border-radius: 0.4rem;
@@ -722,6 +723,8 @@ header .navbar-toggler.collapsed .bottom-bar {
 }
 
 .projects .project-tabbed .project-tabs .project-tab-style li:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#ff4c24), color-stop(#ff4b23), color-stop(#ff4a23), color-stop(#ff4822), color-stop(#ff4722), color-stop(#ff4924), color-stop(#ff4a27), color-stop(#ff4c29), color-stop(#ff512f), color-stop(#ff5635), color-stop(#fe5a3b), to(#fe5f40));
   background-image: linear-gradient(to right top, #ff4c24, #ff4b23, #ff4a23, #ff4822, #ff4722, #ff4924, #ff4a27, #ff4c29, #ff512f, #ff5635, #fe5a3b, #fe5f40);
   border-radius: 0.4rem;
@@ -808,7 +811,7 @@ header .navbar-toggler.collapsed .bottom-bar {
 
 .Blog .bdb-post {
   border-radius: 10px;
-  height: 520px;
+  height: 550px;
   border-radius: 10px;
   background-color: #000c1d;
   display: -webkit-box;
@@ -818,9 +821,6 @@ header .navbar-toggler.collapsed .bottom-bar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .Blog .bdb-post .bdb-post-image {
@@ -838,13 +838,14 @@ header .navbar-toggler.collapsed .bottom-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 300px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .Blog .bdb-post .bdb-content .button_post {
@@ -932,39 +933,82 @@ header .navbar-toggler.collapsed .bottom-bar {
   max-width: 70%;
 }
 
-.Testimonials {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.Testimonials .testim-data-basket .testim-call-to-view {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
 }
 
-.Testimonials .testim-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 1px solid #2c394b;
+.Testimonials .testim-data-basket .testim-tabs .testim-tab-list {
+  list-style-type: none;
+  margin: 10px 10px 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: 0.7 ease-in-out;
+  transition: 0.7 ease-in-out;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: start;
+      align-self: start;
+  background-color: #2c394b;
+  border-radius: 1rem;
+  padding: 2px 10px 2px 10px;
 }
 
-.Testimonials .testim-indicators button {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+.Testimonials .testim-data-basket .testim-tabs .testim-tab-list li {
+  display: inline;
+  cursor: pointer;
+  text-align: start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 3px 3px 3px 3px;
+  padding: 3px 5px 3px 5px;
+}
+
+.Testimonials .testim-data-basket .testim-tabs .testim-tab-list .testim-tab__tab--selected {
   border: 1px solid #ff4c29;
-  background: none;
-  margin-top: 50px;
+  border-radius: 1rem;
 }
 
-.Testimonials .testim-indicators .active {
-  background-color: #ff4c29;
-}
-
-.Testimonials .testim-items {
-  width: 80%;
-  padding: 30px 30px 40px 30px;
-  text-align: center;
-}
-
-.Testimonials .testim-data {
+.Testimonials .testim-data-basket .testim-tabs .testim-tab-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+.Testimonials .testim-data-basket .testim-tabs .testim-tab-row .testim-testim .tt-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.Testimonials .testim-data-basket .testim-tabs .testim-tab-row .testim-testim .tt-header .tt-header-image {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 20px;
+}
+
+.Testimonials .testim-data-basket .testim-tabs .testim-tab-row .testim-testim .tt-header .tt-header-details-name, .Testimonials .testim-data-basket .testim-tabs .testim-tab-row .testim-testim .tt-header tt-header-details-affiliate {
+  margin: 0;
+  padding: 0;
 }
 
 .contact .contact-data-basket {
@@ -1033,6 +1077,8 @@ header .navbar-toggler.collapsed .bottom-bar {
 
 footer {
   background-color: #000c1d;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
 }
 
 footer .foot_wrapper {
@@ -1058,6 +1104,33 @@ footer .foot_wrapper a {
   color: #ff4c29;
   font-size: 16px;
   line-height: 2px;
+}
+
+footer .social-media {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2rem)[2];
+      grid-template-columns: repeat(2, 2rem);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.reveal {
+  position: relative;
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  opacity: 0;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 @media only screen and (max-width: 320px) {
