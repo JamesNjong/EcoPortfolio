@@ -1,56 +1,214 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) and(max-width: 992px) {
   section {
-    padding: 6rem auto;
+    padding: 6rem 0px 6rem 0px;
   }
-
   .bucket {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     padding: 2rem auto;
-    background-color: red;
   }
 
-  .service-data-basket {
-    .service-items {
+  //Adjustments to the header
+  header {
+    padding: 4rem 0rem 4rem 0rem;
+    .header-data-basket {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 50px;
-    }
-    .service-item-card {
-      position: relative;
-      width: 400px;
-      height: 430px;
-    }
-    .section_pitch,
-    .service-label {
-      max-width: 100% !important;
-      text-align: center;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
     }
   }
 
-  //Contact
+  // Adjustments to home
+  .home {
+    .home-data-basket {
+      width: 100%;
+
+      .text-tag-name {
+        font-size: 4rem;
+        overflow: hidden;
+      }
+
+      .text-tag-problem {
+        font-size: 3rem;
+      }
+
+      .text-tag-pitch {
+        font-size: 1.3rem;
+      }
+
+      .home_buttons {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+
+  // Service Adjustments
+  .services {
+    .service-data-basket {
+      .service-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: space-between;
+        align-items: center;
+
+        .service-item-card {
+          position: relative;
+          width: 350px;
+          height: 500px;
+        }
+      }
+
+      .section_pitch,
+      .service-label {
+        max-width: 100% !important;
+        text-align: start;
+      }
+    }
+  }
+  //about section
+  .about {
+    font-size: 20px;
+    text-align: center;
+  }
+  .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    p {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+
+  // background section
+  .background {
+    font-size: 18px;
+  }
+  .background-section-img {
+    content: url("../resources/images/sharpMobile.png");
+  }
+
+  //projects
+  // Project Styling
+  .projects {
+    .pdb-left {
+      width: 100%;
+      font-size: 15px;
+    }
+    .project-tabbed {
+      .project-tabs {
+        .project-tab-style {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          li {
+            display: inline;
+            cursor: pointer;
+            text-align: start;
+            width: 33%;
+            margin: 3px 5px 3px 3px;
+            padding: 3px 10px 3px 10px;
+
+            #frontend_span {
+              display: none;
+            }
+          }
+        }
+        .single-project-content {
+          .port-card {
+            height: 350px;
+
+            .button_project {
+              border-radius: 1.5px;
+              width: fit-content;
+              padding: 5px 5px 5px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //blog
+  .Blog {
+    .bdb-post-wrapper {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 35px;
+      margin-bottom: 20px;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+
+  // Contact styling
   .contact {
     .contact-data-basket {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      gap: 50px;
+      gap: 10px;
+    }
 
-      .cdb-left {
+    .cdb-right {
+      width: 100%;
+    }
+    .cdb-left {
+      p {
         width: 100%;
+      }
+    }
+  }
+
+  .foot-data-basket {
+    padding-bottom: 50px;
+    padding-top: 20px;
+
+    .foot_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .ft_left {
+        display: none;
+      }
+
+      a {
         text-align: center;
+      }
+
+      .ft-center {
+        padding-left: 3rem;
+        padding-right: 0px;
+      }
+    }
+
+    .foot-signature {
+      .left_icons {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        p {
-          width: 90%;
-          text-align: center;
-        }
+        gap: 25px;
+      }
+
+      .right_icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
       }
     }
   }
