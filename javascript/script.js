@@ -33,7 +33,7 @@ window.addEventListener("scroll", () => {
 
 //manage tabs
 
-//manage tabs
+//manage background tabs
 function openTab(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -58,7 +58,7 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " react-tab__tab--selected";
 }
 
-//manage tabs
+//manage project tabs
 function openPortTab(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -83,43 +83,43 @@ function openPortTab(evt, tabName) {
   evt.currentTarget.className += " project-tab__tab--selected";
 }
 
+//manage testimonial pages
+
+function openTestimRow(event, tabName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="testim-tabs__tab-row" and hide them
+  tabcontent = document.getElementsByClassName(" testim-tab-row");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="react-tabs__tab" and remove the class "active"
+  tablinks = document.getElementsByClassName(" testim-tabs__tab");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(
+      " testim-tab__tab--selected",
+      ""
+    );
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(tabName).style.display = "grid";
+  event.currentTarget.className += " testim-tab__tab--selected";
+}
 
  
 
-
-//scroll animations 
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal"); 
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
-window.addEventListener("scroll", reveal);
-
-// To check the scroll position on page load
-reveal();
-
-
-
-
 function highlighter(event) {
-
   var tabcontent = document.getElementsByClassName("active-item");
 
   tabcontent[0].className = tabcontent[0].className.replace("active-item", "");
-  console.log(tabcontent[0]); 
+  console.log(tabcontent[0]);
   event.currentTarget.className += " active-item";
 }
 
-//could you do this without calling the function ? Yea checkout this idea: get all views without the selected class and just set the display to none.
+//this event lister runs on page load to set the tabs to the desired first pages
 document.addEventListener("DOMContentLoaded", function () {
   openTab(event, "react-tabs-exp");
   const li = document.getElementById("react-tabs-0");
@@ -129,15 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const po = document.getElementById("project-tabs-0");
   po.className += " project-tab__tab--selected";
 
-
-  showHiddenBlogs(event, "hidden-wrapper");
-
-
-  
-
+  openTestimRow(event, "testim-tabs-row-1");
+  const tes = document.getElementById("testim-tabs-0");
+  tes.className += " testim-tab__tab--selected";
 });
-
-
-
-
-
