@@ -65,24 +65,30 @@
 <main>
   <div class="space-bar"><span></span></div>
 
-  <section class="home" id="home">
+  <section class="home flex-column-center" id="home">
     <div class="bucket">
         
-        <div class="flex-column-start home-data-basket"> 
-          <p class="text-tag-hello">Hello there, I'm</p>
-                            
-          <h1>
-            <p class="display-1 fw-bold lh-1 mb-3 text-tag-name">James J. Njong</p>
-            <p class="display-4 fw-bold text-tag-problem">a versatile problem solver</p>  
-          </h1>
-    
-          <p class="text-tag-pitch">whom beyond an excellent ability to communicate, thrives on task that help people and organizations set and achieve audacious goals, by using a variety of quantitative analytics tools to support decision making, and/or building the technology required to enhance value creation both inside and outside the organization.</p>
-                            
-                               
-          <div class="home_buttons "> 
-            <span class="button_primary "><a href="#services">Learn more</a></span> 
-            <span class="button_secondary"><a href="#">Download CV</a></span> 
-          </div> 
+        <div class="home-data-basket">  
+
+          <div class="hdb-left">
+              <p class="text-tag-pitch">Good talent will get the job done, but this</p>                 
+              <h1>
+                <p class="display-3 fw-bold text-tag-problem">versatile problem solver</p>  
+              </h1>
+        
+              <p class="text-tag-pitch">With excellent communication skills, and a master of the dynamics on both the business end and the technical end of your organization's value chain, will help you get ahead faster, and cost you far less than most.</p>
+                                
+                                  
+              <div class="home_buttons "> 
+                <span class="button_primary "><a href="#services">Learn more</a></span> 
+                <span class="button_secondary"><a href="#">Download CV</a></span> 
+              </div> 
+
+          </div>
+
+          <div class="hdb-right">
+            <img src="./resources/icons/hero-image.svg" alt="problem solvers and others" class="img-fluid hdb-right-img">
+          </div>
 
         </div>
 
@@ -96,8 +102,8 @@
         <div class="section-appeal">
           
           <p class="section-label service-label text-center">Services.</p> 
-          <p class="section-tag display-4 text-centr">Lorem ipsum dolor sit amet consectetur.</p>
-          <p class="section_pitch text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea cupiditate minima laborum modi laudantium excepturi nisi officiis doloremque. Doloremque laborum ab esse reiciendis praesentium quidem totam. Optio, iure sed.</p> 
+          <p class="section-tag display-4 text-centr">great teams understand each others language</p>
+          <p class="section_pitch text-center">that is why getting a problem solver with cross-functional knowledge, who can bridge the gap between several teams, and still get domain specific task done, will be a game changer for you.</p> 
         </div>
 
 
@@ -109,7 +115,7 @@
               <div class="service-item-content">
                   <p class="skill minor">Frontend Web & Mobile</p> 
                           
-                  <p class="service-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ab enim repellendus dolore perferendis numquam consectetur nemo ullam reprehenderit quas.</p>
+                  <p class="service-item-text">Get help developing frontend web and mobile applications that help your organization or its clients set and achieve their goals.</p>
 
               </div>
             </div>
@@ -121,7 +127,7 @@
               <div class="service-item-content">
                   <p class="skill minor">Quantitative Analytics</p> 
                           
-                  <p class="service-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ab enim repellendus dolore perferendis numquam consectetur nemo ullam reprehenderit quas.</p>
+                  <p class="service-item-text">From product design to customer development, get help with the insights you need from your data, because someone know what they are looking for.</p>
 
               </div>
             </div>
@@ -133,7 +139,7 @@
               <div class="service-item-content">
                   <p class="skill minor">Project  Management</p> 
                           
-                  <p class="service-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ab enim repellendus dolore perferendis numquam consectetur nemo ullam reprehenderit quas.</p>
+                  <p class="service-item-text">Setup MEAL systems that help you better manage your stakeholders, and cut wasteful spending on problems that could be anticipated.</p>
 
               </div>
             </div>
@@ -150,8 +156,10 @@
   <div class="banner-section banner-problem">
     <div class="bucket">
       <div class="banner-problem-basket">
-        <h2>Here is how I problem solve</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsam ipsa porro beatae culpa fugiat necessitatibus eius reprehenderit, exercitationem quae aperiam pariatur similique atque velit nam ducimus repudiandae molestiae et.</p>
+        <h2>When I join your team, here is how I will help.</h2>
+        
+        <p>For every problem, I will employ a three part framework that breaks the problem into the objectives, the key results and the methods. This will allows us to focused right from the start on exactly what we want to achieve, and to underscore what our non-negotiatble outcomes are. And because we will stick to the methods you are already using, and which I have knowledge of, you do not have to spend all day supervising my work.</p>
+
         <span class="button_accent"><a href="./problemsolving/problem.html">Learn more</a></span> 
       </div>
     </div>
@@ -163,7 +171,10 @@
       <div class="project-data-basket "> 
         <div class="pdb-left">
           <p class="section-label">Projects</p>     
-          <p >Here is a curated list of projects I have worked on, with some yet unfinished. The projects highlighted here cover three technical problem areas, and the notes on them, highlight my thought process and problem solving framework which leans heavily on concepts from project management.</p>
+          
+          <p id="project-line" class="display-6">Here are some problems, I have been busy with.</p>
+
+          <p>A curated list of projects, practice and commercial business solutions, along with short conversations on how I managed the projects.</p>
         </div>
 
         <div class="project-tabbed">
@@ -191,7 +202,7 @@
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
                 <h5 class="project-title">Dropstori</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit praesentium quae sequi veniam illum error, iusto aspernatur esse.</p>
+                <p class="project-description">Get a look at how I built this static multipage website for Dropstori. From design to development, and the challenges around copy writing. </p>
 
                 <span class="button_project"><a href="./projects/web/dropstori.html">View Details</a></span>
 
@@ -205,7 +216,7 @@
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
                 <h5 class="project-title">Alianate</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium asperiores hic rerum itaque adipisci laborum consequuntur odit excepturi.</p>
+                <p class="project-description">A dark themed space tourism website designed for the pleasure of dark themes, as part of a series of frontend mentor challenges.</p>
 
                 <span class="button_project"><a href="./projects/web/alianate.html">View Details</a></span>
 
@@ -219,7 +230,7 @@
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
                 <h5 class="project-title">Portfolio</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis illum quaerat assumenda consequuntur reiciendis eligendi optio necessitatibus dolorem.</p>
+                <p class="project-description">This website you are looking at, yeah it was a lot to think through to get it here. Get behind the scenes on how I picked colors, and many other design choices I made.</p>
 
                 <span class="button_project"><a href="./projects/web/portfolio.html">View Details</a></span>
 
@@ -233,7 +244,7 @@
 
                   <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
                   <h5 class="project-title">Shed96</h5>
-                  <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+                  <p class="project-description">This is a dynamic e-commerce site built with React. Its the go to shoe shop if sneakers are your thing, but lets see how it came to be.</p>
 
                   <span class="button_project"><a href="./projects/web/shed96.html">View Details</a></span>
 
@@ -247,7 +258,7 @@
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
                 <h5 class="project-title">Convergent</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+                <p class="project-description">There is always a place to use mathematics once you have learnt it. Convergent is a React project that helps users explore these applications. See how I made it.</p>
 
                 <span class="button_project"><a href="./projects/web/convergent.html">View Details</a></span>
 
@@ -261,7 +272,7 @@
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img" id="closedImage">
                 <h5 class="project-title">Frontdesk</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+                <p class="project-description">Come with me, lets see how I took these practice projects from frontend mentor and turned them into one fun React site.</p>
 
                 <span class="button_project"><a href="./projects/web/frontdesk.html">View Details</a></span>
 
@@ -289,7 +300,7 @@
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
                 <h5 class="project-title">Lotum</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+                <p class="project-description">Text messaging is old fashioned, but we still text. This android text messenger doesn't bring the fun back, but it  blocks out the providers messages.</p>
 
                 <span class="button_project"><a href="./projects/mobile/lotum.html">View Details</a></span>
 
@@ -303,7 +314,7 @@
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
                 <h5 class="project-title">Jinyuy</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+                <p class="project-description">Till we did this, bibles were just one look boring apps. We made them customizable, and far usable.</p>
 
                 <span class="button_project"><a href="./projects/mobile/jinyuy.html">View Details</a></span>
 
@@ -317,7 +328,7 @@
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
                 <h5 class="project-title">Youkaris</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+                <p class="project-description">Everyday catholics need a space to go find info on their faith, and to socialize with like minds. Youkaris gives them this, and now you can findout how I made it.</p>
 
                 <span class="button_project"><a href="./projects/mobile/youkaris.html">View Details</a></span>
 
@@ -331,7 +342,7 @@
 
                   <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
                   <h5 class="project-title">Dataly</h5>
-                  <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+                  <p class="project-description">Conducting surveys online is a faster way to get data, but what we have for this does not fit the needs of all clients. Checkout how I solved this with Dataly</p>
 
                 <span class="button_project"><a href="./projects/mobile/dataly.html">View Details</a></span>
 
@@ -345,7 +356,7 @@
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
                 <h5 class="project-title">MoshTings</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+                <p class="project-description">What if you could collect data on your habits, imagine how much you could learn about what makes you function better.</p>
 
                 <span class="button_project"><a href="./projects/mobile/moshtings.html">View Details</a></span>
 
@@ -359,7 +370,7 @@
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
                 <h5 class="project-title">Shed96</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+                <p class="project-description">This is a mobile e-commerce store, we sell sneakers but we designed the app to help you find the best fit. Checkout what we did, and how we did it.</p>
 
                 <span class="button_project"><a href="./projects/mobile/shed96.html">View Details</a></span>
 
@@ -389,7 +400,7 @@
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
                 <h5 class="project-title">Price Prediction</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+                <p class="project-description">Let us use linear regression and some other techniques to predict use car prices. Read our feedback and see if it appeals to you.</p>
 
                 <span class="button_project"><a href="./projects/analytics/priceprediction.html">View Details</a></span>
 
@@ -403,7 +414,7 @@
                     
                 <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
                 <h5 class="project-title">Credit Scoring</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+                <p class="project-description">Who should get a loan and who should not. Let's see how basic quantitative tools can help finance institutions to make these decisions.</p>
 
                 <span class="button_project"><a href="./projects/analytics/creditscoring.html">View Details</a></span>
 

@@ -209,7 +209,7 @@ button {
 
 .space-bar {
   //this element create needed space between the navigation bar and the first section. I just hade adding padding  ;lol
-  min-height: 70px;
+  min-height: 90px;
 }
 
 //Navigation : header styling
@@ -368,8 +368,18 @@ header {
 .home {
   .home-data-basket {
     padding-top: 50px;
+    display: flex;
+    flex-direction: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     .text-tag-hello {
       color: $color-primary;
+    }
+
+    .hdb-right-img {
+      width: 100%;
     }
 
     .text-tag-name {
@@ -387,7 +397,8 @@ header {
 
     .text-tag-pitch {
       color: $color-text-primary;
-      width: 80%;
+      font-family: $montserrat-font-family;
+      font-weight: 400;
     }
 
     .home_buttons {
@@ -409,8 +420,8 @@ header {
         color: $color-text-secondary;
       }
       .section_pitch {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
       }
     }
     .service-items {
@@ -576,9 +587,15 @@ header {
 .projects {
   margin-top: 0px;
   .pdb-left {
-    width: 80%;
+    width: 100%;
     text-align: center;
+
+    #project-line {
+      font-family: $montserrat-font-family;
+      font-weight: 700;
+    }
   }
+
   .project-data-basket {
     display: flex;
     flex-direction: column;
@@ -926,8 +943,8 @@ footer {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
-      align-items:center; 
-      justify-content:center; 
+      align-items: center;
+      justify-content: center;
 
       .tg-group {
         padding: 10px;
@@ -937,7 +954,7 @@ footer {
         border: 1px solid $color-accent;
         border-radius: 0.3rem;
         padding: 2px 2px 2px 2px;
-        margin: 3rem 1rem 3rem 1rem ;
+        margin: 3rem 1rem 3rem 1rem;
       }
 
       .tg-analytics {
