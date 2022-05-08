@@ -42,16 +42,14 @@
                   <li class="nav-item " ><a onclick="highlighter(event)" href="#home" class="nav-link active-item px-2" >Home <a></li>
 
                   <li class="nav-item" ><a onclick="highlighter(event)" href="#services" class="nav-link px-2" >Services <a></li>
+
+                  <li class="nav-item" ><a onclick="highlighter(event)" href="#projects" class="nav-link px-2">Projects <a></li>
+
                   <li class="nav-item" ><a onclick="highlighter(event)" href="#about" class="nav-link px-2">About <a></li>
+
                   <li class="nav-item" ><a onclick="highlighter(event)" href="#background" class="nav-link px-2">Background <a></li>
 
-                  <li class="nav-item dropdown" ><a onclick="highlighter(event)" href="#projects" class="nav-link px-2 ">Projects</a></li>
-
-                  <li class="nav-item dropdown" ><a onclick="highlighter(event)" href="#blog" class="nav-link px-2 ">Blog</a></li>
-
-                  <li class="nav-item dropdown d-none" ><a onclick="highlighter(event)" href="#testimonials" class="nav-link px-2">Testimonials</a></li> 
-
-                  
+                  <li class="nav-item dropdown" ><a onclick="highlighter(event)" href="#testimonials" class="nav-link px-2">Testimonials</a></li> 
                                   
               </ul>
                 
@@ -66,6 +64,7 @@
 
 <main>
   <div class="space-bar"><span></span></div>
+
   <section class="home" id="home">
     <div class="bucket">
         
@@ -93,59 +92,52 @@
   <section class="services" id="services">
     <div class="bucket">
       <div class="flex-column-start service-data-basket">
-        <p class="section-label service-label">Services.</p> 
-        <p class="section_pitch ">
-        Solving problems around software development, data driven decision making and project management comes easy to me. In this space, there is more fun than work,  using advanced or basic quantitative approaches to design and deliver solutions that meet the needs of all stakeholders.</p> 
+        
+        <div class="section-appeal">
+          
+          <p class="section-label service-label text-center">Services.</p> 
+          <p class="section-tag display-4 text-centr">Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="section_pitch text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea cupiditate minima laborum modi laudantium excepturi nisi officiis doloremque. Doloremque laborum ab esse reiciendis praesentium quidem totam. Optio, iure sed.</p> 
+        </div>
 
 
         <div class="service-items ">
-          <div class="service-item">
-            <div class="service-item-content">
-                  <h3 class="service-item-name">Frontend Web <br>& Android </h3> 
 
-                  <p class="service-item-text">Using a flair of standard tools, I am able to transform designs into fully functional software that helps people and organisations advance their agenda in the corporate space. My tools for work in this space include</p>
+          <a href="./problemsolving/analytics.html" class="service-item" id="software-service">
+            <div class="service-item-contents">
+              <img src="./resources/icons/software.svg" alt="" class="img-fluid service-item-img service-item-img-pm">
+              <div class="service-item-content">
+                  <p class="skill minor">Frontend Web & Mobile</p> 
+                          
+                  <p class="service-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ab enim repellendus dolore perferendis numquam consectetur nemo ullam reprehenderit quas.</p>
 
-                  <ul class="service-item-tools d-none">
-                
-                    <li class="tool-item">HTML, CSS and JavaScript</li>
-      
-                    <li class="tool-item">React, Sass, Bootstrap</li>
-      
-                    <li class="tool-item">Java, Kotlin and Firebase</li>
+              </div>
+            </div>
+          </a>
 
-                  </ul>
+          <a href="./problemsolving/analytics.html" class="service-item" id="analytics-service">
+            <div class="service-item-contents">
+              <img src="./resources/icons/data.svg" alt="" class="img-fluid service-item-img service-item-img-pm">
+              <div class="service-item-content">
+                  <p class="skill minor">Quantitative Analytics</p> 
+                          
+                  <p class="service-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ab enim repellendus dolore perferendis numquam consectetur nemo ullam reprehenderit quas.</p>
 
-                </div>
-          </div>
+              </div>
+            </div>
+          </a>
 
-          <div class="service-item">
-            <div class="service-item-content">
-                  <h3 class="skill minor">Quantitative <br> Analysis</h3> 
-                    
-                  <p class="skill-text">Leaning on tools form math, computer science and often a mix of both, I help people and organisations refine business strategies by translating data into actionable insights using predominantly: </p>
+          <a href="./problemsolving/projectmanagement.html" class="service-item">
+            <div class="service-item-contents">
+              <img src="./resources/icons/proj_management.svg" alt="" class="img-fluid service-item-img service-item-img-pm">
+              <div class="service-item-content">
+                  <p class="skill minor">Project  Management</p> 
+                          
+                  <p class="service-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ab enim repellendus dolore perferendis numquam consectetur nemo ullam reprehenderit quas.</p>
 
-                  <ul class="service-item-tools d-none">
-                    <li class="tool-item">R, Python or Excel</li>
-                    <li class="tool-item">Financial Ratio Analysis</li>
-                    <li class="tool-item">Mathematical Optimization</li>
-                  </ul>  
-
-                </div>
-          </div>
-
-          <div class="service-item">
-            <div class="service-item-content">
-                    <h3 class="skill minor">Project <br> Management</h3> 
-                        
-                    <p class="skill-text">With minimal oversight, I help implement, and continuously improves M&E systems for  project activities, by ensuring the information collected is accurate, timely and disseminated appropriately in high quality reports.</p>
-
-                      <ul class="service-item-tools d-none">
-                        <li class="tool-item">Asana, Slack</li>
-                        <li class="tool-item">MS 365</li>
-                        <li class="tool-item">G Suite</li>
-                      </ul> 
-                </div>
-          </div>
+              </div>
+            </div>
+          </a>
 
         </div>
 
@@ -153,13 +145,378 @@
     </div>
   </section>
 
+
+<!-- Problem solving banner -->
+  <div class="banner-section banner-problem">
+    <div class="bucket">
+      <div class="banner-problem-basket">
+        <h2>Here is how I problem solve</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsam ipsa porro beatae culpa fugiat necessitatibus eius reprehenderit, exercitationem quae aperiam pariatur similique atque velit nam ducimus repudiandae molestiae et.</p>
+        <span class="button_accent"><a href="./problemsolving/problem.html">Learn more</a></span> 
+      </div>
+    </div>
+  </div>
+
+
+  <section class="projects" id="projects">
+    <div class="bucket">
+      <div class="project-data-basket "> 
+        <div class="pdb-left">
+          <p class="section-label">Projects</p>     
+          <p >Here is a curated list of projects I have worked on, with some yet unfinished. The projects highlighted here cover three technical problem areas, and the notes on them, highlight my thought process and problem solving framework which leans heavily on concepts from project management.</p>
+        </div>
+
+        <div class="project-tabbed">
+          <div class="project-tabs flex-column-start">
+            <ul class="project-tab-style" role="tablist">
+                
+              <li class="project-tabs__tab project-tab__tab--selected links" role="tab" id="project-tabs-0"  tabindex="0" onclick="openPortTab(event, 'project-tabs-web')" ><span id="frontend_span">Frontend</span> Web </li>
+                                                                          
+              <li class="project-tabs__tab links" role="tab" id="project-tabs-1" aria-selected="false" aria-disabled="false" aria-controls="project-tabs-1" data-rttab="true" onclick="openPortTab(event, 'project-tabs-android')">Android</li>
+                                                                          
+              <li class="project-tabs__tab links" role="tab" id="project-tabs-2" aria-selected="false" aria-disabled="false" aria-controls="project-tabs-2" data-rttab="true" onclick="openPortTab(event, 'project-tabs-analytics')">Analytics</li>
+                                                                          
+            </ul>
+            
+            <!-- Content for tabs: Frontend -->
+            <div class="project-tabs__tab-panel project-tabs__tab-panel--selected my-3" role="tabpanel" id="project-tabs-web" aria-labelledby="port-tabs-0">
+
+            <div class="single-project-content">
+
+            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
+                
+            <div class="col">
+            
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Dropstori</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit praesentium quae sequi veniam illum error, iusto aspernatur esse.</p>
+
+                <span class="button_project"><a href="./projects/web/dropstori.html">View Details</a></span>
+
+              </div>
+
+            </div> 
+
+            <div class="col">
+            
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Alianate</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium asperiores hic rerum itaque adipisci laborum consequuntur odit excepturi.</p>
+
+                <span class="button_project"><a href="./projects/web/alianate.html">View Details</a></span>
+
+              </div>
+
+            </div>
+
+            <div class="col">
+            
+                <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Portfolio</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis illum quaerat assumenda consequuntur reiciendis eligendi optio necessitatibus dolorem.</p>
+
+                <span class="button_project"><a href="./projects/web/portfolio.html">View Details</a></span>
+
+                </div>
+
+            </div>
+
+            <div class="col">
+            
+              <div class="port-card ">
+
+                  <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                  <h5 class="project-title">Shed96</h5>
+                  <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                  <span class="button_project"><a href="./projects/web/shed96.html">View Details</a></span>
+
+              </div>
+
+            </div>
+
+            <div class="col">
+
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Convergent</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/web/convergent.html">View Details</a></span>
+
+              </div>
+
+            </div>
+
+            <div class="col">
+
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img" id="closedImage">
+                <h5 class="project-title">Frontdesk</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/web/frontdesk.html">View Details</a></span>
+
+              </div>
+
+            </div>
+
+            </div>
+
+            </div>
+            
+            <!-- end of single port content (Frontend)-->        
+            </div>
+  
+            <!-- Content for tabs: Android -->
+            <div class="project-tabs__tab-panel my-3" role="tabpanel" id="project-tabs-android" aria-labelledby="project-tabs-1">
+
+            <div class="single-project-content">
+
+            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
+                
+            <div class="col">
+            
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Lotum</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/mobile/lotum.html">View Details</a></span>
+
+              </div>
+
+            </div> 
+
+            <div class="col">
+            
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Jinyuy</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/mobile/jinyuy.html">View Details</a></span>
+
+              </div>
+
+            </div>
+
+            <div class="col">
+            
+                <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Youkaris</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/mobile/youkaris.html">View Details</a></span>
+
+                </div>
+
+            </div>
+
+            <div class="col">
+            
+              <div class="port-card ">
+
+                  <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                  <h5 class="project-title">Dataly</h5>
+                  <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/mobile/dataly.html">View Details</a></span>
+
+              </div>
+
+            </div>
+
+            <div class="col">
+
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">MoshTings</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/mobile/moshtings.html">View Details</a></span>
+
+              </div>
+
+            </div>
+
+            <div class="col">
+
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Shed96</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/mobile/shed96.html">View Details</a></span>
+
+              </div>
+
+            </div>
+
+            </div>
+
+            </div>
+            <!-- end of single port content (Android)-->        
+
+            </div>
+
+
+
+            <!-- Content for tabs: Analytics -->
+            <div class="project-tabs__tab-panel my-3" role="tabpanel" id="project-tabs-analytics" aria-labelledby="project-tabs-1">
+
+            <div class="single-project-content">
+
+            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
+                
+            <div class="col">
+            
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Price Prediction</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/analytics/priceprediction.html">View Details</a></span>
+
+              </div>
+
+            </div> 
+
+            <div class="col">
+            
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Credit Scoring</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/analytics/creditscoring.html">View Details</a></span>
+
+              </div>
+
+            </div>
+
+            <div class="col">
+            
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Olympics</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/analytics/olympics.html">View Details</a></span>
+
+              </div>
+
+            </div>
+
+            <div class="col">
+            
+              <div class="port-card ">
+
+                  <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                  <h5 class="project-title">Weather Forecast</h5>
+                  <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/analytics/weatherforecast.html">View Details</a></span>
+
+              </div>
+
+            </div>
+
+            <div class="col">
+
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">Mortgage Applications</h5>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/analytics/mortgage.html">View Details</a></span>
+
+              </div>
+
+            </div>
+
+            <div class="col">
+
+              <div class="port-card ">
+                    
+                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
+                <h5 class="project-title">College Output</p>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
+
+                <span class="button_project"><a href="./projects/analytics/college.html">View Details</a></span>
+
+              </div>
+
+            </div>
+
+            </div>
+
+            </div>
+            <!-- end of single port content (Analytics)-->        
+
+            </div>   
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Problem solving banner -->
+  <div class="banner-section banner-tools">
+    <div class="bucket">
+      <div class="banner-tools-basket">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsam ipsa porro beatae culpa fugiat necessitatibus eius reprehenderit, exercitationem quae aperiam pariatur similique atque velit nam ducimus repudiandae molestiae et.</p>
+
+        <div class="tool-grid">
+          <div class="tg-group tg-software"> 
+            <span class="tg-item">Android Studio</span> <span class="tg-item">Java</span> <span class="tg-item">Kotlin</span> <span class="tg-item">Firebase</span> <span class="tg-item">HTML</span> <span class="tg-item">CSS</span> 
+            <span class="tg-item">Sass</span> <span class="tg-item">Bootstrap</span> <span class="tg-item">JavaScript</span> <span class="tg-item">React.JS</span> <span class="tg-item">Node Js</span> <span class="tg-item">Git</span> <span class="tg-item">GitHub</span> 
+          </div>
+          <div class="tg-group tg-analytics"> 
+            <span class="tg-item">R + RStudio</span> <span class="tg-item">Python</span> <span class="tg-item">Excel</span> <span class="tg-item">SQL</span> <span class="tg-item">PowerBI</span> 
+            <span class="tg-item">Machine Learning</span> 
+          </div>
+
+          <div class="tg-group tg-project"> 
+            <span class="tg-item">Office365</span> <span class="tg-item">GSuit</span> <span class="tg-item">Asana</span> <span class="tg-item">Kaban</span> <span class="tg-item">Agile</span> 
+            <span class="tg-item">Scrum</span> 
+          </div>
+        </div>
+         
+      </div>
+    </div>
+  </div>
+
+
+
   <section class="about" id="about">
     <!-- section uses bootstrap featured example: refere to getbootstrap.com for details-->
     <div class="bucket flex-column-center">
       <div class="about-data-basket "> 
         <div class="container py-5" id="featured-3">
           <p class="section-label">About.</p> 
-          <p class="pb-2 border-bottom col-lg-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sit aperiam ab quibusdam at sequi asperiores eveniet? Amet, dolores. Maxime.</p>
+          <p class="pb-2 border-bottom col-lg-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cumque ipsum laborum veniam minus harum veritatis provident rerum fuga reprehenderit officiis, tempora est id voluptatibus nulla, repellendus aut assumenda praesentium, nobis incidunt ut vero laboriosam qui. Sit repudiandae recusandae eligendi! Consectetur porro odit mollitia facilis in iste, reiciendis ex minima. Nemo, eaque quaerat eligendi adipisci, minus atque perferendis expedita explicabo sit quibusdam dicta eos, consequuntur necessitatibus in voluptatibus totam ex!</p>
           <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div class="feature col">
               <div class="about-feature-icon flex-column-center my-bg-primary bg-gradient">
@@ -420,332 +777,16 @@
   </section>
 
 
-
-
-  <section class="projects" id="projects">
+<!-- Problem solving banner -->
+  <div class="banner-section banner-mentorship">
     <div class="bucket">
-      <div class="project-data-basket "> 
-        <div class="pdb-left">
-          <p class="section-label flex-column-start">Projects</p>     
-          <p >Here is a curated list of projects I have worked on, with some yet unfinished. The projects highlighted here cover three technical problem areas, and the notes on them, highlight my thought process and problem solving framework which leans heavily on concepts from project management.</p>
-        </div>
-
-        <div class="project-tabbed">
-          <div class="project-tabs flex-column-start">
-            <ul class="project-tab-style" role="tablist">
-                
-              <li class="project-tabs__tab project-tab__tab--selected links" role="tab" id="project-tabs-0"  tabindex="0" onclick="openPortTab(event, 'project-tabs-web')" ><span id="frontend_span">Frontend</span> Web </li>
-                                                                          
-              <li class="project-tabs__tab links" role="tab" id="project-tabs-1" aria-selected="false" aria-disabled="false" aria-controls="project-tabs-1" data-rttab="true" onclick="openPortTab(event, 'project-tabs-android')">Android</li>
-                                                                          
-              <li class="project-tabs__tab links" role="tab" id="project-tabs-2" aria-selected="false" aria-disabled="false" aria-controls="project-tabs-2" data-rttab="true" onclick="openPortTab(event, 'project-tabs-analytics')">Analytics</li>
-                                                                          
-            </ul>
-            
-            <!-- Content for tabs: Frontend -->
-            <div class="project-tabs__tab-panel project-tabs__tab-panel--selected my-3" role="tabpanel" id="project-tabs-web" aria-labelledby="port-tabs-0">
-
-            <div class="single-project-content">
-
-            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
-                
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Dropstori</h5>
-                <p class="project-description">Static, responsive commercial multi page site for Dropstori, built with sass and designed to be wordy. Uses lots of white space to stress the class of the business. </p>
-
-                <span class="button_project">View Details</span>
-
-              </div>
-
-            </div> 
-
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Alianate</h5>
-                <p class="project-description">A beatifully crafted space tourism website, built with Bootstrap5, and an irresistible dark theme whose charm allows the user to flirt with mars and the moon.</p>
-
-                <span class="button_project">View Details</span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-            
-                <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Portfolio</h5>
-                <p class="project-description">Go backstage on how I made this orange flavoured dark theme protfolio site. What informed the choices, and why was is a challenge. </p>
-
-                <span class="button_project">View Details</span>
-
-                </div>
-
-            </div>
-
-            <div class="col">
-            
-              <div class="port-card ">
-
-                  <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                  <h5 class="project-title">Shed96</h5>
-                  <p class="project-description">An ongoing e-commerce platform, built with React and powered by firebase.It sells shoes, but its built to market hope, hope in where you are headed.</p>
-
-                  <span class="button_project">View Details</span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Convergent</h5>
-                <p class="project-description">A responsive E-learning platform for learning applied mathematics. Designed to entice the learning of even the most complex concepts.</p>
-
-                <span class="button_project">View Details</span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img" id="closedImage">
-                <h5 class="project-title">Frontdesk</h5>
-                <p class="project-description">Frontdesk is a collection of completed front coding challenges, put together with an unmistakable charm, you won't  believe that these are unrelated projects.</p>
-
-                <span class="button_project">View Details</span>
-
-              </div>
-
-            </div>
-
-            </div>
-
-            </div>
-            
-            <!-- end of single port content (Frontend)-->        
-            </div>
-  
-            <!-- Content for tabs: Android -->
-            <div class="project-tabs__tab-panel my-3" role="tabpanel" id="project-tabs-android" aria-labelledby="project-tabs-1">
-
-            <div class="single-project-content">
-
-            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
-                
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Lotum</h5>
-                <p class="project-description">A native android SMS manager designed to blockout unwanted messages from service providers and to auto reply text when you are busy.</p>
-
-                <span class="button_project">View Details</span>
-
-              </div>
-
-            </div> 
-
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Jinyuy</h5>
-                <p class="project-description">This is a firbase powered offline bible application different for two reasons: it looks great and you can make it look like you want.</p>
-
-                <span class="button_project">View Details</span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-            
-                <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Youkaris</h5>
-                <p class="project-description">The Catholic social media platform built with African youth in mind. Youkaris makes being Catholic easy and you won't believe how we built it. </p>
-
-                <span class="button_project">Unfinished</span>
-
-                </div>
-
-            </div>
-
-            <div class="col">
-            
-              <div class="port-card ">
-
-                  <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                  <h5 class="project-title">Dataly</h5>
-                  <p class="project-description">Dataly is a data collection tool built with Kotlin for native android users who want to make data colection easy and seamless. </p>
-
-                  <span class="button_project">View Details</span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">MoshTings</h5>
-                <p class="project-description">A native habit tracker for android, built with Kotlin and Firebase.</p>
-
-                <span class="button_project">View Details</span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Shed96</h5>
-                <p class="project-description">An ongoing e-commerce platform, built with ReactNative and powered by firebase.It sells shoes, but its built to market hope, hope in where you are headed.</p>
-
-                <span class="button_project">Unfinished</span>
-
-              </div>
-
-            </div>
-
-            </div>
-
-            </div>
-            <!-- end of single port content (Android)-->        
-
-            </div>
-
-
-
-            <!-- Content for tabs: Analytics -->
-            <div class="project-tabs__tab-panel my-3" role="tabpanel" id="project-tabs-analytics" aria-labelledby="project-tabs-1">
-
-            <div class="single-project-content">
-
-            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
-                
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Price Prediction</h5>
-                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
-
-                <span class="button_project">View Details</span>
-
-              </div>
-
-            </div> 
-
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Credit Scoring</h5>
-                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
-
-                <span class="button_project">View Details</span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Olympics</h5>
-                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
-
-                <span class="button_project">View Details</span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-            
-              <div class="port-card ">
-
-                  <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                  <h5 class="project-title">Weather Forecast</h5>
-                  <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
-
-                  <span class="button_project">View Details</span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Mortgage Applications</h5>
-                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
-
-                <span class="button_project">View Details</span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">College Output</p>
-                <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio saepe non iste labore sed rerum.</p>
-
-                <span class="button_project">View Details</span>
-
-              </div>
-
-            </div>
-
-            </div>
-
-            </div>
-            <!-- end of single port content (Analytics)-->        
-
-            </div>   
-
-          </div>
-        </div>
+      <div class="banner-mentorship-basket">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsam ipsa porro beatae culpa fugiat necessitatibus eius reprehenderit, exercitationem quae aperiam pariatur similique atque velit nam ducimus repudiandae molestiae et.</p>
+        <span class="button_accent"><a href="./mentoring/mentee.html">Become a Mentee</a></span> 
       </div>
     </div>
-  </section>
-
-
-
+  </div>
 
 
   <section class="Testimonials " id="testimonials">
@@ -973,12 +1014,6 @@
 
 
 
-
-
-
-
-
-
   <section class="contact" id="contact">
     <div class="bucket">
       <div class="contact-data-basket flex-row-to-column-center"> 
@@ -1027,6 +1062,13 @@
       </div>
     </div>
   </section>
+
+
+
+
+ 
+
+
 
 </main> 
 
