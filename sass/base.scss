@@ -3,11 +3,12 @@
 // 1. Portfolio Fonts : Lato fonts [google fonts]
 @import url("https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script&family=Fira+Code:wght@300&family=Forum&family=Stardos+Stencil:wght@400;700&display=swap");
 
+// monstreat fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
 $arimo-font-family: "Arimo", sans-serif; //paragraphs
-$ds-font-family: "Dancing Script", cursive; // decorative text
 $fira-font-family: "Fira Code", monospace; // links
-$forum-font-family: "Forum", cursive; //h3,h4,h5,h6 text
-$stardos-font-family: "Stardos Stencil", cursive; // h1, h2 text
+$montserrat-font-family: "Montserrat", sans-serif; // h1, h2 text
 
 $fs-nav: 15px;
 
@@ -15,14 +16,7 @@ $fs-nav: 15px;
 
 // 2. Portfolio Palettes : One dark theme and one light theme [color hunt help]
 
-// $color-primary: #082032;
-// $color-primary-bg: #01192b;
-// $color-secondary: #2c394b;
-// $color-accent: #ff4c29;
 $color-text: black;
-// $color-extra: #334756;
-//$header-background: #082032;
-//$box-card-rest-color: #000c1d;
 
 $color-primary: #2a0944;
 $color-secondary: #3b185f;
@@ -33,9 +27,13 @@ $color-text-primary: #222222;
 $color-text-secondary: #0d0d0d;
 $color-text-white: #fbfbfb;
 
-$background-light: #fffff4;
+$background-light: #e2e2e245;
 $background-green: #e8f6ef;
 $background-primary: #fff;
+
+$banner-problem-background: #ff7ba9;
+$banner-mentorhip-background: #9fb4ff;
+$banner-tools-background: #fff8d5;
 
 //base code
 
@@ -78,12 +76,14 @@ h3,
 h4,
 h5,
 .text-tag {
-  font-family: $forum-font-family;
+  font-family: $montserrat-font-family;
+  font-weight: 600;
 }
 
 .section-label {
   color: $color-extra;
-  font-family: $stardos-font-family;
+  font-family: $montserrat-font-family;
+  font-weight: 800;
   width: 100%;
 }
 
@@ -374,13 +374,15 @@ header {
 
     .text-tag-name {
       color: $color-text-primary;
-      font-family: $stardos-font-family;
+      font-family: $montserrat-font-family;
+      font-weight: 900;
       overflow: hidden;
     }
 
     .text-tag-problem {
       color: $color-text-secondary;
-      font-family: $forum-font-family;
+      font-family: $montserrat-font-family;
+      font-weight: 700;
     }
 
     .text-tag-pitch {
@@ -399,54 +401,69 @@ header {
 // Services section styling
 .services {
   .service-data-basket {
-    .section_pitch {
-      max-width: 60%;
+    .section-appeal {
+      text-align: center;
+      .section-tag {
+        font-family: $montserrat-font-family;
+        font-weight: 700;
+        color: $color-text-secondary;
+      }
+      .section_pitch {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
     }
     .service-items {
       width: 100%;
       margin-top: 20px;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
       gap: 20px;
       overflow: hidden;
 
       .service-item {
+        text-decoration: none;
+
+        &:hover {
+          transition: all 0.5s ease-in-out;
+          background-color: $color-accent;
+          color: $color-text-secondary;
+          margin: 2px 2px 2px 2px;
+          z-index: 20;
+        }
+      }
+      .service-item-contents {
         width: 320px;
         height: 350px;
-        background: $color-primary;
-        border-radius: 0px;
-        transition: 0.5s;
-        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $background-light;
+        align-items: center;
+        .service-item-img {
+          width: 60px;
+        }
         .service-item-content {
-          padding: 20px;
+          padding: 10px 5px 10px 5px;
           display: flex;
           flex-direction: column;
-          justify-content: space-around;
-          height: 100%;
+          justify-content: center;
           overflow: hidden;
+          text-align: center;
 
-          h3 {
-            font-size: 1.8em;
-            z-index: 1;
-            transition: 0.5s;
-            margin-bottom: 20px;
-            color: $color-accent;
+          .skill {
+            font-size: 1.2em;
+            color: $color-primary;
+            font-family: $montserrat-font-family;
+            font-weight: 500;
           }
 
           p {
-            z-index: 1;
-            transition: 0.5s;
-            color: $color-text-white;
-          }
-
-          &:hover {
-            transition: all 0.5s ease-in-out;
-            background-color: $color-secondary;
-            margin: 2px 2px 2px 2px;
-            z-index: 20;
+            color: $color-text-primary;
+            font-family: $arimo-font-family;
           }
         }
       }
@@ -455,7 +472,7 @@ header {
 }
 
 // About section styling
-.about { 
+.about {
   .about-data-basket {
     display: flex;
     flex-direction: column;
@@ -469,7 +486,7 @@ header {
     }
 
     .feature h2 {
-      font-family: $stardos-font-family;
+      font-family: $montserrat-font-family;
     }
   }
 }
@@ -506,13 +523,15 @@ header {
           padding: 12px 22px 2px 2px;
           border-bottom: 1px solid grey;
           margin-right: 20px;
-          font-family: $stardos-font-family;
+          font-family: $montserrat-font-family;
+          font-weight: 300;
         }
 
         .react-tab__tab--selected {
           color: $color-extra;
           border-bottom: 2px solid $color-extra;
           text-align: start;
+          font-weight: 600;
         }
       }
 
@@ -533,7 +552,8 @@ header {
           padding: 0px;
           margin-bottom: 5px;
           margin-top: 2rem;
-          font-family: $stardos-font-family;
+          font-family: $montserrat-font-family;
+          font-weight: 700;
         }
         .tag-2 {
           color: $color-extra;
@@ -556,11 +576,22 @@ header {
 .projects {
   margin-top: 0px;
   .pdb-left {
-    width: 50%;
+    width: 80%;
+    text-align: center;
+  }
+  .project-data-basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .project-tabbed {
     .project-tabs {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
       .project-tab-style {
         list-style-type: none;
         margin: 10px 10px 10px 0px;
@@ -571,7 +602,7 @@ header {
         scrollbar-width: 0px;
         transition: 0.7 ease-in-out;
         width: fit-content;
-        align-self: start;
+        align-self: center;
         background-color: $color-primary;
         border-radius: 10px;
         padding: 2px 2px 2px 2px;
@@ -630,9 +661,13 @@ header {
           .button_project {
             border: 1px solid $color-text-secondary;
             border-radius: 5px;
-            color: $color-text-secondary;
             display: flex;
             cursor: pointer;
+            a {
+              text-decoration: none;
+              color: $color-text-secondary;
+              font-size: 14px;
+            }
           }
           .project-img {
             content: url("../resources/icons/open_project.svg");
@@ -700,7 +735,7 @@ header {
           color: $color-accent;
         }
       }
-      .testim-tab-row-content{
+      .testim-tab-row-content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -717,7 +752,7 @@ header {
               padding: 0;
             }
             .tt-header-details-name {
-              font-family: $forum-font-family;
+              font-weight: 400;
               color: $color-secondary;
               font-size: 1.5rem;
             }
@@ -753,6 +788,11 @@ header {
     }
     .cdb-left-rule {
       width: 40%;
+    }
+    h5 {
+      font-family: $montserrat-font-family;
+      font-weight: 700;
+      color: $color-text-secondary;
     }
   }
   .contact-form {
@@ -826,7 +866,114 @@ footer {
   }
 }
 
- 
+// banners section
+
+.banner-section {
+  min-height: 400px;
+  padding: 2rem 4rem 2rem 4rem;
+}
+
+.banner-problem {
+  background-color: $banner-problem-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .banner-problem-basket {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.banner-mentorship {
+  background-color: $banner-mentorhip-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .banner-mentorship-basket {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.banner-tools {
+  background-color: $banner-tools-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .banner-tools-basket {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      align-items:center; 
+      justify-content:center; 
+
+      .tg-group {
+        padding: 10px;
+      }
+
+      .tg-item {
+        border: 1px solid $color-accent;
+        border-radius: 0.3rem;
+        padding: 2px 2px 2px 2px;
+        margin: 3rem 1rem 3rem 1rem ;
+      }
+
+      .tg-analytics {
+        border-left: 1px solid $color-primary;
+        border-right: 1px solid $color-primary;
+      }
+    }
+  }
+}
+
+// 404 Pages
+
+.cover {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+
+  h1 {
+    font-size: 6rem;
+    color: $color-accent;
+    font-family: $montserrat-font-family;
+    font-weight: 900;
+  }
+  .pnf {
+    font-size: 3rem;
+    font-family: $montserrat-font-family;
+    font-weight: 500;
+  }
+
+  .pnf {
+    font-size: 3rem;
+  }
+}
 
 //Media QUERIES
 

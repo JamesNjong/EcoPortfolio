@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script&family=Fira+Code:wght@300&family=Forum&family=Stardos+Stencil:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -46,12 +47,14 @@ h3,
 h4,
 h5,
 .text-tag {
-  font-family: "Forum", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 .section-label {
   color: #a12568;
-  font-family: "Stardos Stencil", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
   width: 100%;
 }
 
@@ -448,13 +451,15 @@ header .navbar-toggler.collapsed .bottom-bar {
 
 .home .home-data-basket .text-tag-name {
   color: #222222;
-  font-family: "Stardos Stencil", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
   overflow: hidden;
 }
 
 .home .home-data-basket .text-tag-problem {
   color: #0d0d0d;
-  font-family: "Forum", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .home .home-data-basket .text-tag-pitch {
@@ -470,8 +475,19 @@ header .navbar-toggler.collapsed .bottom-bar {
   margin-top: 30px;
 }
 
-.services .service-data-basket .section_pitch {
-  max-width: 60%;
+.services .service-data-basket .section-appeal {
+  text-align: center;
+}
+
+.services .service-data-basket .section-appeal .section-tag {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #0d0d0d;
+}
+
+.services .service-data-basket .section-appeal .section_pitch {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .services .service-data-basket .service-items {
@@ -484,9 +500,9 @@ header .navbar-toggler.collapsed .bottom-bar {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -497,17 +513,21 @@ header .navbar-toggler.collapsed .bottom-bar {
 }
 
 .services .service-data-basket .service-items .service-item {
-  width: 320px;
-  height: 350px;
-  background: #2a0944;
-  border-radius: 0px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  border-radius: 8px;
+  text-decoration: none;
 }
 
-.services .service-data-basket .service-items .service-item .service-item-content {
-  padding: 20px;
+.services .service-data-basket .service-items .service-item:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #fec260;
+  color: #0d0d0d;
+  margin: 2px 2px 2px 2px;
+  z-index: 20;
+}
+
+.services .service-data-basket .service-items .service-item-contents {
+  width: 320px;
+  height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,34 +535,45 @@ header .navbar-toggler.collapsed .bottom-bar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e2e2e245;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .service-data-basket .service-items .service-item-contents .service-item-img {
+  width: 60px;
+}
+
+.services .service-data-basket .service-items .service-item-contents .service-item-content {
+  padding: 10px 5px 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
+  text-align: center;
 }
 
-.services .service-data-basket .service-items .service-item .service-item-content h3 {
-  font-size: 1.8em;
-  z-index: 1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  margin-bottom: 20px;
-  color: #fec260;
+.services .service-data-basket .service-items .service-item-contents .service-item-content .skill {
+  font-size: 1.2em;
+  color: #2a0944;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
-.services .service-data-basket .service-items .service-item .service-item-content p {
-  z-index: 1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  color: #fbfbfb;
-}
-
-.services .service-data-basket .service-items .service-item .service-item-content:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  background-color: #3b185f;
-  margin: 2px 2px 2px 2px;
-  z-index: 20;
+.services .service-data-basket .service-items .service-item-contents .service-item-content p {
+  color: #222222;
+  font-family: "Arimo", sans-serif;
 }
 
 .about .about-data-basket {
@@ -566,7 +597,7 @@ header .navbar-toggler.collapsed .bottom-bar {
 }
 
 .about .about-data-basket .feature h2 {
-  font-family: "Stardos Stencil", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .background .background-data-basket .react-tabs {
@@ -613,13 +644,15 @@ header .navbar-toggler.collapsed .bottom-bar {
   padding: 12px 22px 2px 2px;
   border-bottom: 1px solid grey;
   margin-right: 20px;
-  font-family: "Stardos Stencil", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 .background .background-data-basket .react-tabs .tab-style .react-tab__tab--selected {
   color: #a12568;
   border-bottom: 2px solid #a12568;
   text-align: start;
+  font-weight: 600;
 }
 
 .background .background-data-basket .react-tabs .single-tab-content ul {
@@ -639,7 +672,8 @@ header .navbar-toggler.collapsed .bottom-bar {
   padding: 0px;
   margin-bottom: 5px;
   margin-top: 2rem;
-  font-family: "Stardos Stencil", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .background .background-data-basket .react-tabs .single-tab-content .tag-2 {
@@ -661,7 +695,38 @@ header .navbar-toggler.collapsed .bottom-bar {
 }
 
 .projects .pdb-left {
-  width: 50%;
+  width: 80%;
+  text-align: center;
+}
+
+.projects .project-data-basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .project-tabbed .project-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects .project-tabbed .project-tabs .project-tab-style {
@@ -682,8 +747,8 @@ header .navbar-toggler.collapsed .bottom-bar {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  -ms-flex-item-align: start;
-      align-self: start;
+  -ms-flex-item-align: center;
+      align-self: center;
   background-color: #2a0944;
   border-radius: 10px;
   padding: 2px 2px 2px 2px;
@@ -755,11 +820,16 @@ header .navbar-toggler.collapsed .bottom-bar {
 .projects .project-tabbed .project-tabs .single-project-content .port-card:hover .button_project {
   border: 1px solid #0d0d0d;
   border-radius: 5px;
-  color: #0d0d0d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+}
+
+.projects .project-tabbed .project-tabs .single-project-content .port-card:hover .button_project a {
+  text-decoration: none;
+  color: #0d0d0d;
+  font-size: 14px;
 }
 
 .projects .project-tabbed .project-tabs .single-project-content .port-card:hover .project-img {
@@ -876,7 +946,7 @@ header .navbar-toggler.collapsed .bottom-bar {
 }
 
 .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header .tt-header-details-name {
-  font-family: "Forum", cursive;
+  font-weight: 400;
   color: #3b185f;
   font-size: 1.5rem;
 }
@@ -915,6 +985,12 @@ header .navbar-toggler.collapsed .bottom-bar {
 
 .contact .cdb-left .cdb-left-rule {
   width: 40%;
+}
+
+.contact .cdb-left h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #0d0d0d;
 }
 
 .contact .contact-form {
@@ -1003,6 +1079,178 @@ footer .social-media {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 15px;
+}
+
+.banner-section {
+  min-height: 400px;
+  padding: 2rem 4rem 2rem 4rem;
+}
+
+.banner-problem {
+  background-color: #ff7ba9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-problem .banner-problem-basket {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.banner-mentorship {
+  background-color: #9fb4ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-mentorship .banner-mentorship-basket {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.banner-tools {
+  background-color: #fff8d5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-tools .banner-tools-basket {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.banner-tools .banner-tools-basket .tool-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-tools .banner-tools-basket .tool-grid .tg-group {
+  padding: 10px;
+}
+
+.banner-tools .banner-tools-basket .tool-grid .tg-item {
+  border: 1px solid #fec260;
+  border-radius: 0.3rem;
+  padding: 2px 2px 2px 2px;
+  margin: 3rem 1rem 3rem 1rem;
+}
+
+.banner-tools .banner-tools-basket .tool-grid .tg-analytics {
+  border-left: 1px solid #2a0944;
+  border-right: 1px solid #2a0944;
+}
+
+.cover {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 6rem;
+}
+
+.cover h1 {
+  font-size: 6rem;
+  color: #fec260;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+.cover .pnf {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.cover .pnf {
+  font-size: 3rem;
 }
 
 @media only screen and (max-width: 320px) {
