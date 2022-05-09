@@ -33,7 +33,7 @@ $background-primary: #fff;
 
 $banner-problem-background: #ff7ba9;
 $banner-mentorhip-background: #9fb4ff;
-$banner-tools-background: #fff8d5;
+$banner-tools-background: #B4CFB0;
 
 //base code
 
@@ -483,7 +483,7 @@ header {
 }
 
 // About section styling
-.about {
+.about { 
   .about-data-basket {
     display: flex;
     flex-direction: column;
@@ -504,7 +504,9 @@ header {
 
 // Background section styling
 
-.background {
+.background { 
+  padding-top: 0px !important;
+  margin-bottom: 20px; 
   .background-data-basket {
     //naming here is different html code forged from TryDo and styled to fit our purpose
     .react-tabs {
@@ -577,6 +579,8 @@ header {
           padding: 0px;
           margin-bottom: 5px;
           max-width: 100%;
+          visibility: hidden;
+          display:none; 
         }
       }
     }
@@ -589,10 +593,14 @@ header {
   .pdb-left {
     width: 100%;
     text-align: center;
+    
 
     #project-line {
       font-family: $montserrat-font-family;
       font-weight: 700;
+    }
+    #project-para {
+      width: 80%;
     }
   }
 
@@ -913,6 +921,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 6rem;
 
   .banner-mentorship-basket {
     text-align: center;
@@ -939,6 +948,10 @@ footer {
     align-items: center;
     gap: 20px;
 
+    #tools-para{
+      width:65%;
+    }
+
     .tool-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -954,7 +967,8 @@ footer {
         border: 1px solid $color-accent;
         border-radius: 0.3rem;
         padding: 2px 2px 2px 2px;
-        margin: 3rem 1rem 3rem 1rem;
+        margin: 4rem 1rem 4rem 1rem;
+        background-color:$color-accent; 
       }
 
       .tg-analytics {

@@ -621,6 +621,11 @@ header .navbar-toggler.collapsed .bottom-bar {
   font-family: "Montserrat", sans-serif;
 }
 
+.background {
+  padding-top: 0px !important;
+  margin-bottom: 20px;
+}
+
 .background .background-data-basket .react-tabs {
   padding-left: 0;
   margin: 0;
@@ -709,6 +714,8 @@ header .navbar-toggler.collapsed .bottom-bar {
   padding: 0px;
   margin-bottom: 5px;
   max-width: 100%;
+  visibility: hidden;
+  display: none;
 }
 
 .projects {
@@ -723,6 +730,10 @@ header .navbar-toggler.collapsed .bottom-bar {
 .projects .pdb-left #project-line {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+
+.projects .pdb-left #project-para {
+  width: 80%;
 }
 
 .projects .project-data-basket {
@@ -1161,6 +1172,7 @@ footer .social-media {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 6rem;
 }
 
 .banner-mentorship .banner-mentorship-basket {
@@ -1181,7 +1193,7 @@ footer .social-media {
 }
 
 .banner-tools {
-  background-color: #fff8d5;
+  background-color: #B4CFB0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1214,6 +1226,10 @@ footer .social-media {
   gap: 20px;
 }
 
+.banner-tools .banner-tools-basket #tools-para {
+  width: 65%;
+}
+
 .banner-tools .banner-tools-basket .tool-grid {
   display: -ms-grid;
   display: grid;
@@ -1236,7 +1252,8 @@ footer .social-media {
   border: 1px solid #fec260;
   border-radius: 0.3rem;
   padding: 2px 2px 2px 2px;
-  margin: 3rem 1rem 3rem 1rem;
+  margin: 4rem 1rem 4rem 1rem;
+  background-color: #fec260;
 }
 
 .banner-tools .banner-tools-basket .tool-grid .tg-analytics {
