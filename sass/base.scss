@@ -31,9 +31,9 @@ $background-light: #e2e2e245;
 $background-green: #e8f6ef;
 $background-primary: #fff;
 
-$banner-problem-background: #ff7ba9;
-$banner-mentorhip-background: #9fb4ff;
-$banner-tools-background: #B4CFB0;
+$banner-problem-background: #fca9d5f8;
+$banner-mentorhip-background: #fca9d5f8;
+$banner-tools-background: #fca9d5f8;
 
 //base code
 
@@ -50,8 +50,10 @@ $banner-tools-background: #B4CFB0;
 html,
 body {
   background-color: $background-primary;
-  font-family: $arimo-font-family;
+  font-family: $montserrat-font-family;
+  font-weight: 500;
   color: $color-text-primary;
+  font-size: 16px;
 }
 
 section {
@@ -78,6 +80,16 @@ h5,
 .text-tag {
   font-family: $montserrat-font-family;
   font-weight: 600;
+  //overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  overflow: hidden;
 }
 
 .section-label {
@@ -483,11 +495,19 @@ header {
 }
 
 // About section styling
-.about { 
+.about {
   .about-data-basket {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    .about-header {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+    }
 
     .about-feature-icon {
       width: 80px;
@@ -496,17 +516,22 @@ header {
       margin-bottom: 20px;
     }
 
-    .feature h2 {
-      font-family: $montserrat-font-family;
+    .feature {
+      p {
+        text-align: justify;
+      }
+      h2 {
+        font-family: $montserrat-font-family;
+      }
     }
   }
 }
 
 // Background section styling
 
-.background { 
+.background {
   padding-top: 0px !important;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   .background-data-basket {
     //naming here is different html code forged from TryDo and styled to fit our purpose
     .react-tabs {
@@ -580,7 +605,7 @@ header {
           margin-bottom: 5px;
           max-width: 100%;
           visibility: hidden;
-          display:none; 
+          display: none;
         }
       }
     }
@@ -593,7 +618,6 @@ header {
   .pdb-left {
     width: 100%;
     text-align: center;
-    
 
     #project-line {
       font-family: $montserrat-font-family;
@@ -640,6 +664,7 @@ header {
           margin: 3px 3px 3px 3px;
           padding: 3px 10px 3px 10px;
           color: $color-text-white;
+          font-family: $fira-font-family;
         }
 
         .project-tab__tab--selected {
@@ -948,8 +973,8 @@ footer {
     align-items: center;
     gap: 20px;
 
-    #tools-para{
-      width:65%;
+    #tools-para {
+      width: 65%;
     }
 
     .tool-grid {
@@ -961,14 +986,18 @@ footer {
 
       .tg-group {
         padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
       }
 
       .tg-item {
         border: 1px solid $color-accent;
         border-radius: 0.3rem;
-        padding: 2px 2px 2px 2px;
-        margin: 4rem 1rem 4rem 1rem;
-        background-color:$color-accent; 
+        background-color: $color-accent;
+        background-color: $color-accent;
       }
 
       .tg-analytics {
