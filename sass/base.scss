@@ -19,9 +19,9 @@ $fs-nav: 15px;
 $color-text: black;
 
 $color-primary: #2a0944;
-$color-secondary: #3b185f;
+$color-secondary: #4c0791;
 $color-accent: #fec260;
-$color-extra: #a12568;
+$color-extra: #4c0791;
 
 $color-text-primary: #222222;
 $color-text-secondary: #0d0d0d;
@@ -31,9 +31,9 @@ $background-light: #e2e2e245;
 $background-green: #e8f6ef;
 $background-primary: #fff;
 
-$banner-problem-background: #fca9d5f8;
-$banner-mentorhip-background: #fca9d5f8;
-$banner-tools-background: #fca9d5f8;
+$banner-problem-background: #2a0944;
+$banner-mentorhip-background: #2a0944;
+$banner-tools-background: #2a0944;
 
 //base code
 
@@ -51,7 +51,7 @@ html,
 body {
   background-color: $background-primary;
   font-family: $montserrat-font-family;
-  font-weight: 500;
+  font-weight: 400;
   color: $color-text-primary;
   font-size: 16px;
 }
@@ -195,7 +195,7 @@ button {
 .button_secondary {
   border: none;
   border-radius: 0.3rem;
-  background: $color-extra;
+  background: $color-secondary;
   padding: 10px 10px 10px 10px;
   width: fit-content;
   display: flex;
@@ -921,6 +921,7 @@ footer {
 .banner-section {
   min-height: 400px;
   padding: 2rem 4rem 2rem 4rem;
+  color: $color-text-white;
 }
 
 .banner-problem {
@@ -973,36 +974,23 @@ footer {
     align-items: center;
     gap: 20px;
 
-    #tools-para {
-      width: 65%;
+    h2 {
+      font-size: 2rem;
     }
 
     .tool-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       gap: 10px;
       align-items: center;
       justify-content: center;
 
-      .tg-group {
-        padding: 10px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-      }
-
       .tg-item {
         border: 1px solid $color-accent;
         border-radius: 0.3rem;
-        background-color: $color-accent;
-        background-color: $color-accent;
-      }
-
-      .tg-analytics {
-        border-left: 1px solid $color-primary;
-        border-right: 1px solid $color-primary;
+        width: fit-content;
+        padding: 10px 15px 10px 15px;
       }
     }
   }
@@ -1039,6 +1027,8 @@ footer {
 
 @import "../Responsives/xsmall.scss";
 
-//@import "../Responsives/small.scss";
+@import "../Responsives/small.scss";
+
+@import "../Responsives/medium.scss";
 
 @import "../Responsives/large.scss";
