@@ -98,6 +98,9 @@ p {
   font-weight: 800;
   width: 100%;
 }
+h2{
+  text-transform: capitalize;
+}
 
 a,
 button {
@@ -432,8 +435,8 @@ header {
         color: $color-text-secondary;
       }
       .section_pitch {
-        padding-left: 10rem;
-        padding-right: 10rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
       }
     }
     .service-items {
@@ -743,7 +746,8 @@ header {
       text-align: center;
     }
     .section-tag {
-      font-size: 3rem;
+      font-family: $montserrat-font-family;
+      font-weight: 700;
       color: $color-primary;
       text-align: center;
     }
