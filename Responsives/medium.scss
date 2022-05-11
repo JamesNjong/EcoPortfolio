@@ -101,7 +101,7 @@
             text-align: center;
 
             .skill {
-              font-size: 1.2em;
+              font-size: 22px;
               color: $color-primary;
               font-family: $montserrat-font-family;
               font-weight: 500;
@@ -110,7 +110,9 @@
             p {
               color: $color-text-primary;
               font-family: $arimo-font-family;
-              font-size: 12px;
+              font-size: 16px;
+              padding-left: 20px;
+              padding-right: 20px;
             }
           }
         }
@@ -154,11 +156,11 @@
       text-align: center;
 
       #project-line {
-        font-size: 18px;
+        font-size: 22px;
       }
       #project-para {
         width: 100%;
-        font-size: 12px;
+        font-size: 14px;
       }
     }
     .project-tabbed {
@@ -180,7 +182,7 @@
             //padding: 3px 10px 3px 10px;
 
             #frontend_span {
-              display: none;
+              //display: none;
             }
           }
         }
@@ -189,7 +191,7 @@
             height: 350px;
 
             p {
-              font-size: 12px;
+              font-size: 16px;
             }
 
             .button_project {
@@ -200,7 +202,7 @@
               a {
                 text-decoration: none;
                 color: $color-accent;
-                font-size: 12px;
+                font-size: 14px;
                 overflow: hidden;
               }
             }
@@ -321,7 +323,7 @@
               .tt-header-details-name {
                 font-weight: 400;
                 color: $color-secondary;
-                font-size: 16px;
+                //font-size: 16px;
               }
             }
 
@@ -329,7 +331,7 @@
               margin-top: 10px;
               border-bottom-left-radius: 10px;
               border-top-right-radius: 10px;
-              font-size: 12px;
+              //font-size: 12px;
             }
           }
         }
@@ -422,9 +424,6 @@
   //banners
   .banner-problem {
     .banner-problem-basket {
-      p {
-        font-size: 12px;
-      }
     }
   }
 
@@ -442,13 +441,6 @@
       justify-content: space-around;
       align-items: center;
       gap: 20px;
-
-      h2 {
-        font-size: 20px;
-      }
-      #tools-para {
-        font-size: 12px;
-      }
     }
   }
 
@@ -469,10 +461,10 @@
       gap: 20px;
 
       h2 {
-        font-size: 20px;
+        font-size: 26px;
       }
       p {
-        font-size: 12px;
+        font-size: 16px;
       }
     }
   }
