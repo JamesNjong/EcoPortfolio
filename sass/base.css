@@ -69,6 +69,10 @@ p {
   width: 100%;
 }
 
+h2 {
+  text-transform: capitalize;
+}
+
 a,
 button {
   font-family: "Fira Code", monospace;
@@ -518,8 +522,8 @@ header .navbar-toggler.collapsed .bottom-bar {
 }
 
 .services .service-data-basket .section-appeal .section_pitch {
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .services .service-data-basket .service-items {
@@ -932,7 +936,8 @@ header .navbar-toggler.collapsed .bottom-bar {
 }
 
 .Testimonials .testim-data-basket .section-tag {
-  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   color: #2a0944;
   text-align: center;
 }
