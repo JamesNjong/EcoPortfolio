@@ -293,8 +293,7 @@ header {
   -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
           box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   z-index: 26;
-  padding: 3rem 0rem 3rem 0rem;
-  min-height: 100px;
+  padding: 1rem 0rem 1rem 0rem;
   /* Color of 3 lines */
   /* when navigation is clicked */
   /* State when the navbar is collapsed */
@@ -465,19 +464,23 @@ header .navbar-toggler.collapsed .bottom-bar {
   -webkit-box-direction: normal;
       -ms-flex-direction: grid;
           flex-direction: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  -ms-grid-columns: 50% 40%;
+      grid-template-columns: 50% 40%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .home .home-data-basket .text-tag-hello {
   color: #2a0944;
+}
+
+.home .home-data-basket .hdb-right {
+  width: 100%;
 }
 
 .home .home-data-basket .hdb-right-img {
@@ -494,7 +497,7 @@ header .navbar-toggler.collapsed .bottom-bar {
 .home .home-data-basket .text-tag-problem {
   color: #0d0d0d;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .home .home-data-basket .text-tag-pitch {

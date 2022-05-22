@@ -241,8 +241,8 @@ header {
   text-align: start;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   z-index: 26;
-  padding: 3rem 0rem 3rem 0rem;
-  min-height: 100px;
+  padding: 1rem 0rem 1rem 0rem;
+  //min-height: 100px;
 
   .header-data-basket {
     display: flex;
@@ -385,14 +385,16 @@ header {
     padding-top: 50px;
     display: flex;
     flex-direction: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 50% 40%;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     .text-tag-hello {
       color: $color-primary;
     }
-
+    .hdb-right {
+      width: 100%;
+    }
     .hdb-right-img {
       width: 100%;
     }
@@ -407,7 +409,7 @@ header {
     .text-tag-problem {
       color: $color-text-secondary;
       font-family: $montserrat-font-family;
-      font-weight: 700;
+      font-weight: 600;
     }
 
     .text-tag-pitch {
