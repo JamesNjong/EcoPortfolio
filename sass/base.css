@@ -63,7 +63,7 @@ p {
 }
 
 .section-label {
-  color: #4c0791;
+  color: #e9f0fb;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   width: 100%;
@@ -75,7 +75,8 @@ h2 {
 
 a,
 button {
-  font-family: "Fira Code", monospace;
+  font-family: "Montserrat", sans-serif;
+  font-size: 400;
   cursor: pointer;
 }
 
@@ -170,7 +171,7 @@ button {
 .button_accent {
   border: none;
   border-radius: 0.3rem;
-  background: #fec260;
+  background: #f66b0e;
   padding: 0 auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -196,18 +197,17 @@ button {
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
-  color: #222222;
-  font-family: "Fira Code", monospace;
+  color: #fbfbfb;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .button_primary {
   border: none;
   border-radius: 0.3rem;
-  background: #2a0944;
+  background: #2155cd;
   padding: 0 auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,14 +233,14 @@ button {
 }
 
 .button_primary:hover {
-  background-color: #4c0791;
+  background-color: #0aa1dd;
   color: #fbfbfb;
 }
 
 .button_secondary {
   border: none;
   border-radius: 0.3rem;
-  background: #4c0791;
+  background: #0aa1dd;
   padding: 10px 10px 10px 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -273,26 +273,21 @@ button {
 }
 
 .my-bg-primary {
-  background-color: #2a0944;
+  background-color: #2155cd;
 }
 
 .space-bar {
-  min-height: 90px;
+  min-height: 60px;
 }
 
 header {
-  background: #fec260;
-  font-family: "Fira Code", monospace;
-  color: #222222;
-  background-color: #2a0944;
+  color: #fbfbfb;
+  background-color: #2155cd;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   text-align: start;
-  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-  z-index: 26;
   padding: 1rem 0rem 1rem 0rem;
   /* Color of 3 lines */
   /* when navigation is clicked */
@@ -324,16 +319,11 @@ header .navbar {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-header .navbar .dropdown-menu {
-  z-index: 30;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .navbar-nav {
@@ -344,27 +334,21 @@ header .navbar-nav {
 
 header .nav-link {
   color: #fbfbfb !important;
+  font-family: "Arimo", sans-serif !important;
+  font-weight: 400;
   position: relative;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
 header .active-item {
-  color: #fec260 !important;
+  border-bottom: 1px solid #fbfbfb;
 }
 
 header .nav-link:hover {
-  color: #fec260 !important;
   -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
-}
-
-header .nav-link:hover::before {
-  position: absolute;
-  content: "";
-  bottom: -3px;
-  right: 0px;
-  left: 10px;
-  height: 5px;
-  background-color: #fec260;
+  border-bottom: 1px solid #fbfbfb;
 }
 
 header .navbar-toggler {
@@ -386,7 +370,7 @@ header .navbar-toggler .toggler-icon {
   position: absolute;
   height: 20px;
   width: 3px;
-  background: #fec260;
+  background: #f66b0e;
   border-radius: 1px;
   opacity: 1;
   left: 10px;
@@ -409,7 +393,7 @@ header .navbar-toggler-icon:focus {
 }
 
 header .navbar-toggler.collapsed .toggler-icon {
-  background-color: #fec260;
+  background-color: #f66b0e;
 }
 
 header .navbar-toggler .top-bar {
@@ -460,44 +444,47 @@ header .navbar-toggler.collapsed .bottom-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: grid;
-          flex-direction: grid;
-  -ms-grid-columns: 50% 40%;
-      grid-template-columns: 50% 40%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
-}
-
-.home .home-data-basket .text-tag-hello {
-  color: #2a0944;
+  gap: 5%;
 }
 
 .home .home-data-basket .hdb-right {
-  width: 100%;
+  width: 35%;
 }
 
-.home .home-data-basket .hdb-right-img {
-  width: 100%;
+.home .home-data-basket .hdb-right .hdb-right-img {
+  width: 90%;
+}
+
+.home .home-data-basket .hdb-left {
+  width: 65%;
+}
+
+.home .home-data-basket .text-tag-hello {
+  color: #2155cd;
 }
 
 .home .home-data-basket .text-tag-name {
-  color: #222222;
+  color: #2155cd;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   overflow: hidden;
 }
 
 .home .home-data-basket .text-tag-problem {
-  color: #0d0d0d;
+  color: #f66b0e;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  font-size: 21px;
 }
 
 .home .home-data-basket .text-tag-pitch {
@@ -506,12 +493,37 @@ header .navbar-toggler.collapsed .bottom-bar {
   font-weight: 400;
 }
 
+.home .home-data-basket .highlight-text {
+  background-color: #2155cd;
+  color: #fbfbfb;
+  padding: 10px auto;
+}
+
 .home .home-data-basket .home_buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
   margin-top: 30px;
+}
+
+.home .home-feature-basket {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 100px;
+}
+
+.home .home-feature-basket .feature-head {
+  font-weight: 600;
+  color: #2155cd;
+  font-size: 18px;
+}
+
+.home .home-feature-basket .feature-description {
+  color: #222222;
 }
 
 .services .service-data-basket .section-appeal {
@@ -558,7 +570,7 @@ header .navbar-toggler.collapsed .bottom-bar {
 .services .service-data-basket .service-items .service-item:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  background-color: #fec260;
+  background-color: #f66b0e;
   color: #0d0d0d;
   margin: 2px 2px 2px 2px;
   z-index: 20;
@@ -605,7 +617,7 @@ header .navbar-toggler.collapsed .bottom-bar {
 
 .services .service-data-basket .service-items .service-item-contents .service-item-content .skill {
   font-size: 1.2em;
-  color: #2a0944;
+  color: #2155cd;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
@@ -613,6 +625,64 @@ header .navbar-toggler.collapsed .bottom-bar {
 .services .service-data-basket .service-items .service-item-contents .service-item-content p {
   color: #222222;
   font-family: "Arimo", sans-serif;
+}
+
+.products .bucket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products .bucket .section-appeal {
+  text-align: center;
+  width: 60%;
+}
+
+.products .bucket .section-appeal .section-tag {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2155cd;
+}
+
+.products .bucket .servicelist-basket {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.products .bucket .servicelist-basket .service-item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.products .bucket .servicelist-basket .service-item-content .minor {
+  color: #2155cd;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.products .bucket .servicelist-basket .service-item-content .learn_more {
+  display: none;
 }
 
 .about .about-data-basket {
@@ -714,8 +784,8 @@ header .navbar-toggler.collapsed .bottom-bar {
 }
 
 .background .background-data-basket .react-tabs .tab-style .react-tab__tab--selected {
-  color: #4c0791;
-  border-bottom: 2px solid #4c0791;
+  color: #e9f0fb;
+  border-bottom: 2px solid #e9f0fb;
   text-align: start;
   font-weight: 600;
 }
@@ -728,12 +798,12 @@ header .navbar-toggler.collapsed .bottom-bar {
 
 .background .background-data-basket .react-tabs .single-tab-content .tag-1::before {
   content: ">> ";
-  color: #2a0944;
+  color: #2155cd;
 }
 
 .background .background-data-basket .react-tabs .single-tab-content .tag-1 {
   line-height: 1rem;
-  color: #2a0944;
+  color: #2155cd;
   padding: 0px;
   margin-bottom: 5px;
   margin-top: 2rem;
@@ -742,7 +812,7 @@ header .navbar-toggler.collapsed .bottom-bar {
 }
 
 .background .background-data-basket .react-tabs .single-tab-content .tag-2 {
-  color: #4c0791;
+  color: #e9f0fb;
   line-height: 3px;
   padding: 0px;
   margin-bottom: 5px;
@@ -769,6 +839,8 @@ header .navbar-toggler.collapsed .bottom-bar {
 .projects .pdb-left #project-line {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: 26px;
+  color: #2155cd;
 }
 
 .projects .pdb-left #project-para {
@@ -825,7 +897,7 @@ header .navbar-toggler.collapsed .bottom-bar {
   width: fit-content;
   -ms-flex-item-align: center;
       align-self: center;
-  background-color: #2a0944;
+  background-color: #e9f0fb;
   border-radius: 10px;
   padding: 2px 2px 2px 2px;
 }
@@ -837,24 +909,26 @@ header .navbar-toggler.collapsed .bottom-bar {
   width: 150px;
   margin: 3px 3px 3px 3px;
   padding: 3px 10px 3px 10px;
-  color: #fbfbfb;
-  font-family: "Fira Code", monospace;
+  color: #222222;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
 }
 
 .projects .project-tabbed .project-tabs .project-tab-style .project-tab__tab--selected {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  background: #fec260;
+  background: #2155cd;
   border-radius: 0.4rem;
   text-align: center;
-  color: #0d0d0d;
+  color: #fbfbfb;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .projects .project-tabbed .project-tabs .single-project-content .port-card {
-  background: #2a0944;
+  background: #e9f0fb;
   border-radius: 10px;
-  padding: 1rem;
-  height: 300px;
+  padding: 2rem 2rem 2rem 2rem;
+  height: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,11 +940,15 @@ header .navbar-toggler.collapsed .bottom-bar {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 5px;
-  color: #fbfbfb;
+  color: #222222;
+}
+
+.projects .project-tabbed .project-tabs .single-project-content .port-card .project-img {
+  content: url("../resources/icons/open_project.svg");
 }
 
 .projects .project-tabbed .project-tabs .single-project-content .port-card .button_project {
-  border: 1px solid #fec260;
+  border: 1px solid #0aa1dd;
   border-radius: 3px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -885,17 +963,19 @@ header .navbar-toggler.collapsed .bottom-bar {
 }
 
 .projects .project-tabbed .project-tabs .single-project-content .port-card:hover {
-  background-color: #fec260;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #2155cd;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   border-radius: 0px;
-  color: #0d0d0d;
+  color: #fbfbfb;
 }
 
 .projects .project-tabbed .project-tabs .single-project-content .port-card:hover .button_project {
-  border: 1px solid #0d0d0d;
+  border: 1px solid #fbfbfb;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -905,12 +985,12 @@ header .navbar-toggler.collapsed .bottom-bar {
 
 .projects .project-tabbed .project-tabs .single-project-content .port-card:hover .button_project a {
   text-decoration: none;
-  color: #0d0d0d;
+  color: #fbfbfb;
   font-size: 14px;
 }
 
 .projects .project-tabbed .project-tabs .single-project-content .port-card:hover .project-img {
-  content: url("../resources/icons/open_project.svg");
+  content: url("../resources/icons/closed_project.svg");
 }
 
 .Testimonials .testim-data-basket {
@@ -941,7 +1021,7 @@ header .navbar-toggler.collapsed .bottom-bar {
 .Testimonials .testim-data-basket .section-tag {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #2a0944;
+  color: #2155cd;
   text-align: center;
 }
 
@@ -980,7 +1060,7 @@ header .navbar-toggler.collapsed .bottom-bar {
       align-self: center;
   border-radius: 1rem;
   padding: 2px 10px 2px 10px;
-  background-color: #2a0944;
+  background-color: #2155cd;
   margin-bottom: 20px;
 }
 
@@ -995,11 +1075,11 @@ header .navbar-toggler.collapsed .bottom-bar {
 }
 
 .Testimonials .testim-data-basket .testim-tabs .testim-tab-list .testim-tab__tab--selected {
-  border: 1px solid #fec260;
+  border: 1px solid #f66b0e;
   border-radius: 50%;
   text-align: center;
   padding-bottom: 5px;
-  color: #fec260;
+  color: #f66b0e;
 }
 
 .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content {
@@ -1014,7 +1094,7 @@ header .navbar-toggler.collapsed .bottom-bar {
 .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #fec260;
+  background-color: #f66b0e;
 }
 
 .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header .tt-header-details-name,
@@ -1025,7 +1105,7 @@ header .navbar-toggler.collapsed .bottom-bar {
 
 .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header .tt-header-details-name {
   font-weight: 400;
-  color: #4c0791;
+  color: #0aa1dd;
   font-size: 1.5rem;
 }
 
@@ -1065,14 +1145,15 @@ header .navbar-toggler.collapsed .bottom-bar {
   width: 40%;
 }
 
-.contact .cdb-left h5 {
+.contact .cdb-left .good-talk {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   color: #0d0d0d;
+  font-size: 26px;
 }
 
 .contact .contact-form {
-  background-color: #2a0944;
+  background-color: #2155cd;
   border-radius: 10px;
 }
 
@@ -1083,14 +1164,37 @@ header .navbar-toggler.collapsed .bottom-bar {
   color: #fbfbfb;
 }
 
+.contact .contact-form ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: .5;
+}
+
+.contact .contact-form :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: .5;
+}
+
+.contact .contact-form ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: .5;
+}
+
+.contact .contact-form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: .5;
+}
+
 .contact .contact-form input[type="text"],
 .contact .contact-form select,
 .contact .contact-form textarea {
   width: 100%;
   padding: 4px;
-  border: 1px solid #ccc;
-  border-radius: 0;
-  border-top-left-radius: 0;
+  border: 1px solid #fff;
+  border-radius: 8px;
   resize: vertical;
   background: none;
   margin-bottom: 1rem;
@@ -1099,12 +1203,12 @@ header .navbar-toggler.collapsed .bottom-bar {
 }
 
 .contact .contact-form .btn-send {
-  color: #222222;
+  color: #fbfbfb;
   width: 150px !important;
 }
 
 .contact .contact-form .email-text a {
-  color: #fec260;
+  color: #fbfbfb;
   font-family: "Arimo", sans-serif;
 }
 
@@ -1113,7 +1217,7 @@ header .navbar-toggler.collapsed .bottom-bar {
 }
 
 footer {
-  background-color: #fec260;
+  background-color: #e9f0fb;
   padding-bottom: 3rem;
   padding-top: 2rem;
 }
@@ -1138,14 +1242,14 @@ footer .foot_wrapper {
 
 footer .foot_wrapper a {
   text-decoration: none;
-  color: #2a0944;
+  color: #222222;
   font-size: 16px;
   line-height: 2px;
   cursor: pointer;
 }
 
 footer .foot_wrapper a:hover {
-  color: #4c0791;
+  color: #2155cd;
 }
 
 footer .social-media {
@@ -1161,12 +1265,12 @@ footer .social-media {
 
 .banner-section {
   min-height: 400px;
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 2rem 2rem 2rem 2rem;
   color: #fbfbfb;
 }
 
 .banner-problem {
-  background-color: #2a0944;
+  background-color: #0aa1dd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1199,43 +1303,8 @@ footer .social-media {
   gap: 20px;
 }
 
-.banner-mentorship {
-  background-color: #2a0944;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 6rem;
-}
-
-.banner-mentorship .banner-mentorship-basket {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-}
-
 .banner-tools {
-  background-color: #2a0944;
+  background-color: #0aa1dd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1268,8 +1337,9 @@ footer .social-media {
   gap: 20px;
 }
 
-.banner-tools .banner-tools-basket h2 {
-  font-size: 2rem;
+.banner-tools .banner-tools-basket .tag {
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .banner-tools .banner-tools-basket .tool-grid {
@@ -1292,7 +1362,7 @@ footer .social-media {
 }
 
 .banner-tools .banner-tools-basket .tool-grid .tg-item {
-  border: 1px solid #fec260;
+  border: 1px solid #2155cd;
   border-radius: 0.3rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1320,7 +1390,7 @@ footer .social-media {
 
 .cover h1 {
   font-size: 6rem;
-  color: #fec260;
+  color: #f66b0e;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
 }
@@ -1460,7 +1530,7 @@ footer .social-media {
   }
   .services .service-data-basket .service-items .service-item-contents .service-item-content .skill {
     font-size: 1.2em;
-    color: #2a0944;
+    color: #2155cd;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
@@ -1536,7 +1606,7 @@ footer .social-media {
     font-size: 12px;
   }
   .projects .project-tabbed .project-tabs .single-project-content .port-card .button_project {
-    border: 1px solid #fec260;
+    border: 1px solid #f66b0e;
     border-radius: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1545,7 +1615,7 @@ footer .social-media {
   }
   .projects .project-tabbed .project-tabs .single-project-content .port-card .button_project a {
     text-decoration: none;
-    color: #fec260;
+    color: #f66b0e;
     font-size: 12px;
     overflow: hidden;
   }
@@ -1611,7 +1681,7 @@ footer .social-media {
   }
   .Testimonials .testim-data-basket .section-tag {
     font-size: 20px;
-    color: #2a0944;
+    color: #2155cd;
     text-align: center;
   }
   .Testimonials .testim-data-basket .testim-tabs {
@@ -1648,7 +1718,7 @@ footer .social-media {
         align-self: center;
     border-radius: 1rem;
     padding: 2px 10px 2px 10px;
-    background-color: #2a0944;
+    background-color: #2155cd;
     margin-bottom: 20px;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-list li {
@@ -1662,11 +1732,11 @@ footer .social-media {
     overflow: hidden;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-list .testim-tab__tab--selected {
-    border: 1px solid #fec260;
+    border: 1px solid #f66b0e;
     border-radius: 50%;
     text-align: center;
     padding-bottom: 5px;
-    color: #fec260;
+    color: #f66b0e;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content {
     display: -ms-grid;
@@ -1681,7 +1751,7 @@ footer .social-media {
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #fec260;
+    background-color: #f66b0e;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header .tt-header-details-name,
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header tt-header-details-affiliate {
@@ -1690,7 +1760,7 @@ footer .social-media {
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header .tt-header-details-name {
     font-weight: 400;
-    color: #4c0791;
+    color: #0aa1dd;
     font-size: 16px;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-body {
@@ -1823,7 +1893,7 @@ footer .social-media {
     font-size: 12px;
   }
   .banner-tools {
-    background-color: #2a0944;
+    background-color: #faf5e4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1870,13 +1940,13 @@ footer .social-media {
   }
   .banner-tools .banner-tools-basket .tool-grid .tg-analytics {
     border: none;
-    border-top: 1px solid #2a0944;
-    border-bottom: 1px solid #2a0944;
+    border-top: 1px solid #2155cd;
+    border-bottom: 1px solid #2155cd;
     padding-top: 15px;
     padding-bottom: 15px;
   }
   .banner-mentorship {
-    background-color: #2a0944;
+    background-color: #faf5e4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2042,7 +2112,7 @@ footer .social-media {
   }
   .services .service-data-basket .service-items .service-item-contents .service-item-content .skill {
     font-size: 1.2em;
-    color: #2a0944;
+    color: #2155cd;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
@@ -2118,7 +2188,7 @@ footer .social-media {
     font-size: 12px;
   }
   .projects .project-tabbed .project-tabs .single-project-content .port-card .button_project {
-    border: 1px solid #fec260;
+    border: 1px solid #f66b0e;
     border-radius: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2127,7 +2197,7 @@ footer .social-media {
   }
   .projects .project-tabbed .project-tabs .single-project-content .port-card .button_project a {
     text-decoration: none;
-    color: #fec260;
+    color: #f66b0e;
     font-size: 12px;
     overflow: hidden;
   }
@@ -2193,7 +2263,7 @@ footer .social-media {
   }
   .Testimonials .testim-data-basket .section-tag {
     font-size: 20px;
-    color: #2a0944;
+    color: #2155cd;
     text-align: center;
   }
   .Testimonials .testim-data-basket .testim-tabs {
@@ -2230,7 +2300,7 @@ footer .social-media {
         align-self: center;
     border-radius: 1rem;
     padding: 2px 10px 2px 10px;
-    background-color: #2a0944;
+    background-color: #2155cd;
     margin-bottom: 20px;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-list li {
@@ -2244,11 +2314,11 @@ footer .social-media {
     overflow: hidden;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-list .testim-tab__tab--selected {
-    border: 1px solid #fec260;
+    border: 1px solid #f66b0e;
     border-radius: 50%;
     text-align: center;
     padding-bottom: 5px;
-    color: #fec260;
+    color: #f66b0e;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content {
     display: -ms-grid;
@@ -2263,7 +2333,7 @@ footer .social-media {
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #fec260;
+    background-color: #f66b0e;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header .tt-header-details-name,
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header tt-header-details-affiliate {
@@ -2272,7 +2342,7 @@ footer .social-media {
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header .tt-header-details-name {
     font-weight: 400;
-    color: #4c0791;
+    color: #0aa1dd;
     font-size: 16px;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-body {
@@ -2405,7 +2475,7 @@ footer .social-media {
     font-size: 12px;
   }
   .banner-tools {
-    background-color: #2a0944;
+    background-color: #faf5e4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2443,7 +2513,7 @@ footer .social-media {
     font-size: 12px;
   }
   .banner-mentorship {
-    background-color: #2a0944;
+    background-color: #faf5e4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2601,7 +2671,7 @@ footer .social-media {
   }
   .services .service-data-basket .service-items .service-item-contents .service-item-content .skill {
     font-size: 22px;
-    color: #2a0944;
+    color: #2155cd;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
@@ -2676,7 +2746,7 @@ footer .social-media {
     font-size: 16px;
   }
   .projects .project-tabbed .project-tabs .single-project-content .port-card .button_project {
-    border: 1px solid #fec260;
+    border: 1px solid #f66b0e;
     border-radius: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2685,7 +2755,7 @@ footer .social-media {
   }
   .projects .project-tabbed .project-tabs .single-project-content .port-card .button_project a {
     text-decoration: none;
-    color: #fec260;
+    color: #f66b0e;
     font-size: 14px;
     overflow: hidden;
   }
@@ -2751,7 +2821,7 @@ footer .social-media {
   }
   .Testimonials .testim-data-basket .section-tag {
     font-size: 20px;
-    color: #2a0944;
+    color: #2155cd;
     text-align: center;
   }
   .Testimonials .testim-data-basket .testim-tabs {
@@ -2788,7 +2858,7 @@ footer .social-media {
         align-self: center;
     border-radius: 1rem;
     padding: 2px 10px 2px 10px;
-    background-color: #2a0944;
+    background-color: #2155cd;
     margin-bottom: 20px;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-list li {
@@ -2802,11 +2872,11 @@ footer .social-media {
     overflow: hidden;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-list .testim-tab__tab--selected {
-    border: 1px solid #fec260;
+    border: 1px solid #f66b0e;
     border-radius: 50%;
     text-align: center;
     padding-bottom: 5px;
-    color: #fec260;
+    color: #f66b0e;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content {
     display: -ms-grid;
@@ -2821,7 +2891,7 @@ footer .social-media {
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #fec260;
+    background-color: #f66b0e;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header .tt-header-details-name,
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header tt-header-details-affiliate {
@@ -2830,7 +2900,7 @@ footer .social-media {
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header .tt-header-details-name {
     font-weight: 400;
-    color: #4c0791;
+    color: #0aa1dd;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-body {
     margin-top: 10px;
@@ -2958,7 +3028,7 @@ footer .social-media {
     gap: 25px;
   }
   .banner-tools {
-    background-color: #2a0944;
+    background-color: #faf5e4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2990,7 +3060,7 @@ footer .social-media {
     gap: 20px;
   }
   .banner-mentorship {
-    background-color: #2a0944;
+    background-color: #faf5e4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3149,7 +3219,7 @@ footer .social-media {
   }
   .services .service-data-basket .service-items .service-item-contents .service-item-content .skill {
     font-size: 22px;
-    color: #2a0944;
+    color: #2155cd;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
@@ -3224,7 +3294,7 @@ footer .social-media {
     font-size: 16px;
   }
   .projects .project-tabbed .project-tabs .single-project-content .port-card .button_project {
-    border: 1px solid #fec260;
+    border: 1px solid #f66b0e;
     border-radius: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3233,7 +3303,7 @@ footer .social-media {
   }
   .projects .project-tabbed .project-tabs .single-project-content .port-card .button_project a {
     text-decoration: none;
-    color: #fec260;
+    color: #f66b0e;
     font-size: 14px;
     overflow: hidden;
   }
@@ -3299,7 +3369,7 @@ footer .social-media {
   }
   .Testimonials .testim-data-basket .section-tag {
     font-size: 20px;
-    color: #2a0944;
+    color: #2155cd;
     text-align: center;
   }
   .Testimonials .testim-data-basket .testim-tabs {
@@ -3336,7 +3406,7 @@ footer .social-media {
         align-self: center;
     border-radius: 1rem;
     padding: 2px 10px 2px 10px;
-    background-color: #2a0944;
+    background-color: #2155cd;
     margin-bottom: 20px;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-list li {
@@ -3350,11 +3420,11 @@ footer .social-media {
     overflow: hidden;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-list .testim-tab__tab--selected {
-    border: 1px solid #fec260;
+    border: 1px solid #f66b0e;
     border-radius: 50%;
     text-align: center;
     padding-bottom: 5px;
-    color: #fec260;
+    color: #f66b0e;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content {
     display: -ms-grid;
@@ -3369,7 +3439,7 @@ footer .social-media {
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #fec260;
+    background-color: #f66b0e;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header .tt-header-details-name,
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header tt-header-details-affiliate {
@@ -3378,7 +3448,7 @@ footer .social-media {
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-header .tt-header-details-name {
     font-weight: 400;
-    color: #4c0791;
+    color: #0aa1dd;
   }
   .Testimonials .testim-data-basket .testim-tabs .testim-tab-row-content .testim-testim .tt-body {
     margin-top: 10px;
@@ -3506,7 +3576,7 @@ footer .social-media {
     gap: 25px;
   }
   .banner-tools {
-    background-color: #2a0944;
+    background-color: #faf5e4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3538,7 +3608,7 @@ footer .social-media {
     gap: 20px;
   }
   .banner-mentorship {
-    background-color: #2a0944;
+    background-color: #faf5e4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

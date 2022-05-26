@@ -28,7 +28,13 @@
   <div class="bucket">
     
     <div class="header-data-basket">
-        <nav class="navbar navbar-expand-md navbar-light flex-row-btn">
+      <!-- Brand -->
+          <div class="brand d-lg-block d-none">
+            <div><img src="./resources/brand/logo-light.svg" width="40"  alt="name-logo" class="img-fluid brand-img"> </div>
+            <p class="text-name d-none">Njong</p>
+          </div>
+
+        <nav class="navbar navbar-expand-md navbar-light">
 
           <!-- Toggler/collapsable Button -->
           <button class="navbar-toggler collapsed d-flex d-lg-none d-md-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,11 +47,7 @@
                           
           </button>
 
-        <!-- Brand -->
-          <div class="brand d-flex justify-content-center align-items-center">
-            <img src="./resources/brand/logo-dark.svg" width="50"  alt="name-logo" class="img-fluid d-lg-inline-block d-none m-2" > 
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
 
               <ul class="navbar-nav  justify-content-end align-items-md-end">
                                   
@@ -55,18 +57,20 @@
 
                   <li class="nav-item" ><a onclick="highlighter(event)" href="#projects" class="nav-link px-2">Projects <a></li>
 
-                  <li class="nav-item" ><a onclick="highlighter(event)" href="#about" class="nav-link px-2">About <a></li>
+                  <li class="nav-item" ><a onclick="highlighter(event)" href="about.html" class="nav-link px-2">About <a></li>
 
-                  <li class="nav-item" ><a onclick="highlighter(event)" href="#background" class="nav-link px-2">Background <a></li>
 
-                  <li class="nav-item dropdown" ><a onclick="highlighter(event)" href="#testimonials" class="nav-link px-2">Testimonials</a></li> 
+                  <li class="nav-item d-none" ><a onclick="highlighter(event)" href="#testimonials" class="nav-link px-2">Testimonials</a></li> 
                                   
               </ul>
                 
-            </div> 
-          </div>
+          </div> 
+
+          <div class="button_accent d-lg-inline-block"><a href="#contact">Contact</a></div> 
       </nav>
-      <div class="button_accent d-lg-inline-block"><a href="#contact">Contact</a></div> 
+
+      <!-- Navbar links -->
+
     </div>
 
   </div>
@@ -82,16 +86,13 @@
 
           <div class="hdb-left">             
               <h1>
-                <p class="display-4 fw-bold text-tag-name ">Beyond problem solving,</p>
-                <p class="display-6 text-tag-problem">build a bridge to the audacious goals you've set.</p>  
+                <p class="display-4 fw-bold text-tag-name ">Beyond problem solving,</p> 
               </h1>    
-              <p class="text-tag-pitch">Problem solving is two things: goal and strategy. Like you, your competition knows this, and they use it. So, if you must be ahead, you have to do what they are not, and that is exactly where I come in. I help you go beyond problem solving, and start concieving and building the future you want, whatever your industry. I'm James Junior Njong, and you are welcome here.</p>
-
-                                
+              <p class="text-tag-problem">build a bridge to the audacious goals you've set.</p> 
+              <p class="text-tag-pitch">I help people and organizations take advantage of the chaos of everyday business, to build truly rewarding strategies, frontend web or mobile applications, and MEAL systems that help them edge closer to the targets that matter most.</p>
                                   
               <div class="home_buttons "> 
-                <span class="button_primary "><a href="#services">Learn more</a></span> 
-                <span class="button_secondary"><a href="#">Download CV</a></span> 
+                <span class="button_primary "><a href="#services">Learn more</a></span>  
               </div> 
 
           </div>
@@ -102,65 +103,27 @@
 
         </div>
 
-    </div>
-  </section>
+        <div class="home-feature-basket">
 
-  <section class="services" id="services">
-    <div class="bucket">
-      <div class="flex-column-start service-data-basket">
-        
-        <div class="section-appeal">
-          
-          <p class="section-label service-label text-center">Services.</p> 
-          <h2 class="section-tag display-5 text-centr">problem solving, is building bridges</h2>
-          <p class="section_pitch text-center">with one hire, get expert level help in solving problems across multiple teams, and ensure that across your strategic value nodes, solutions are optimally aligned with your corporate strategy.</p> 
-        </div>
+          <div class="home-feature-item">
+            <p class="feature-head">Eloquent</p>
+            <p class="feature-description">Get ahead of the rest by adding an effective communicator to your team, and fast tracking communication across all internal and external stakeholder groups.</p>
+          </div>
 
+          <div class="home-feature-item">
+            <p class="feature-head">Versatile</p>
+            <p class="feature-description">For the price of one,  get talent that wears many hearts with unquestionable excellence on any task, from business development to Frontend web and android development.</p>
+          </div>
 
-        <div class="service-items ">
-
-          <a href="./problemsolving/analytics.html" class="service-item" id="software-service">
-            <div class="service-item-contents">
-              <img src="./resources/icons/software.svg" alt="" class="img-fluid service-item-img service-item-img-pm">
-              <div class="service-item-content">
-                  <p class="skill minor">Frontend Web & Mobile</p> 
-                          
-                  <p class="service-item-text">Get help developing frontend web and mobile applications that help your organization or its clients set and achieve their goals.</p>
-
-              </div>
-            </div>
-          </a>
-
-          <a href="./problemsolving/analytics.html" class="service-item" id="analytics-service">
-            <div class="service-item-contents">
-              <img src="./resources/icons/data.svg" alt="" class="img-fluid service-item-img service-item-img-pm">
-              <div class="service-item-content">
-                  <p class="skill minor">Quantitative Analytics</p> 
-                          
-                  <p class="service-item-text">From product design to customer development, get help with the actionable insights you need from your data, because someone knows what they are looking for.</p>
-
-              </div>
-            </div>
-          </a>
-
-          <a href="./problemsolving/projectmanagement.html" class="service-item">
-            <div class="service-item-contents">
-              <img src="./resources/icons/proj_management.svg" alt="" class="img-fluid service-item-img service-item-img-pm">
-              <div class="service-item-content">
-                  <p class="skill minor">Project  Management</p> 
-                          
-                  <p class="service-item-text">Setup MEAL systems that help you better manage your stakeholders, and get help cutting wasteful spending on problems that could be anticipated.</p>
-
-              </div>
-            </div>
-          </a>
+          <div class="home-feature-item">
+            <p class="feature-head">Proactive</p>
+            <p class="feature-description">Enhance your value chain, with a problem solver who can anticipate challenges and set solution wheels in motion before the rest wake up.</p>
+          </div>
 
         </div>
 
-      </div>
     </div>
   </section>
-
 
 <!-- Problem solving banner -->
   <div class="banner-section banner-problem">
@@ -175,16 +138,85 @@
     </div>
   </div>
 
+  
+  <section class="products" id="services">
+
+    <div class="bucket">
+
+      <div class="section-appeal"> 
+          <h5 class="section-tag text-centr">problem solving, is building bridges</h5>
+          <p class="section_pitch text-center">with one hire, get expert level help in solving problems across multiple teams, and ensure that across all teams, solutions are optimally aligned with your corporate strategy.</p> 
+
+        </div>
+
+      <div class="servicelist-basket">
+
+        
+        <!--Business Development-->
+        <div class="service-item-content flex-row-btn">
+          <div class="service-content-img">
+            <img src="./resources/illustrations/Business.svg" width="500" alt="android svg from storyset" class="img-fluid img-serv">
+          </div>
+          <div class="service-content-data p-1">
+            <p class="skill minor">Business Development</p> 
+            <p class="service-item-text">Build strategic partnerships and support the activities and initiatives that help you and your team get to the targets you've set.</p>
+            <a href="#" class="learn_more">Learn More</a>
+          </div>
+        </div>
+
+        <!--Android Development-->
+        <div class="service-item-content flex-row-btn">
+          <div class="service-content-img">
+            <img src="./resources/illustrations/Analytics.svg" width="500" alt="android svg from storyset" class="img-fluid img-serv">
+          </div>          
+          <div class="service-content-data p-1">
+            <p class="skill minor">Quantitative Analysis</p> 
+            <p class="service-item-text">Get actionable insights from your data, and throw a cherry on top, with pitch perfect storytelling.</p>
+            <a href="#" class="learn_more">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Frontend web development -->
+        <div class="service-item-content flex-row-btn">
+          <div class="service-content-img">
+            <img src="./resources/illustrations/Web.svg" width="500" alt="android svg from storyset" class="img-fluid img-serv">
+          </div>
+          
+          <div class="service-content-data p-1">
+            <p class="skill minor">Frontend Web and Android Development</p> 
+            <p class="service-item-text">Get help developing frontend web and android applications that help your organization or its clients set and achieve their goals.</p>
+            <a href="#" class="learn_more">Learn More</a>
+          </div>
+        </div>
+
+
+
+        <!--Project Management-->
+        <div class="service-item-content flex-row-btn">
+          <div class="service-content-img">
+            <img src="./resources/illustrations/Management.svg" width="500" alt="android svg from storyset" class="img-fluid img-serv">
+          </div>
+          <div class="service-content-data p-1">
+            <p class="skill minor">Project  Management</p> 
+            <p class="service-item-text">Get help building MEAL systems that support timely project delivery and help you cut wasteful spending by anticipating and solving problems.</p>
+            <a href="#" class="learn_more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
 
   <section class="projects" id="projects">
     <div class="bucket">
       <div class="project-data-basket "> 
-        <div class="pdb-left flex-column-center">
-          <p class="section-label">Projects</p>     
-          
-          <h2 id="project-line" class="display-6">problem solving happens before you encounter a challenge </h2>
+        <div class="pdb-left flex-column-center">   
+          <p id="project-line" >problem solving is practice </p>
 
-          <p id="project-para">here is a gallery of challenges I have taken-on, and notes on why they will help me, when I come over. </p>
+          <p id="project-para px-4">and here is why I will have a head start when I take on your challenges. </p>
         </div>
 
         <div class="project-tabbed">
@@ -502,11 +534,12 @@
   </section>
 
 
+
  <!-- Problem solving banner -->
-  <div class="banner-section banner-tools">
+  <div class="banner-section banner-tools d-none">
     <div class="bucket">
       <div class="banner-tools-basket">
-        <h2>problem solving is endless learning</h2>
+        <p class="tag">problem solving is endless learning</p>
         <p id="tools-para">here are the tools and systems that help me get the job done. They add to my tongue and my mind, and together we enhance value creation</p>
 
         <div class="tool-grid"> 
@@ -524,300 +557,8 @@
     </div>
   </div>
 
-
-
-  <section class="about" id="about">
-    <!-- section uses bootstrap featured example: refere to getbootstrap.com for details-->
-    <div class="bucket flex-column-center">
-      <div class="about-data-basket "> 
-        <div class="container py-5" id="featured-3">
-          
-          <div class="row about-header">
-            <div class="col col-lg-8">
-              <p class="section-label">About.</p> 
-              <p class="pb-2 border-bottom">Hello again. My name is James Jr. Njong, and I am a versatile problem solver with a diverse set of skills and cross-functional knowledge that affords me the latitude to tackle problems in software development, financial and data analysis as well as advance mathematics. I have been privileged to work within education management over the last two years, expanding my knowledge of project management and also mastering the art of communicating complex ideas, while building partnerships that help advance our goals as an organization. <br/>At present, I am keen on new challenges that will leverage some or all of my diverse problem solving skills, and I continue to think that a tech-savvy problem solver with management experience and a natural ability to communicate effectively, can seamlessly fit-in and thrive at all levels of any value chain.  </p>
-            </div>
-            <div class="col col-lg-4">
-                <img src="./resources/images/evp.svg" alt="james j njong" class="img-fluid evp-image">
-            </div>
-          </div>
-
-
-
-
-          <div class="row g-5 py-5 row-cols-1 row-cols-lg-3">
-            <div class="feature col">
-              <div class="about-feature-icon flex-column-center my-bg-primary bg-gradient">
-                <img class="bi" width="50" height="50" src="resources/icons/about_destination.svg"/>
-              </div>
-              <div>
-                <h2>Outlook</h2>
-                <p>I am extremely excited about work that puts me at the intersection of business and product development. I find that these kinds of roles allow me to marry my ability to communicate and to solve both technical and non-technical problems using the full spectrum of the skills I have developed. And in this way, my employer gets the full benefits of what (s)he pays for.</p>
-              </div>
-            </div>
-            <div class="feature col">
-              <div class="about-feature-icon flex-column-center my-bg-primary bg-gradient">
-                <img class="bi" width="50" height="50" src="resources/icons/about_background.svg"/>
-              </div>
-              <div>
-                <h2>Throwback</h2>
-                <p>Having had over a decade of graduate and post graduate level training as a mathematician, I have developed a solid procedural problem solving ability that all but guarantees success in tackling technical problems. And because these years have involved research, I tend to be great at self directing, and thus need minimal supervision on the job. </p>
-              </div>
-            </div>
-            <div class="feature col">
-              <div class="about-feature-icon flex-column-center my-bg-primary bg-gradient">
-                <img class="bi" width="50" height="50" src="resources/icons/about_connecting.svg"/>
-              </div>
-              <div>
-                <h2>Motivation</h2>
-              <p>By default, I am not set up as an entrepreneur, and thus my energy entirely comes from doing meaningful work that helps advance an agenda that is not centered around me. I consequently am comfortable within the chaos of a startup environment, as well as the calm of established organizations, both not lacking in ambition, nor uncertain about their vision.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="background" id="background">
-    <div class="bucket">
-      <div class="background-data-basket"> 
-         <div class="row  justify-content-between align-items-center">
-            <!--Section 1: Images -->
-            <div class="col-lg-4">
-
-            <!-- Section 2.1: Text-->
-            <div class="section-title">
-              <img src="./resources/images/sharpshot.png" alt="james-j-njong" width="400px" class="img-fluid background-section-img">                     
-            </div>
-
-            </div>
-                                        
-            <!--Section 2: Tabs and Text -->
-            <div class="col-lg-7 g-5">
-            <div class="about-inner inner">
-            <p class="section-label">Background.</p>                                    
-            <!--Section 2.2: Tabs -->
-            <div class="row ">
-                        
-            <div class="row">
-
-            <div class="col-12">
-
-            <div class="react-tabs">
-            <!--List of Tabs -->    
-                        
-            <ul class="tab-style" role="tablist">
-                            
-                <li class="react-tabs__tab react-tab__tab--selected links" role="tab" id="react-tabs-0"  tabindex="0" onclick="openTab(event, 'react-tabs-exp')" >Experience </li>
-                                                                                
-                <li class="react-tabs__tab links" role="tab" id="react-tabs-1" aria-selected="false" aria-disabled="false" aria-controls="react-tabs-3" data-rttab="true" onclick="openTab(event, 'react-tabs-ed')">Education</li>
-                                                                                
-                <li class="react-tabs__tab links" role="tab" id="react-tabs-2" aria-selected="false" aria-disabled="false" aria-controls="react-tabs-5" data-rttab="true" onclick="openTab(event, 'react-tabs-vol')">Volunteering</li>
-                                                                                
-                <li class="react-tabs__tab links" role="tab" id="react-tabs-3" aria-selected="false" aria-disabled="false" aria-controls="react-tabs-7" data-rttab="true" onclick="openTab(event, 'react-tabs-cert')">Certifications</li>
-                                                                                
-            </ul>
-
-            <!-- Tab Content -->                                                        
-            <!--Experience Tab-->                                                            
-            <div class="react-tabs__tab-panel react-tabs__tab-panel--selected" role="tabpanel" id="react-tabs-exp" aria-labelledby="react-tabs-0">
-                        
-            <div class="single-tab-content">
-                            
-            <ul>
-
-            <li><p class="exp-item-job tag-1 reveal">Cooperative Education Assistant</p> 
-
-            <small class="exp-item-employ tag-2 highlight">AIMS-Cameroon - (February 2020-Now)</small>
-
-            <p class="exp-item-desc tag-3">Developed programs and market linkages to enhance student employability.</p>
-
-            </li>
-
-            <li><p class="exp-item-job tag-1 reveal">Android Developer </p>
-                                
-            <small class="exp-item-employ tag-2 highlight">WaZaHub - (November 2019-February 2020)</small> 
-
-            <p class="exp-item-desc tag-3">Built android modules for processing online payments via WaZaPay APIs.</p>
-            </li>
-
-            <li><p class="exp-item-job tag-1 reveal">Freelance Java Developer</p> 
-
-            <small class="exp-item-employ tag-2 highlight">Youkaris - (Noveber 2017-Now)</small>
-
-            <p class="exp-item-desc tag-3">Designed and developed mobile and desktop community management applications for the Strangers for Mary Network.</p>
-
-            </li>
-
-            <li><p class="exp-item-job tag-1 reveal">Radio Presenter and Anchor</p> 
-                                
-            <small class="exp-item-employ tag-2 highlight">HelenKriss Radio - (April - August 2012)</small>
-                                
-            <p class="exp-item-desc tag-3">Hosted late night entertainment shows and ran foreign news commentary on the breakfast shows.</p>
-
-            </li>
-                            
-            </ul>
-                            
-            </div>
-                        
-            </div>
-                        
-            <!--Education Tab -->
-            <div class="react-tabs__tab-panel " role="tabpanel" id="react-tabs-ed" aria-labelledby="react-tabs-2">
-
-            <div class="single-tab-content">
-                            
-            <ul>
-            <li><p class="ed-item-degree tag-1 reveal">PgD. Business and Management</p> 
-
-            <small class="ed-item-school tag-2 highlight">ESMT Berlin - (July-August 2020)</small>
-
-            <p class="tag-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </li>
-
-            <li><p class="ed-item-degree tag-1 reveal">MSc. Applied Mathematics</p> 
-
-            <small class="ed-item-school tag-2 highlight">AIMS-Cameroon - (October 2018-July 2019)</small>
-
-            <p class="tag-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </li>
-
-            <li><p class="ed-item-degree tag-1 reveal">MSc. Pure Mathematics</p> 
-
-            <small class="ed-item-school tag-2 highlight">University of Buea - (October 2015-December 2018)</small>
-
-            <p class="tag-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </li>
-
-            <li><p class="ed-item-degree tag-1 reveal">BSc. Mathematics with Computer Sciences</p> 
-
-            <small class="ed-item-school tag-2 highlight">University of Buea - (October 2012-August 2015)</small>
-
-            <p class="tag-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </li>
-                            
-            </ul>
-                            
-            </div>
-
-            </div>
-                        
-            <!-- Volunteering Tab -->
-            <div class="react-tabs__tab-panel " role="tabpanel" id="react-tabs-vol" aria-labelledby="react-tabs-4">
-
-            <div class="single-tab-content">
-                            
-            <ul>
-            <li><p class="ed-item-degree tag-1 reveal">Student Representative</p> 
-
-            <small class="ed-item-school tag-2 highlight">AIMS-Cameroon - (2018-2019)</small>
-
-            <p class="tag-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </li>
-
-            <li><p class="ed-item-degree tag-1 reveal">Fundraising Commiittee Chair</p> 
-
-            <small class="ed-item-school tag-2 highlight">Buea University Parish - (2016 - 2017)</small>
-
-            <p class="tag-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </li>
-
-            <li><p class="ed-item-degree tag-1 reveal">Pastoral Council Chair</p> 
-
-            <small class="ed-item-school tag-2 highlight">Buea University Parish - (2014 - 2015)</small>
-
-            <p class="tag-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </li>
-
-            <li><p class="ed-item-degree tag-1 reveal">SG Mathematics Student's Union</p> 
-
-            <small class="ed-item-school tag-2 highlight">University of Buea - (2013 - 2015)</small>
-
-            <p class="tag-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </li>
-                            
-            </ul>
-                            
-            </div>
-
-            </div>
-
-            <!-- Certifications Tab-->            
-            <div class="react-tabs__tab-panel " role="tabpanel" id="react-tabs-cert" aria-labelledby="react-tabs-6">
-
-            <div class="single-tab-content">
-                            
-            <ul>
-            <li><p class="ed-item-degree tag-1 minor">Legacy Frontend Developer Certification</p> 
-
-            <small class="ed-item-school tag-2 highlight">FreeCodeCamp - (April 2022)</small>
-
-            <p class="tag-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </li>
-
-            <li><p class="ed-item-degree tag-1 reveal">Financial Analyst Certification</p> 
-
-            <small class="ed-item-school tag-2 highlight">LinkedIn Learning - (December 2021)</small>
-
-            <p class="tag-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </li>
-
-            <li><p class="ed-item-degree tag-1 reveal">Project Management Certification</p> 
-
-            <small class="ed-item-school tag-2 highlight">LinkedIn Learning - (November 2021)</small>
-
-            <p class="tag-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            </li>
-
-            <li><p class="ed-item-degree tag-1 reveal">MARAG, General Management Training</p> 
-
-            <small class="ed-item-school tag-2 highlight">MARGA Business Simulations GbmH - (August 2019)</small>
-
-            <p class="tag-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-
-            </li>
-                            
-            </ul>
-                            
-            </div>
-
-            </div>
-                        
-            </div></div></div></div></div></div></div></div>
-                        
-                      
-            </div>
-      </div>
-    </div>
-  </section>
-
-
-<!-- Problem solving banner -->
-  <div class="banner-section banner-mentorship">
-    <div class="bucket">
-      <div class="banner-mentorship-basket">
-        <h2>problem solving is a team effort</h2>
-        <p>with over a decade spent within higher education, I have grown to understand what existing gaps make great students fail at building great careers. And for nothing but a thank you, I help them fill this gap through mentorship and career development support. And you can join this effort, with a simple referral.</p>
-        <span class="button_accent"><a href="./mentoring/mentee.html">Refer a Mentee</a></span> 
-      </div>
-    </div>
-  </div>
-
-
-  <section class="Testimonials " id="testimonials">
+ 
+  <section class="Testimonials d-none" id="testimonials">
     <div class="bucket">
       <div class="testim-data-basket">
         <p class="section-label d-none">Testimonials</p>
@@ -1040,14 +781,25 @@
     </div>
   </section>
 
+<!-- Problem solving banner -->
+  <div class="banner-section banner-problem" id="about">
+    <div class="bucket">
+      <div class="banner-problem-basket">
+        <h2 >problem solving is a way of life</h2>
+        
+        <p>Hello ! My name is James Jr. Njong, and for the last ten years, I have done nothing but learn how to solve problems, and then moved on to use this knowledge in helping one of Africa's most vibrant post-graduate training programs to build the maket linkages it needs to improve student outcomes. </p>
 
+        <span class="button_accent"><a href=".about.html">Learn More</a></span> 
+      </div>
+    </div>
+  </div>
 
   <section class="contact" id="contact">
-    <div class="bucket">
+    <div class="bucket flex-column-center">
       <div class="contact-data-basket flex-row-to-column-center"> 
         <div class="cdb-left">
-          <p class="section-label contact-tag">Contact <br> <hr class="cdb-left-rule"> </p>
-          <h2 class="good-talk" >problem solving is good talk</h2>
+          <p class="contact-tag">Contact <br> <hr class="cdb-left-rule"> </p>
+          <p class="good-talk" >problem solving is good talk</p>
           <p>every good conversation begins with a hello, and the person who cannot wait to talk says it first. So  here is my Hello! Hope you are well.</p> 
         </div>
 
@@ -1056,7 +808,7 @@
             <div class="rounded shadow-lg p-4 card-image">
               <div class="tag-forms flex-row-start">
 
-                <img src="./resources/icons/email.svg" alt="email svg" width="60" class="img-fluid text-center"> 
+                <img src="./resources/icons/email.svg" alt="email svg" width="60" class="img-fluid text-center d-none"> 
                 <div class="flex-column-center">
                   <h5 class="white-text">Bridge the gap, break the ice</h5>
                   <p class="email-text"> <a href="mailto:hello@njongjames.com">hello@njongjames.com</a> </p></div>
@@ -1076,7 +828,7 @@
 
                   <div class="row">
                     <label for="msg-boot">Message</label>
-                    <textarea id="msg-boot" class="message-boot form-control" rows="5" placeholder="I cannot wait to meet you buddy." required></textarea>
+                    <textarea id="msg-boot" class="message-boot form-control" rows="5" placeholder="I cannot wait to meet you, and to take on the world with you." required></textarea>
                   </div>
 
                   <!--button-->

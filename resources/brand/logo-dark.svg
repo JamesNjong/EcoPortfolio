@@ -1,24 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="542" height="533" viewBox="0 0 542 533">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="723.015" height="717.015" viewBox="0 0 723.015 717.015">
   <defs>
-    <filter id="Ellipse_14" x="0" y="0" width="542" height="533" filterUnits="userSpaceOnUse">
-      <feOffset dx="22" dy="13" input="SourceAlpha"/>
+    <filter id="Rectangle_3" x="0" y="0" width="723.015" height="717.015" filterUnits="userSpaceOnUse">
+      <feOffset dx="-26" dy="20" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feFlood flood-opacity="0.161"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
+    <filter id="Path_7" x="147.786" y="149.993" width="463.255" height="467.42" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_8" x="181.697" y="80.465" width="463.255" height="467.419" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_3" x="368.455" y="74.632" width="156.878" height="144.878" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_4" x="289.966" y="493.947" width="156.878" height="144.878" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_5" x="317.185" y="521.166" width="102.439" height="90.439" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_6" x="395.674" y="101.852" width="102.439" height="90.439" filterUnits="userSpaceOnUse">
+      <feOffset dx="30" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-7"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
   </defs>
-  <g id="Group_27" data-name="Group 27" transform="translate(-738 -220)">
-    <g transform="matrix(1, 0, 0, 1, 738, 220)" filter="url(#Ellipse_14)">
-      <circle id="Ellipse_14-2" data-name="Ellipse 14" cx="255.5" cy="255.5" r="255.5" fill="#020202"/>
+  <g id="Group_8" data-name="Group 8" transform="translate(-2434.924 734.684) rotate(-45)">
+    <g id="Group_7" data-name="Group 7">
+      <g transform="matrix(0.71, 0.71, -0.71, 0.71, 2241.25, 1202.25)" filter="url(#Rectangle_3)">
+        <rect id="Rectangle_3-2" data-name="Rectangle 3" width="502" height="471" rx="75" transform="translate(35 354.97) rotate(-45)" fill="#2155cd"/>
+      </g>
+      <g id="Group_6" data-name="Group 6" transform="translate(2019.519 1651.671) rotate(-20)">
+        <g transform="matrix(0.42, 0.91, -0.91, 0.42, 362.07, -346.48)" filter="url(#Path_7)">
+          <path id="Path_7-2" data-name="Path 7" d="M0,221.293S58.153,57.223,75.451,8.351,195.464,139.2,235.469,182.818,285.024,51.968,301.543,8.351" transform="translate(182.04 429.46) rotate(-52)" fill="none" stroke="#fdfdfd" stroke-width="50"/>
+        </g>
+        <g transform="matrix(0.42, 0.91, -0.91, 0.42, 362.07, -346.48)" filter="url(#Path_8)">
+          <path id="Path_8-2" data-name="Path 8" d="M0,221.293S58.153,57.223,75.451,8.351,195.464,139.2,235.469,182.818,285.024,51.968,301.543,8.351" transform="translate(215.95 359.93) rotate(-52)" fill="none" stroke="#fdfdfd" stroke-width="50"/>
+        </g>
+      </g>
     </g>
-    <g id="Group_25" data-name="Group 25" transform="translate(792.456 321.734)">
-      <path id="Path_28" data-name="Path 28" d="M21.25,0c11.984.251,21.9,10.62,22.153,23.161L48.17,261.592c.251,12.541-9.261,22.5-21.245,22.253s-21.9-10.62-22.153-23.161L0,22.258C-.246,9.717,9.266-.246,21.25,0Z" transform="translate(101.723 13.379) rotate(21)" fill="#fff"/>
-      <path id="Path_29" data-name="Path 29" d="M23.181.005C36.255.279,47.074,11.591,47.348,25.272l4.685,234.3c.274,13.681-10.1,24.55-23.176,24.276S4.964,272.26,4.69,258.579L.005,24.281C-.268,10.6,10.108-.268,23.181.005Z" transform="translate(353.92 11.613) rotate(21)" fill="#fff"/>
-      <path id="Path_30" data-name="Path 30" d="M31.306.01C43.465-.351,53.03,9.382,52.669,21.747L44.042,317.906c-.36,12.366-10.509,22.682-22.668,23.042S-.35,331.576.01,319.211L8.637,23.052C9,10.686,19.147.37,31.306.01Z" transform="translate(35.134 35.644) rotate(-37)" fill="#fff"/>
-      <path id="Path_31" data-name="Path 31" d="M31.306.01C43.465-.351,53.03,9.382,52.669,21.747L44.042,317.906c-.36,12.366-10.509,22.682-22.668,23.042S-.35,331.576.01,319.211L8.637,23.052C9,10.686,19.147.37,31.306.01Z" transform="translate(118.3 31.703) rotate(-37)" fill="#fff"/>
-      <path id="Path_32" data-name="Path 32" d="M21.25,0c11.984.251,21.9,10.62,22.153,23.161L48.17,261.592c.251,12.541-9.261,22.5-21.245,22.253s-21.9-10.62-22.153-23.161L0,22.258C-.246,9.717,9.266-.246,21.25,0Z" transform="translate(184.889 9.438) rotate(21)" fill="#fff"/>
-      <path id="Path_33" data-name="Path 33" d="M23.181.005C36.255.279,47.074,11.591,47.348,25.272l4.685,234.3c.274,13.681-10.1,24.55-23.176,24.276S4.964,272.26,4.69,258.579L.005,24.281C-.268,10.6,10.108-.268,23.181.005Z" transform="translate(270.754 15.554) rotate(21)" fill="#fff"/>
+    <g transform="matrix(0.71, 0.71, -0.71, 0.71, 2241.25, 1202.25)" filter="url(#Ellipse_3)">
+      <circle id="Ellipse_3-2" data-name="Ellipse 3" cx="38.5" cy="38.5" r="38.5" transform="translate(368.45 138.02) rotate(-46)" fill="#f66b0e"/>
+    </g>
+    <g transform="matrix(0.71, 0.71, -0.71, 0.71, 2241.25, 1202.25)" filter="url(#Ellipse_4)">
+      <circle id="Ellipse_4-2" data-name="Ellipse 4" cx="38.5" cy="38.5" r="38.5" transform="translate(289.97 557.34) rotate(-46)" fill="#f66b0e"/>
+    </g>
+    <g transform="matrix(0.71, 0.71, -0.71, 0.71, 2241.25, 1202.25)" filter="url(#Ellipse_5)">
+      <ellipse id="Ellipse_5-2" data-name="Ellipse 5" cx="19.25" cy="19.25" rx="19.25" ry="19.25" transform="translate(317.19 556.86) rotate(-46)" fill="#fdfdfd"/>
+    </g>
+    <g transform="matrix(0.71, 0.71, -0.71, 0.71, 2241.25, 1202.25)" filter="url(#Ellipse_6)">
+      <ellipse id="Ellipse_6-2" data-name="Ellipse 6" cx="19.25" cy="19.25" rx="19.25" ry="19.25" transform="translate(395.67 137.55) rotate(-46)" fill="#fdfdfd"/>
     </g>
   </g>
 </svg>
