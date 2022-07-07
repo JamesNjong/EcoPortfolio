@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>  
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Hey, I'm James J. Njong, and I am a versatile problem solver who helps people and organizations set and achieve audacious goals, through problem solving across three strategic nodes of their value chain." />
-    <meta name="author" content="James Njong" />
+    <meta name="author" content="James J. Njong" />
     <meta name="generator" content="Jamzy 0.88.1" />
   <title>James J. Njong</title>
 
@@ -13,7 +13,7 @@
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <!-- Custome style sheet-->
-  <link rel="stylesheet" href="./sass/base.css">
+  <link rel="stylesheet" href="./Styles/defaults.css">
 
 
   <!--Linkedin Tags following the OGP-->
@@ -24,20 +24,20 @@
 </head>
 <body>
 
-<header class="header-content">
+<div class="space-bar"></div>
+<header class="header-content animate glow">
   <div class="bucket">
     
     <div class="header-data-basket">
       <!-- Brand -->
-          <div class="brand d-lg-block d-none">
-            <div><img src="./resources/brand/logo-light.svg" width="40"  alt="name-logo" class="img-fluid brand-img"> </div>
-            <p class="text-name d-none">Njong</p>
-          </div>
+      <div class="brand">
+        <div><img src="./resources/Icons/brand.svg" width="40"  alt="name-logo" class="img-fluid brand-img"> </div>
+      </div>
 
-        <nav class="navbar navbar-expand-md navbar-light">
+      <nav class="navbar navbar-expand-md navbar-light">
 
-          <!-- Toggler/collapsable Button -->
-          <button class="navbar-toggler collapsed d-flex d-lg-none d-md-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- Toggler/collapsable Button -->
+      <button class="navbar-toggler collapsed d-flex d-lg-none d-md-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                               
               <span class="toggler-icon top-bar"></span>
                               
@@ -45,775 +45,407 @@
                               
               <span class="toggler-icon bottom-bar"></span>
                           
-          </button>
+      </button>
 
-          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
 
-              <ul class="navbar-nav  justify-content-end align-items-md-end">
+      <ul class="navbar-nav  justify-content-end align-items-md-end">
                                   
-                  <li class="nav-item " ><a onclick="highlighter(event)" href="#home" class="nav-link active-item px-2" >Home <a></li>
+        <li class="nav-item " ><a onclick="highlighter(event)" href="#home" class="nav-link active-item px-2" >Home <a></li>
 
-                  <li class="nav-item" ><a onclick="highlighter(event)" href="#services" class="nav-link px-2" >Services <a></li>
+        <li class="nav-item" ><a onclick="highlighter(event)" href="#services" class="nav-link px-2" >Services <a></li>
 
-                  <li class="nav-item" ><a onclick="highlighter(event)" href="#projects" class="nav-link px-2">Projects <a></li>
+        <li class="nav-item" ><a onclick="highlighter(event)" href="#features" class="nav-link px-2">Features <a></li>
 
-                  <li class="nav-item" ><a onclick="highlighter(event)" href="about.html" class="nav-link px-2">About <a></li>
+        <li class="nav-item" ><a onclick="highlighter(event)" href="#portfolio" class="nav-link px-2">Portfolio <a></li>
 
+        <li class="nav-item dropdown" >
+          <a onclick="highlighter(event)" href="#about" class="nav-link px-2">About  
+        </a> 
+        </li>
 
-                  <li class="nav-item d-none" ><a onclick="highlighter(event)" href="#testimonials" class="nav-link px-2">Testimonials</a></li> 
+        <li class="nav-item " ><a onclick="highlighter(event)" href="#faq" class="nav-link px-2">FAQs</a></li>
+
+        <li class="nav-item d-lg-none d-block" ><a onclick="highlighter(event)" href="#contacts" class="nav-link px-2">Contact</a></li>  
                                   
-              </ul>
+      </ul>
                 
-          </div> 
+    </div> 
 
-          <div class="button_accent d-lg-inline-block"><a href="#contact">Contact</a></div> 
+    <div class="buttonPrimary d-lg-block d-none"><a href="#contacts">Contact</a></div> 
       </nav>
 
-      <!-- Navbar links -->
-
-    </div>
+  <!-- Navbar links -->
 
   </div>
-</header>  
+  </div>
+</header> 
 
 <main>
-  <div class="space-bar"><span></span></div>
 
-  <section class="home flex-column-center" id="home">
-    <div class="bucket">
-        
-        <div class="home-data-basket">  
+<section class="home" id="home">
 
-          <div class="hdb-left">             
-              <h1>
-                <p class="display-4 fw-bold text-tag-name ">Beyond problem solving,</p> 
-              </h1>    
-              <p class="text-tag-problem">build a bridge to the audacious goals you've set.</p> 
-              <p class="text-tag-pitch">I help people and organizations take advantage of the chaos of everyday business, to build truly rewarding strategies, frontend web or mobile applications, and MEAL systems that help them edge closer to the targets that matter most.</p>
-                                  
-              <div class="home_buttons "> 
-                <span class="button_primary "><a href="#services">Learn more</a></span>  
-              </div> 
+<div class="bucket">
+ <div class="home_data_basket flexRowColumn">
+  <div class="animately slide home-text major-div"> 
+   <h1 class="magisho">Beyond problem solving,</h1>
+   <h5>I help organizations achieve audacious goals, in software development, quantitative analysis and business development.</h5>
 
-          </div>
+   <div class="flexRowMaintain">
 
-          <div class="hdb-right">
-            <img src="./resources/images/profile_home_page.png" alt="problem solvers and others" class="img-fluid hdb-right-img">
-          </div>
-
-        </div>
-
-        <div class="home-feature-basket">
-
-          <div class="home-feature-item">
-            <p class="feature-head">Eloquent</p>
-            <p class="feature-description">Get ahead of the rest by adding an effective communicator to your team, and fast tracking communication across all internal and external stakeholder groups.</p>
-          </div>
-
-          <div class="home-feature-item">
-            <p class="feature-head">Versatile</p>
-            <p class="feature-description">For the price of one,  get talent that wears many hearts with unquestionable excellence on any task, from business development to Frontend web and android development.</p>
-          </div>
-
-          <div class="home-feature-item">
-            <p class="feature-head">Proactive</p>
-            <p class="feature-description">Enhance your value chain, with a problem solver who can anticipate challenges and set solution wheels in motion before the rest wake up.</p>
-          </div>
-
-        </div>
-
+    <div class="learnmore buttonSecondary my-4">
+     <a href="#services">Learn More</a>
     </div>
-  </section>
 
-<!-- Problem solving banner -->
-  <div class="banner-section banner-problem">
-    <div class="bucket">
-      <div class="banner-problem-basket">
-        <h2 >problem solving is two things, goal and strategy</h2>
-        
-        <p>For every problem, I employ a three part framework that breaks the problem into the objectives, the key results and then proceed to set the strategy. This allows me to remove ambiguity from the problem case definitions, focus on exactly what we want to achieve, and underline what our non-negotiable outcomes are. </p>
-
-        <span class="button_accent"><a href="./problemsolving/problem.html">Learn more</a></span> 
-      </div>
-    </div>
+    <a href="#">Download Resume</a>
+   </div>
   </div>
 
-  
-  <section class="products" id="services">
-
-    <div class="bucket">
-
-      <div class="section-appeal"> 
-          <h5 class="section-tag text-centr">problem solving, is building bridges</h5>
-          <p class="section_pitch text-center">with one hire, get expert level help in solving problems across multiple teams, and ensure that across all teams, solutions are optimally aligned with your corporate strategy.</p> 
-
-        </div>
-
-      <div class="servicelist-basket">
-
-        
-        <!--Business Development-->
-        <div class="service-item-content flex-row-btn">
-          <div class="service-content-img">
-            <img src="./resources/illustrations/Business.svg" width="500" alt="android svg from storyset" class="img-fluid img-serv">
-          </div>
-          <div class="service-content-data p-1">
-            <p class="skill minor">Business Development</p> 
-            <p class="service-item-text">Build strategic partnerships and support the activities and initiatives that help you and your team get to the targets you've set.</p>
-            <a href="#" class="learn_more">Learn More</a>
-          </div>
-        </div>
-
-        <!--Android Development-->
-        <div class="service-item-content flex-row-btn">
-          <div class="service-content-img">
-            <img src="./resources/illustrations/Analytics.svg" width="500" alt="android svg from storyset" class="img-fluid img-serv">
-          </div>          
-          <div class="service-content-data p-1">
-            <p class="skill minor">Quantitative Analysis</p> 
-            <p class="service-item-text">Get actionable insights from your data, and throw a cherry on top, with pitch perfect storytelling.</p>
-            <a href="#" class="learn_more">Learn More</a>
-          </div>
-        </div>
-
-        <!-- Frontend web development -->
-        <div class="service-item-content flex-row-btn">
-          <div class="service-content-img">
-            <img src="./resources/illustrations/Web.svg" width="500" alt="android svg from storyset" class="img-fluid img-serv">
-          </div>
-          
-          <div class="service-content-data p-1">
-            <p class="skill minor">Frontend Web and Android Development</p> 
-            <p class="service-item-text">Get help developing frontend web and android applications that help your organization or its clients set and achieve their goals.</p>
-            <a href="#" class="learn_more">Learn More</a>
-          </div>
-        </div>
-
-
-
-        <!--Project Management-->
-        <div class="service-item-content flex-row-btn">
-          <div class="service-content-img">
-            <img src="./resources/illustrations/Management.svg" width="500" alt="android svg from storyset" class="img-fluid img-serv">
-          </div>
-          <div class="service-content-data p-1">
-            <p class="skill minor">Project  Management</p> 
-            <p class="service-item-text">Get help building MEAL systems that support timely project delivery and help you cut wasteful spending by anticipating and solving problems.</p>
-            <a href="#" class="learn_more">Learn More</a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <section class="projects" id="projects">
-    <div class="bucket">
-      <div class="project-data-basket "> 
-        <div class="pdb-left flex-column-center">   
-          <p id="project-line" >problem solving is practice </p>
-
-          <p id="project-para px-4">and here is why I will have a head start when I take on your challenges. </p>
-        </div>
-
-        <div class="project-tabbed">
-          <div class="project-tabs flex-column-start">
-            <ul class="project-tab-style" role="tablist">
-                
-              <li class="project-tabs__tab project-tab__tab--selected links" role="tab" id="project-tabs-0"  tabindex="0" onclick="openPortTab(event, 'project-tabs-web')" ><span id="frontend_span">Frontend</span> Web </li>
-                                                                          
-              <li class="project-tabs__tab links" role="tab" id="project-tabs-1" aria-selected="false" aria-disabled="false" aria-controls="project-tabs-1" data-rttab="true" onclick="openPortTab(event, 'project-tabs-android')">Android</li>
-                                                                          
-              <li class="project-tabs__tab links" role="tab" id="project-tabs-2" aria-selected="false" aria-disabled="false" aria-controls="project-tabs-2" data-rttab="true" onclick="openPortTab(event, 'project-tabs-analytics')">Analytics</li>
-                                                                          
-            </ul>
-            
-            <!-- Content for tabs: Frontend -->
-            <div class="project-tabs__tab-panel project-tabs__tab-panel--selected my-3" role="tabpanel" id="project-tabs-web" aria-labelledby="port-tabs-0">
-
-            <div class="single-project-content">
-
-            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
-                
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Dropstori</h5>
-                <p class="project-description">Get a look at how I built this static multipage website for Dropstori. From design to development, and the challenges around copy writing. </p>
-
-                <span class="button_project"><a href="./projects/web/dropstori.html">View Details</a></span>
-
-              </div>
-
-            </div> 
-
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Alianate</h5>
-                <p class="project-description">A dark themed space tourism website designed for the pleasure of dark themes, as part of a series of frontend mentor challenges.</p>
-
-                <span class="button_project"><a href="./projects/web/alianate.html">View Details</a></span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-            
-                <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Portfolio</h5>
-                <p class="project-description">This website you are looking at, yeah it was a lot to think through to get it here. Get behind the scenes on how I picked colors, and many other design choices I made.</p>
-
-                <span class="button_project"><a href="./projects/web/portfolio.html">View Details</a></span>
-
-                </div>
-
-            </div>
-
-            <div class="col">
-            
-              <div class="port-card ">
-
-                  <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                  <h5 class="project-title">Shed96</h5>
-                  <p class="project-description">This is a dynamic e-commerce site built with React. Its the go to shoe shop if sneakers are your thing, but lets see how it came to be.</p>
-
-                  <span class="button_project"><a href="./projects/web/shed96.html">View Details</a></span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Convergent</h5>
-                <p class="project-description">There is always a place to use mathematics once you have learnt it. Convergent is a React project that helps users explore these applications. See how I made it.</p>
-
-                <span class="button_project"><a href="./projects/web/convergent.html">View Details</a></span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img" id="closedImage">
-                <h5 class="project-title">Frontdesk</h5>
-                <p class="project-description">Come with me, lets see how I took these practice projects from frontend mentor and turned them into one fun React site.</p>
-
-                <span class="button_project"><a href="./projects/web/frontdesk.html">View Details</a></span>
-
-              </div>
-
-            </div>
-
-            </div>
-
-            </div>
-            
-            <!-- end of single port content (Frontend)-->        
-            </div>
-  
-            <!-- Content for tabs: Android -->
-            <div class="project-tabs__tab-panel my-3" role="tabpanel" id="project-tabs-android" aria-labelledby="project-tabs-1">
-
-            <div class="single-project-content">
-
-            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
-                
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Lotum</h5>
-                <p class="project-description">Text messaging is old fashioned, but we still text. This android text messenger doesn't bring the fun back, but it  blocks out the providers messages.</p>
-
-                <span class="button_project"><a href="./projects/mobile/lotum.html">View Details</a></span>
-
-              </div>
-
-            </div> 
-
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Jinyuy</h5>
-                <p class="project-description">Till we did this, bibles were just one look boring apps. We made them customizable, and far usable.</p>
-
-                <span class="button_project"><a href="./projects/mobile/jinyuy.html">View Details</a></span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-            
-                <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Youkaris</h5>
-                <p class="project-description">Everyday catholics need a space to go find info on their faith, and to socialize with like minds. Youkaris gives them this, and now you can findout how I made it.</p>
-
-                <span class="button_project"><a href="./projects/mobile/youkaris.html">View Details</a></span>
-
-                </div>
-
-            </div>
-
-            <div class="col">
-            
-              <div class="port-card ">
-
-                  <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                  <h5 class="project-title">Dataly</h5>
-                  <p class="project-description">Conducting surveys online is a faster way to get data, but what we have for this does not fit the needs of all clients. Checkout how I solved this with Dataly</p>
-
-                <span class="button_project"><a href="./projects/mobile/dataly.html">View Details</a></span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">MoshTings</h5>
-                <p class="project-description">What if you could collect data on your habits, imagine how much you could learn about what makes you function better.</p>
-
-                <span class="button_project"><a href="./projects/mobile/moshtings.html">View Details</a></span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Shed96</h5>
-                <p class="project-description">This is a mobile e-commerce store, we sell sneakers but we designed the app to help you find the best fit. Checkout what we did, and how we did it.</p>
-
-                <span class="button_project"><a href="./projects/mobile/shed96.html">View Details</a></span>
-
-              </div>
-
-            </div>
-
-            </div>
-
-            </div>
-            <!-- end of single port content (Android)-->        
-
-            </div>
-
-
-
-            <!-- Content for tabs: Analytics -->
-            <div class="project-tabs__tab-panel my-3" role="tabpanel" id="project-tabs-analytics" aria-labelledby="project-tabs-1">
-
-            <div class="single-project-content">
-
-            <div class="row row-cols-1 row-cols-md-3 row-cols-xl-3 g-3 academics justify-content-center align-items-center">
-                
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Price Forecast</h5>
-                <p class="project-description">Let us use linear regression and some other techniques to predict use car prices. Read our feedback and see if it appeals to you.</p>
-
-                <span class="button_project"><a href="./projects/analytics/priceforcast.html">View Details</a></span>
-
-              </div>
-
-            </div> 
-
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Credit Scoring</h5>
-                <p class="project-description">Who should get a loan and who should not. Let's see how basic quantitative tools can help finance institutions to make these decisions.</p>
-
-                <span class="button_project"><a href="./projects/analytics/creditscoring.html">View Details</a></span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-            
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Olympics</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
-
-                <span class="button_project"><a href="./projects/analytics/olympics.html">View Details</a></span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-            
-              <div class="port-card ">
-
-                  <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                  <h5 class="project-title">Weather Forecast</h5>
-                  <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
-
-                <span class="button_project"><a href="./projects/analytics/weatherforecast.html">View Details</a></span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">Mortgage Applications</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
-
-                <span class="button_project"><a href="./projects/analytics/mortgage.html">View Details</a></span>
-
-              </div>
-
-            </div>
-
-            <div class="col">
-
-              <div class="port-card ">
-                    
-                <img src="./resources/icons/closed_project.svg" width="34px" alt="" class="img-fluid project-img"> 
-                <h5 class="project-title">College Output</h5>
-                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores similique repudiandae, nulla minus necessitatibus aperiam sint eum eaque quidem quibusdam.</p>
-
-                <span class="button_project"><a href="./projects/analytics/college.html">View Details</a></span>
-
-              </div>
-
-            </div>
-
-            </div>
-
-            </div>
-            <!-- end of single port content (Analytics)-->        
-
-            </div>   
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
- <!-- Problem solving banner -->
-  <div class="banner-section banner-tools d-none">
-    <div class="bucket">
-      <div class="banner-tools-basket">
-        <p class="tag">problem solving is endless learning</p>
-        <p id="tools-para">here are the tools and systems that help me get the job done. They add to my tongue and my mind, and together we enhance value creation</p>
-
-        <div class="tool-grid"> 
-            <span class="tg-item">Android Studio</span> <span class="tg-item">Java</span> <span class="tg-item">Kotlin</span> <span class="tg-item">Firebase</span> <span class="tg-item">HTML</span> <span class="tg-item">CSS</span> 
-            <span class="tg-item">Sass</span> <span class="tg-item">Bootstrap</span> <span class="tg-item">JavaScript</span> <span class="tg-item">React.JS</span> <span class="tg-item">Node Js</span> <span class="tg-item">Git</span> <span class="tg-item">GitHub</span> 
-           
-            <span class="tg-item">R + RStudio</span> <span class="tg-item">Python</span> <span class="tg-item">Excel</span> <span class="tg-item">SQL</span> <span class="tg-item">PowerBI</span> 
-            <span class="tg-item">Machine Learning</span> 
-
-          <span class="tg-item">Office365</span> <span class="tg-item">GSuit</span> <span class="tg-item">Asana</span> <span class="tg-item">Kaban</span> <span class="tg-item">Agile</span> 
-            <span class="tg-item">Scrum</span>
-        </div>
-         
-      </div>
-    </div>
+  <div class="image-container animately spin major-div">
+   <img src="./resources/home_header.png" alt="home " class="img-fluid">
   </div>
 
+
+ </div>
+</div>
  
-  <section class="Testimonials d-none" id="testimonials">
-    <div class="bucket">
-      <div class="testim-data-basket">
-        <p class="section-label d-none">Testimonials</p>
-        <h2 class="section-tag display-6">problem solving is people and their feedback</h2>
-        <p class="testim-call-to-view ">and here is some feedback from the people I have worked with over the years.</p>
-
-        <div class="testim-tabs">
-          <!-- First row of testimonials-->
-
-          <div class="testim-tab-row" id="testim-tabs-row-1">
-
-              <div class="testim-tab-row-content slide_in_left">
-
-                <div class="testim-testim card shadow-sm rounded px-3">
-                  
-                  <div class="tt-body">
-                    <p class="tt-body-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure expedita accusantium laboriosam debitis soluta totam id aut nemo, animi cupiditate iste aspernatur accusamus rem alias molestias! Ullam natus nulla, nam culpa labore dolores iste. Neque nobis maxime laboriosam. Voluptate sequi ab iure, cumque placeat esse exercitationem. Quisquam maxime debitis dolorem.</p>
-                    <hr class="col-8">
-                  </div>
-
-                  <div class="tt-header "> 
-                    <div class="tt-header-details">
-                      <p class="tt-header-details-name">John Doe</p>
-                      <small class="tt-header-details-affiliate">Lorem ipsum dolor sit.</small>
-                    </div>
-
-                  </div>
-
-
-
-                </div>
-
-                <div class="testim-testim card shadow-sm rounded px-3">
-                  
-                  <div class="tt-body">
-                    <p class="tt-body-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure expedita accusantium laboriosam debitis soluta totam id aut nemo, animi cupiditate iste aspernatur accusamus rem alias molestias! Ullam natus nulla, nam culpa labore dolores iste. Neque nobis maxime laboriosam. Voluptate sequi ab iure, cumque placeat esse exercitationem. Quisquam maxime debitis dolorem.</p>
-                    <hr class="col-8">
-                  </div>
-
-                  <div class="tt-header "> 
-                    <div class="tt-header-details">
-                      <p class="tt-header-details-name">Ann Donovan</p>
-                      <small class="tt-header-details-affiliate">Lorem ipsum dolor sit.</small>
-                    </div>
-
-                  </div>
-
-
-
-                </div>
-
-                <div class="testim-testim card shadow-sm rounded px-3">
-                  
-                  <div class="tt-body">
-                    <p class="tt-body-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure expedita accusantium laboriosam debitis soluta totam id aut nemo, animi cupiditate iste aspernatur accusamus rem alias molestias! Ullam natus nulla, nam culpa labore dolores iste. Neque nobis maxime laboriosam. Voluptate sequi ab iure, cumque placeat esse exercitationem. Quisquam maxime debitis dolorem.</p>
-                    <hr class="col-8">
-                  </div>
-
-                  <div class="tt-header "> 
-                    <div class="tt-header-details">
-                      <p class="tt-header-details-name">Dr. Kenndy Johnson</p>
-                      <small class="tt-header-details-affiliate">Lorem ipsum dolor sit.</small>
-                    </div>
-
-                  </div>
-
-
-
-                </div>
-              </div>
-
-          </div>
-
-
-          <!--Testimonial Row 2-->
-          <div class="testim-tab-row" id="testim-tabs-row-2">
-
-            <div class="testim-tab-row-content slide_in_left">
-
-                <div class="testim-testim card shadow-sm rounded px-3">
-                  
-                  <div class="tt-body">
-                    <p class="tt-body-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure expedita accusantium laboriosam debitis soluta totam id aut nemo, animi cupiditate iste aspernatur accusamus rem alias molestias! Ullam natus nulla, nam culpa labore dolores iste. Neque nobis maxime laboriosam. Voluptate sequi ab iure, cumque placeat esse exercitationem. Quisquam maxime debitis dolorem.</p>
-                    <hr class="col-8">
-                  </div>
-
-                  <div class="tt-header "> 
-                    <div class="tt-header-details">
-                      <p class="tt-header-details-name">Peter Drury</p>
-                      <small class="tt-header-details-affiliate">Lorem ipsum dolor sit.</small>
-                    </div>
-
-                  </div>
-
-
-
-                </div>
-
-                <div class="testim-testim card shadow-sm rounded px-3">
-                  
-                  <div class="tt-body">
-                    <p class="tt-body-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure expedita accusantium laboriosam debitis soluta totam id aut nemo, animi cupiditate iste aspernatur accusamus rem alias molestias! Ullam natus nulla, nam culpa labore dolores iste. Neque nobis maxime laboriosam. Voluptate sequi ab iure, cumque placeat esse exercitationem. Quisquam maxime debitis dolorem.</p>
-                    <hr class="col-8">
-                  </div>
-
-                  <div class="tt-header "> 
-                    <div class="tt-header-details">
-                      <p class="tt-header-details-name">Evarestus Ngala</p>
-                      <small class="tt-header-details-affiliate">Lorem ipsum dolor sit.</small>
-                    </div>
-
-                  </div>
-
-
-
-                </div>
-
-                <div class="testim-testim card shadow-sm rounded px-3">
-                  
-                  <div class="tt-body">
-                    <p class="tt-body-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure expedita accusantium laboriosam debitis soluta totam id aut nemo, animi cupiditate iste aspernatur accusamus rem alias molestias! Ullam natus nulla, nam culpa labore dolores iste. Neque nobis maxime laboriosam. Voluptate sequi ab iure, cumque placeat esse exercitationem. Quisquam maxime debitis dolorem.</p>
-                    <hr class="col-8">
-                  </div>
-
-                  <div class="tt-header "> 
-                    <div class="tt-header-details">
-                      <p class="tt-header-details-name">Paul Mbiydzenyuy</p>
-                      <small class="tt-header-details-affiliate">Lorem ipsum dolor sit.</small>
-                    </div>
-
-                  </div>
-
-
-
-                </div>
-            </div>
-
-          </div>
-
-          <!--Testimonial Row 3-->
-          <div class="testim-tab-row" id="testim-tabs-row-3">
-
-              <div class="testim-tab-row-content slide_in_left">
-
-                <div class="testim-testim card shadow-sm rounded px-3">
-                  
-                  <div class="tt-body">
-                    <p class="tt-body-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure expedita accusantium laboriosam debitis soluta totam id aut nemo, animi cupiditate iste aspernatur accusamus rem alias molestias! Ullam natus nulla, nam culpa labore dolores iste. Neque nobis maxime laboriosam. Voluptate sequi ab iure, cumque placeat esse exercitationem. Quisquam maxime debitis dolorem.</p>
-                    <hr class="col-8">
-                  </div>
-
-                  <div class="tt-header "> 
-                    <div class="tt-header-details">
-                      <p class="tt-header-details-name">John Doe</p>
-                      <small class="tt-header-details-affiliate">Lorem ipsum dolor sit.</small>
-                    </div>
-
-                  </div>
-
-
-
-                </div>
-
-                <div class="testim-testim card shadow-sm rounded px-3">
-                  
-                  <div class="tt-body">
-                    <p class="tt-body-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure expedita accusantium laboriosam debitis soluta totam id aut nemo, animi cupiditate iste aspernatur accusamus rem alias molestias! Ullam natus nulla, nam culpa labore dolores iste. Neque nobis maxime laboriosam. Voluptate sequi ab iure, cumque placeat esse exercitationem. Quisquam maxime debitis dolorem.</p>
-                    <hr class="col-8">
-                  </div>
-
-                  <div class="tt-header "> 
-                    <div class="tt-header-details">
-                      <p class="tt-header-details-name">John Doe</p>
-                      <small class="tt-header-details-affiliate">Lorem ipsum dolor sit.</small>
-                    </div>
-
-                  </div>
-
-
-
-                </div>
-
-                <div class="testim-testim card shadow-sm rounded px-3">
-                  
-                  <div class="tt-body">
-                    <p class="tt-body-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure expedita accusantium laboriosam debitis soluta totam id aut nemo, animi cupiditate iste aspernatur accusamus rem alias molestias! Ullam natus nulla, nam culpa labore dolores iste. Neque nobis maxime laboriosam. Voluptate sequi ab iure, cumque placeat esse exercitationem. Quisquam maxime debitis dolorem.</p>
-                    <hr class="col-8">
-                  </div>
-
-                  <div class="tt-header "> 
-                    <div class="tt-header-details">
-                      <p class="tt-header-details-name">John Doe</p>
-                      <small class="tt-header-details-affiliate">Lorem ipsum dolor sit.</small>
-                    </div>
-
-                  </div>
-
-
-
-                </div>
-              </div>
-
-          </div>
-
-
-
-          <ul class="testim-tab-list" role="tablist">
-                
-              <li class="testim-tabs__tab testim-tab__tab--selected links" role="tab" id="testim-tabs-0"  tabindex="0" onclick="openTestimRow(event, 'testim-tabs-row-1')" ><span id="row-1">1</span>  </li>
-                                                                          
-              <li class="testim-tabs__tab  links" role="tab" id="testim-tabs-1"  tabindex="1" onclick="openTestimRow(event, 'testim-tabs-row-2')" ><span id="row-1">2</span>  </li>
-
-              <li class="testim-tabs__tab links" role="tab" id="testim-tabs-2"  tabindex="2" onclick="openTestimRow(event, 'testim-tabs-row-3')" ><span id="row-1">3</span>  </li>
-                                                                          
-          </ul>
+</section>
+
+
+
+<section class="service-content" id="services">
+
+ <div class="bucket">
+  <div class="service-data-basket">
+
+   <div class="service-item flexRowColumnReversed">
+    <div class="image-container animately drop major-div">
+     <img src="./resources/home_quant.png" alt="home quant image" class="img-fluid">
+    </div>
+
+    <div class="animately slide major-div py-tab">
+      <p class="service-item-hch">How can help ? </p>
+      <h2 class="magisho">Quantitative Analysis <span class="colored">and</span> Business Development.
+      </h2>
+      <p>Through building market linkages, or helping you make sense of the data that holds insights to the decisions that will drive the outcomes that matter most for your business, I will help set you apart from the rest. And because I can self direct and have a solid base in project management, you can focus on bigger things while I handle these. </p>
+    </div>
+   </div>
+
+   <div class="service-item  flexRowColumn ">
+
+    <div class="animately slide delay-2 major-div py-tab">
+      <p class="service-item-hch">How can help ? </p>
+      <h2 class="magisho">
+       Fullstack Web<span class="colored"> and</span> Android Development.
+      </h2>
+      <p>Beyond writing code in several programming languages, you will be able to accelerate development on both you web and mobile teams through a developer who can translate with much ease business problems into programmable technical solutions, and speed up how you navigate the ambiguity that exist in solution design.</p>
+    </div>
+    <div class="image-container animately splat major-div">
+     <img src="./resources/home_dev.png" alt="home quant image" class="img-fluid">
+    </div> 
+   </div>
+
+  </div>
+ </div>
+
+</section>
+
+
+
+
+<section class="feature-content" id="features">
+ <div class="bucket">
+
+  <div class="feature-data-basket">
+   
+   <div class="feature_basket">
+ 
+   <div class="feature_grid"> 
+
+    <div class="feature_tag animately glow">
+     <h2 class="whyme magisho"><span class="colored">Why</span> go with <span class="colored">me</span> ?</h2>
+     <p>Outside getting the technical right, here are five more features that will make your experience of me mouth watering.</p>
+    </div>
+   <div class="feature_item animately delay-1" id="fi_versatile">
+    <h3 class="fi_title">Versatile Problem solving</h3>
+    <p class="fi_content">Imagine a problem solver who understands how to tackle challenges on both the business end and the technical end of your organization, and who can shift across at least five teams and still create value effortlessly.  </p>
+   </div>
+
+   <div class="feature_item animately delay-2" id="fi_partnerships">
+    <h3 class="fi_title">Experience in partnership development</h3>
+    <p class="fi_content">With over three years of experience building partnerships at AIMS, you will be getting talent that can identify and build the relations that help drive the outcomes you seek.</p>
+   </div>
+
+   <div class="feature_item animately delay-1" id="fi_procedural">
+    <h3 class="fi_title">Advanced procedural thinking</h3>
+    <p class="fi_content">Leaning on over ten years of graduate and postgraduate mathematics training, you be able to accelerate the way you develop programming solutions by leveraging my well formed ability to think procedurally, and stress test what we know.</p>
+   </div>
+
+   <div class="feature_item animately delay-3" id="fi_communication">
+    <h3 class="fi_title">Effective communication</h3>
+    <p class="fi_content">Imagine what you can do across multiple teams with my ability to effectively communicate technical details to a non-technical audience, and break down complex stuff to bite size pieces everyone can swallow.</p>
+   </div>
+
+   <div class="feature_item animately delay-1" id="fi_ambiguity">
+    <h3 class="fi_title">Ease with ambiguity</h3>
+    <p class="fi_content">Before we think of what a feasible solution to a problem is, we need to understand the problem, and this takes even more time than designing the solution. The extra value you get with me, is that I can make this faster.</p>
+   </div>
+
+   </div>
+  </div>
+ </div>
+</section>
+
+
+<div class="cto">
+  <div class="bucket">
+      
+   <div class="howwesolve">
+    <div class="flexRowColumn ">
+    <div class="animately pop delay-1 image-container major-div">
+     <img src="./resources/home_problems.png" alt="home quant image" class="img-fluid">
+    </div>
+
+    <div class="animately slide delay-2 major-div">
+      <h2 class="magisho">
+       <span class="colored">Problem solving</span> is two things : goal and strategy. 
+      </h2>
+      <p class="my-2">For every problem, I set the objectives, and the key results, then complete the road map to a sturdy solution with an outline of the strategy. <br><br>This allows me to remove ambiguity from the problem case definitions, focus on exactly what we want to achieve, and underline what our non-negotiable outcomes are.</p>
+
+      <div class="hws_action flexRowMaintain my-5">
+       <div>Want more ? </div> <div class="buttonSecondary"><a href="#contacts">Let's talk</a></div> 
+      </div>
+    </div>
+   </div>
+   </div>   
+  </div>
+</div>
+
+
+<section class="portfolio-content" id="portfolio">
+  <div class="bucket">
+  <div class="portfolio-data-basket">
+
+    <div class="pfb-header flexRowColumn">
+      <div class="pfb-header-left major-div">
+        <h2 class="magisho">Somethings I have built.</h2>
+        <p>Here are some personal projects I have worked on over the years, from frontend web and mobile through backend projects to a plethora of data analytics projects. </p>
+      </div>
+
+      <div class="pfb-header-right major-div">
+        <div class="pfb-header-right-categories flexRowMaintain">
+          <div class="cat-item  animately pop delay-1"><p class=" active-item">M</p></div>
+          <div class="cat-item  animately pop delay-3"><p>W</p></div>
+          <div class="cat-item  animately slide delay-3"><p>A</p></div>
+          <div class="cat-item  animately glow delay-4"><p>B</p></div>
         </div>
-
-      </div>
-
-    </div>
-  </section>
-
-<!-- Problem solving banner -->
-  <div class="banner-section banner-problem" id="about">
-    <div class="bucket">
-      <div class="banner-problem-basket">
-        <h2 >problem solving is a way of life</h2>
-        
-        <p>Hello ! My name is James Jr. Njong, and for the last ten years, I have done nothing but learn how to solve problems, and then moved on to use this knowledge in helping one of Africa's most vibrant post-graduate training programs to build the maket linkages it needs to improve student outcomes. </p>
-
-        <span class="button_accent"><a href=".about.html">Learn More</a></span> 
       </div>
     </div>
+    
+    <div class="pfd-mobile">
+          <div class="portfolio-list portfolio-mobile flexRowMaintain">
+      <div class="portfolio-item flexRowColumnReversed">
+        <div class="portfolio-inner-left major-div">
+          <small class="pil-type">ANDROID</small>
+          <h3 class="pil-title">Wallang</h3>
+          <p class="pil-description">This is a social media platform for android, built with Kotlin and Firebase.</p>
+          <div class="buttonOutline"><a href="#">View Project</a></div>
+        </div>
+        <div class="portfolio-inner-right major-div">
+          <img src="./resources/wallang_img_home.png" alt="product image" class="img img-holder pir-img">
+        </div>
+      </div>
+      <div class="portfolio-item flexRowColumnReversed">
+        <div class="portfolio-inner-left major-div">
+          <small class="pil-type">ANDROID</small>
+          <h3 class="pil-title">Bondool</h3>
+          <p class="pil-description">Bondool is a book search API built with Jetpack compose and the google books API.</p>
+          <div class="buttonOutline"><a href="#">View Project</a></div>
+        </div>
+        <div class="portfolio-inner-right major-div">
+          <img src="./resources/bondool_image_home.png" alt="product image" class="img img-holder pir-img">
+        </div>
+      </div> 
+      <div class="portfolio-item flexRowColumnReversed">
+        <div class="portfolio-inner-left major-div">
+          <small class="pil-type">ANDROID</small>
+          <h3 class="pil-title">PlantRoutine</h3>
+          <p class="pil-description">PlantRoutine is a system management platform for a termal power plant.</p>
+          <div class="buttonOutline"><a href="#">View Project</a></div>
+        </div>
+        <div class="portfolio-inner-right major-div">
+          <img src="./resources/eneo_project_home.png" alt="product image" class="img img-holder pir-img">
+        </div>
+      </div>      
+    </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="about-content" id="about">
+
+<div class="bucket">
+ <div class="about-data-basket">
+  <div class="flexRowColumnReversed">
+   <div class="about_snippet  animately glow delay-1 major-div">
+    <h6 class="section-lable">About Me</h6>
+    <h2 class="magisho">A mathematician made for business.</h2> 
+    <p>Primarily trained as a mathematician, I have learned how to leverage quantitative problem solving tools and methods from mathematics to create value within structured corporations and startups. Further, my social engagements and early career experiences have allowed me access to knowledge of management and leadership, which I am eager to bring aboard to teams with ambitions that encircle the world. </p>
+
+   <div class="flexRowMaintain abouttons">
+    <div>Not heard enough ?</div>
+    <div class="learnmore buttonPrimary">
+     <a href="./About/">Learn More</a>
+    </div>
+   </div>
   </div>
 
-  <section class="contact" id="contact">
-    <div class="bucket flex-column-center">
-      <div class="contact-data-basket flex-row-to-column-center"> 
-        <div class="cdb-left">
+  <div class="image-container major-div">
+   <img src="./resources/home_about.png" alt="home " class="img-fluid home_about_img">
+  </div>
+  </div>
+ </div>
+</div>
+
+</section>
+
+
+<section class="testimonials-content " id="testimonials"><div class="bucket"><div class="testimonial-data-basket">
+
+<div class="testim-talkbar">
+  <h2 class="magisho">A man is who <span class="colored">people say</span> he is.</h2>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil inventore, vero tempora est aspernatur ex laboriosam ducimus nostrum repudiandae iste.</p>
+</div>
+
+<div class="testimonial-scroll-container">
+  <div class="testim-grid">
+
+<div class="testim-item" id="ti-1">
+ <div class="testim-item-inner">
+ <h6 class="ti-name">John Akereme</h6>
+ <small class="ti-position">Managing Director, AIMS-Cameroon</small>
+ <hr class="col-6">
+
+ <small class="ti-words">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nostrum minus quia veniam beatae earum exercitationem ex, perspiciatis, dolorum tenetur corrupti nemo placeat fuga qui facilis et tempore dolorem, temporibus quas dignissimos ab tempora. Dolore sint provident cum dolorum. Maiores!</small>
+ </div>
+
+</div>
+
+<div class="testim-item animately pop delay-3" id="ti-2">
+ <div class="testim-item-inner">
+ <h6 class="ti-name">Pius Atangana</h6>
+ <small class="ti-position">Lorem ipsum dolor sit amet consectetur.</small>
+ <hr class="col-6">
+
+ <small class="ti-words">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nostrum minus quia veniam beatae earum exercitationem ex, perspiciatis, dolorum tenetur corrupti nemo placeat fuga qui facilis et tempore dolorem, temporibus quas dignissimos ab tempora. Dolore sint provident cum dolorum. Maiores!</small>
+ </div>
+
+</div>
+
+<div class="testim-item animately slide delay-1" id="ti-3">
+  <div class="testim-item-inner">
+    <h6 class="ti-name">David Sena</h6>
+    <small class="ti-position">Lorem ipsum dolor sit amet consectetur.</small>
+    <hr class="col-6">
+    <small class="ti-words">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nostrum minus quia veniam beatae earum exercitationem ex, perspiciatis, dolorum tenetur corrupti nemo placeat fuga qui facilis et tempore dolorem, temporibus quas dignissimos ab tempora. Dolore sint provident cum dolorum. Maiores!</small>
+  </div>
+
+</div>
+
+<div class="testim-item animately glow delay-2" id="ti-4">
+  <div class="testim-item-inner">
+    <h6 class="ti-name">Rockefeller</h6>
+    <small class="ti-position">Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
+    <hr class="col-6">
+   <small class="ti-words">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nostrum minus quia veniam beatae earum exercitationem ex, perspiciatis, dolorum tenetur corrupti nemo placeat fuga qui facilis et tempore dolorem, temporibus quas dignissimos ab tempora. Dolore sint provident cum dolorum. Maiores!</small>
+  </div>
+
+</div>
+
+<div class="testim-item animately slide delay-3" id="ti-5">
+ <div class="testim-item-inner">
+ <h6 class="ti-name">Virgil Van Bomel</h6>
+ <small class="ti-position">Lorem ipsum dolor sit.</small>
+ <hr class="col-6">
+
+ <small class="ti-words">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nostrum minus quia veniam beatae earum exercitationem ex, perspiciatis, dolorum tenetur corrupti nemo placeat fuga qui facilis et tempore dolorem, temporibus quas dignissimos ab tempora. Dolore sint provident cum dolorum. Maiores!</small>
+ </div>
+
+</div>
+
+<div class="testim-item animately blur delay-4" id="ti-6">
+ <div class="testim-item-inner">
+ <h6 class="ti-name">Minang Kongfred</h6>
+ <small class="ti-position">Lorem ipsum dolor sit amet.</small>
+ <hr class="col-6">
+
+ <small class="ti-words">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nostrum minus quia veniam beatae earum exercitationem ex, perspiciatis, dolorum tenetur corrupti nemo placeat fuga qui facilis et tempore dolorem, temporibus quas dignissimos ab tempora. Dolore sint provident cum dolorum. Maiores!</small>
+</div>
+ 
+
+</div>
+
+ </div></div></section>
+
+</div>
+
+<section class="faq-content" id="faq"><div class="bucket"><div class="faq-data-basket">
+ <h2 class="text-center magisho my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore accusantium ea obcaecati?</h2>
+ <div class="acordion-content">
+   <button class="accordion">What unique skills would you bring to our organization?</button> 
+  <div class="panel">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit architecto quos quas hic voluptas dolore distinctio aut vel consequatur? Officiis maxime repellendus aliquid corporis! Alias amet, repellat et maxime voluptatibus voluptatem accusantium fugit laudantium repellendus omnis quidem molestias optio aut tenetur, sunt, fuga laborum rem qui ipsa est possimus.</p>
+  </div>
+
+<button class="accordion">Do you have any leadership experience ?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae officiis veritatis non eligendi in sed quam, hic fugit esse est dolores eveniet maiores qui expedita, sequi cupiditate! Iste consectetur totam atque quidem recusandae consequatur blanditiis dolorem laborum magnam dignissimos, error labore ut reiciendis, porro suscipit sit dicta voluptate vero?</p>
+</div>
+
+<button class="accordion">Ours is a long-hours culture – is that a problem for you?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusamus, minima architecto facilis fugit quae quidem quibusdam? Odio culpa ratione, doloremque temporibus beatae vitae saepe magni debitis a officiis ex necessitatibus ea illo soluta, rem minima. Libero laudantium eos enim deserunt quod at tempore perspiciatis, nisi placeat quia aliquid voluptatibus!</p>
+</div>
+<button class="accordion">What is your greatest strength ?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusamus, minima architecto facilis fugit quae quidem quibusdam? Odio culpa ratione, doloremque temporibus beatae vitae saepe magni debitis a officiis ex necessitatibus ea illo soluta, rem minima. Libero laudantium eos enim deserunt quod at tempore perspiciatis, nisi placeat quia aliquid voluptatibus!</p>
+</div>
+
+
+<button class="accordion">How do you respond to authority?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusamus, minima architecto facilis fugit quae quidem quibusdam? Odio culpa ratione, doloremque temporibus beatae vitae saepe magni debitis a officiis ex necessitatibus ea illo soluta, rem minima. Libero laudantium eos enim deserunt quod at tempore perspiciatis, nisi placeat quia aliquid voluptatibus!</p>
+</div>
+
+ </div>
+
+</div></div></section> 
+
+
+<section class="contacts-content" id="contacts">
+ <div class="bucket">
+  <div class="contacts-data-basket flexRowColumn"> 
+
+    <div class="cdb-left major-div">
           <p class="contact-tag">Contact <br> <hr class="cdb-left-rule"> </p>
-          <p class="good-talk" >problem solving is good talk</p>
-          <p>every good conversation begins with a hello, and the person who cannot wait to talk says it first. So  here is my Hello! Hope you are well.</p> 
-        </div>
+          <p class="good-talk magisho" >Bridge the gap, and Break the ice.</p>
+          <p>Every good conversation begins with a hello, and the person who cannot wait to talk says it first. So  here is my Hello! Hope you are well.</p> 
 
-        <div class="cdb-right">
-          <div class="contact-form mb-5">
-            <div class="rounded shadow-lg p-4 card-image">
-              <div class="tag-forms flex-row-start">
+          <div class="contact_socials">
+           <a href="#" class="animately delay-4 pop"> <img src="./resources/Icons/Github.svg" width="30" alt="" class="img-fluid social_icon m-2"> </a>
+           <a href="#" class="animately delay-1 blur"> <img src="./resources/Icons/LinkedIN.svg" width="30" alt="" class="img-fluid social_icon m-2"> </a>
+           <a href="#" class="animately delay-2 slide"> <img src="./resources/Icons/Twitter.svg" width="30" alt="" class="img-fluid social_icon m-2"> </a>
+           <a href="#" class="animately delay-3 glow"> <img src="./resources/Icons/Facebook.svg" width="30" alt="" class="img-fluid social_icon m-2"> </a>
+           <a href="#" class="animately delay-2 pop"> <img src="./resources/Icons/Outlook.svg" width="30" alt="" class="img-fluid social_icon m-2"> </a>
+          </div>
+    </div>
 
-                <img src="./resources/icons/email.svg" alt="email svg" width="60" class="img-fluid text-center d-none"> 
-                <div class="flex-column-center">
-                  <h5 class="white-text">Bridge the gap, break the ice</h5>
-                  <p class="email-text"> <a href="mailto:hello@njongjames.com">hello@njongjames.com</a> </p></div>
-                </div>
-        
+    <div class="cdb-right major-div">
+          <div class="contact-form mb-5 animately glow">
+           <div class="tag-forms p-4 flex-row-start">
+               <p>Message Now</p>
               <form method="POST">
                 <div class="text-center p-4">
                   <div class="row">
@@ -828,85 +460,84 @@
 
                   <div class="row">
                     <label for="msg-boot">Message</label>
-                    <textarea id="msg-boot" class="message-boot form-control" rows="5" placeholder="I cannot wait to meet you, and to take on the world with you." required></textarea>
+                    <textarea id="msg-boot" class="message-boot form-control" rows="10" placeholder="I cannot wait to meet you, and to take on the world with you." required></textarea>
                   </div>
 
                   <!--button-->
                   <div class="row py-3 align-items-center">
-                    <button type="button" class="button_accent btn-send">Send</button>
+                    <button type="button" class="buttonSecondary btn-send">Send</button>
                   </div>
                 </div>
               </form>
             </div>
-          </div>
         </div>
 
-      </div>
-    </div>
-  </section>
+    </div> 
+ </div>
+</section>
+
+</main>
 
 
+<footer class="footer animate pop">
+ <div class="bucket"> <div class="foot-data-basket"><div class="foot-grid">
 
+  <div class="foot-left">
+   <img src="./resources/Icons/brand.svg" alt="james-j-njong-logo" class="img-fluid">
+   <h3 class="magisho">Beyond problem solving</h3>
 
- 
+   <div class="ft-left-socials">
+     <a href="#"> <img src="./resources/Icons/Github.svg" width="30" alt="" class="img-fluid social_icon m-2"> </a>
+     <a href="#"> <img src="./resources/Icons/LinkedIN.svg" width="30" alt="" class="img-fluid social_icon m-2"> </a>
+     <a href="#"> <img src="./resources/Icons/Twitter.svg" width="30" alt="" class="img-fluid social_icon m-2"> </a>
+     <a href="#"> <img src="./resources/Icons/Facebook.svg" width="30" alt="" class="img-fluid social_icon m-2"> </a>
+     <a href="#"> <img src="./resources/Icons/Outlook.svg" width="30" alt="" class="img-fluid social_icon m-2"> </a>
+   </div>
 
-
-
-</main> 
-
-
-
-<footer>
-  <div class="bucket">
-    <div class="foot-data-basket">
-      <div class="foot_wrapper">
-      <div class="ft_left">
-        <img src="./resources/brand/logo-dark.svg" width="100" alt="james njong logo" class="img-fluid ft_left_brand">
-      </div>
-      <div class="ft-center">
-
-        <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 g-2 justify-content-center align-items-center">
-          <div class="col"><a href="#home">Home</a></div> 
-          <div class="col"><a href="#services">Services</a></div> 
-          <div class="col"><a href="#about">About</a></div>
-
-          <div class="col"><a href="#background">Background</a></div> 
-          <div class="col"><a href="#projects">Projects</a></div>  
-           <div class="col"><a href="#testimonials">Testimonials</a></div> 
-          <div class="col"><a href="#contact">Contact</a></div>
-          <div class="col"><a href="#"></a></div> 
-        </div>
-        
-         
-      </div>
-      <div class="ft_left">
-        <a href="#home"><img src="./resources/icons/icon-arrow-down.svg" width="30" alt="icon up" class="img-fluid ft_left_brand"></a>
-      </div>
-    </div>
-    <div class="foot-signature">
-      <hr>
-        <div class="ft_center_icons flex-row-btn">
-        
-        <div class="signature">
-          <img src="./resources/icons/signature.png" width="130" alt="twitter icon" class="img-fluid ft_sig"> 
-          <p  class="text-center copy">© Copywrite 2022</p>
-        </div>
-        <div class="social-media"> 
-            <img src="./resources/icons/icon-twitter.svg" width="30" alt="twitter icon" class="img-fluid ft_left_brand ">
-
-            <img src="./resources/icons/icon-linkedin.svg" width="30" alt="linkedIn icon" class="img-fluid ft_left_brand">
-           
-            <img src="./resources/icons/icon-github.svg" width="30" alt="twitter icon" class="img-fluid ft_left_brand"> 
-          
-        </div>
-
-        </div>
-    </div>
-    </div>
+   <div class="ft-left-rights"><p  class="copy">© Copywrite njong2022</p></div>
   </div>
+
+  <div class="foot-center">
+   <div class="fc-navigation">
+    <h3>Navigation</h3>
+    <div class="fc-navigation-itemlist">
+    <p  class="fc-nav-list-item"><a href="">Home</a></p>
+    <p  class="fc-nav-list-item"><a href="#">Services</a></p>
+    <p  class="fc-nav-list-item"><a href="#">Features</a></p>
+    <p  class="fc-nav-list-item"><a href="#">Portfolio</a></li>      
+    </div>  
+   </div>
+   <div class="fc-about">
+    <h3>About</h3>
+    <div class="fc-about-itemlist">
+    <p  class="fc-about-list-item"><a href="#">Profile</a></p>
+    <p  class="fc-about-list-item"><a href="#">Experience</a></p>
+    <p  class="fc-about-list-item"><a href="#">Background</a></p>
+    <p  class="fc-about-list-item"><a href="#">Skills</a></li>
+    </div>
+
+   </div>
+  </div>
+
+  <div class="foot-right">
+   <div class="fc-services">
+    <h3>Services</h3>
+    <p  class="fc-service-list-item">Business Development</p>
+    <p  class="fc-service-list-item">Android App Development</p>
+    <p  class="fc-service-list-item">Data Analytics</p>
+    <p  class="fc-service-list-item">Financial Analysis</li>
+    <p  class="fc-service-list-item">Frontend Web Development</li>
+   </div>
+   <div class="fc-about">
+    <h3>Resources</h3>
+    <p  class="fc-about-list-item"><a href="">Resume</a></p>
+    <p  class="fc-about-list-item"><a href="#">After x and y</a></p>
+    <p  class="fc-about-list-item"><a href="#">Structured, Strategic and Painless</a></p> 
+   </div>
+  </div>  
+
+ </div> </div></div>
 </footer>
-
-
 
 
 
@@ -916,7 +547,7 @@
 
 
 <!-- Custom js file-->
-<script src="./javascript/script.js"></script> 
+<script src="script.js"></script> 
 
 </body>
 </html>

@@ -1,0 +1,22 @@
+@media only screen and(min-width: 1330px) {
+  body {
+    background-color: aqua;
+  }
+
+
+
+
+.flexRowColumn{
+  @include flexDisplay(center, center, 3rem, column);
+}
+
+.flexRowColumnReversed{
+  @include flexDisplay(center, center, 3rem, column-reverse);
+}
+
+.flexRowMaintain{
+  @include flexDisplay(space-between, center, 6rem, row);
+  width: fit-content;
+}
+
+}

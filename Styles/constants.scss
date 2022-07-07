@@ -1,0 +1,468 @@
+//styles for the portfolio
+
+// 1. Portfolio Fonts : Lato fonts [google fonts]
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script&family=Fira+Code:wght@300&family=Forum&family=Stardos+Stencil:wght@400;700&display=swap");
+
+// monstreat fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+$arimo-font-family: "Arimo", sans-serif; //paragraphs
+$fira-font-family: "Fira Code", monospace; // links
+$montserrat-font-family: "Montserrat", sans-serif; // h1, h2 text
+
+$fs-nav: 15px;
+
+// paragraphs are allowed the default browser weights from
+
+// 2. Portfolio Palettes : One dark theme and one light theme [color hunt help]
+
+$color-primary: #6cc57c;
+$color-secondary: #23233c;
+$color-accent: #7f8da0;
+$color-extra: #f2f6ff;
+
+$color-shade1: #7f8da0;
+$color-shade2: #d0f0d6;
+$color-shade3: #a7d6e6;
+$color-text: black;
+
+@font-face {
+  font-family: "Magisho";
+  src: url("./Magisho/Magisho.otf");
+}
+
+@mixin flexDisplay($justify, $aligns, $gaps, $direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $aligns;
+  gap: $gaps;
+}
+
+@mixin uniformPaddSection($padd, $ht) {
+  padding: $padd 0 $padd 0;
+  margin: 0 auto;
+  min-height: $ht;
+}
+
+@mixin myButtons($color, $width) {
+  border: none;
+  border-radius: 0.3rem;
+  background: $color;
+  padding: 7px 10px 7px 10px;
+  width: $width;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  a {
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    color: $color-extra !important;
+    font-family: $fira-font-family;
+    margin: 0 auto;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  //list-style: none;
+  overflow-x: hidden;
+
+  //hide scrollbars
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html,
+body {
+  background-color: $color-extra;
+  font-family: $montserrat-font-family;
+  font-weight: 400;
+  color: $color-text;
+  font-size: 1rem;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+section {
+  @include uniformPaddSection(2rem, 100vh);
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2,
+h3,
+h4,
+h5,
+.text-tag {
+  font-family: $montserrat-font-family;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+h1,
+h2,
+p {
+  overflow: hidden;
+}
+
+.magisho {
+  font-family: $montserrat-font-family;
+  font-weight: 800;
+}
+
+a {
+  color: $color-primary;
+}
+
+.colored {
+  color: $color-primary;
+}
+
+.bucket {
+  width: 80%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem auto;
+}
+
+.flexRowToColumn {
+  @include flexDisplay(space-between, center, 6rem, row);
+}
+
+.twoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.flexRowStrict {
+  @include flexDisplay(space-around, center, 6rem, row);
+  width: fit-content;
+}
+
+.buttonPrimary {
+  @include myButtons($color-primary, 120px);
+}
+
+.buttonSecondary {
+  @include myButtons($color-secondary, 120px);
+}
+
+.buttonBadge {
+  border: none;
+  border-radius: 0.3rem;
+  background: #fff;
+  padding: 7px 10px 7px 10px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 1rem 1rem 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
+
+  a {
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    color: $color-secondary !important;
+    font-family: $montserrat-font-family;
+    font-weight: 300;
+    margin: 0 auto;
+  }
+}
+
+.btn_view_project {
+  border: 1px solid rgb(3, 3, 3);
+  border-radius: 0.3rem;
+  padding: 3px 5px 3px 5px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0rem 1rem 1rem;
+
+  a {
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    color: white;
+    color: $color-secondary !important;
+    font-family: $fira-font-family;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0 auto;
+  }
+}
+
+.buttonSecondary-flow {
+  @include myButtons($color-secondary, fit-content);
+}
+
+.space-bar {
+  width: 100%;
+  height: 10px;
+}
+
+.header-data-basket {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  // item styles
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+  }
+  .navbar-nav {
+    letter-spacing: 0.1rem;
+    transition: all 0.7s ease-in-out;
+  }
+
+  .nav-link {
+    color: $color-text !important;
+    font-family: $arimo-font-family !important;
+    font-weight: 400;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  .active-item {
+    border-bottom: 1px solid $color-primary;
+  }
+
+  .nav-link:hover {
+    transition: 0.7s ease-in-out;
+    border-bottom: 1px solid $color-primary;
+  }
+
+  //manage the hamburger
+  .navbar-toggler {
+    width: 60px;
+    height: 30px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+
+    span {
+      margin: 0;
+      padding: 0;
+    }
+
+    .toggler-icon {
+      display: block;
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      background: $color-accent;
+      border-radius: 1px;
+      opacity: 1;
+      left: 10px;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+      border-radius: 1px;
+    }
+  }
+
+  //clear out all default decorative button styles
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+  }
+
+  /* Color of 3 lines */
+
+  .navbar-toggler.collapsed .toggler-icon {
+    background-color: $color-accent;
+  }
+
+  /* when navigation is clicked */
+
+  .navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+  }
+
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+  }
+
+  .navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+  }
+
+  /* State when the navbar is collapsed */
+
+  .navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+  }
+
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    left: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    filter: alpha(opacity=0);
+  }
+
+  .navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    left: 0px;
+    margin-left: 0px;
+    transform: rotate(0deg);
+    margin-top: 0px;
+  }
+
+  //dropdown
+
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow-x: hidden;
+  }
+
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+
+    &:hover {
+    }
+  }
+
+  /* Add a red background color to navbar links on hover */
+  .dropdown:hover .dropbtn {
+    background-color: rgb(255, 255, 255);
+  }
+
+  /* Dropdown content (hidden by default) */
+  #dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+//extra small and small screens
+@media only screen and (max-width: 480px) {
+  .flexRowStrict {
+    @include flexDisplay(space-around, center, 6rem, column);
+    width: 100%;
+  }
+
+  .bucket {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+  .flexRowToColumn {
+    @include flexDisplay(space-between, center, 6rem, column);
+  }
+
+  .twoGrid {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .buttonBadge {
+    padding: 4px 10px 4px 10px;
+    overflow: hidden;
+  }
+}
+
+//small
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .flexRowStrict {
+    @include flexDisplay(space-around, center, 6rem, column);
+    width: 100%;
+  }
+
+  .bucket {
+    width: 95%;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+  .flexRowToColumn {
+    @include flexDisplay(space-between, center, 6rem, column);
+  }
+
+  .twoGrid {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .buttonBadge {
+    padding: 4px 10px 4px 10px;
+    overflow: hidden;
+  }
+}
