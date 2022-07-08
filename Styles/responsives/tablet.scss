@@ -28,6 +28,63 @@
     margin: 0 auto;
     padding: 2rem auto;
   }
+
+  //menu classes
+
+  .header-active {
+    //bottom: 0;
+    .header-data-basket {
+      display: grid;
+      grid-template-areas: "a . b" "c c c" " d d d";
+      grid-template-rows: 1fr 3fr 2fr;
+
+      .brand {
+        grid-area: a;
+        .brand_name {
+          display: none;
+        }
+      }
+
+      .navigation-items {
+        grid-area: c;
+        @include flexDisplay(center, center, 10px, column);
+        .navbar-nav {
+          @include flexDisplay(space-around, start, 10px, row);
+          .nav-item {
+            height: fit-content;
+          }
+        }
+
+        .contactton {
+          margin-left: 0rem;
+          margin-top: 3rem;
+        }
+      }
+      .drawer_iconz {
+        display: inline-block;
+        grid-area: b;
+        @include flexDisplay(center, flex-start, 4px, column);
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  .header-content {
+    .header-data-basket {
+      .navigation-items {
+        display: none;
+      }
+      .drawer_iconz {
+        display: inline-block;
+        grid-area: a;
+        @include flexDisplay(center, flex-start, 4px, column);
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  //end of menu styling
+
   .home {
     .home_data_basket {
       .home-text {

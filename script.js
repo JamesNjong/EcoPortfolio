@@ -41,6 +41,7 @@ function highlighter(event) {
   tabcontent[0].className = tabcontent[0].className.replace("active-item", "");
   console.log(tabcontent[0]);
   event.currentTarget.className += " active-item";
+  Navigator();
 }
 
 var onAppear = [];
@@ -70,7 +71,7 @@ window.addEventListener(
       if (vwBottom > elemTop && vwTop - elemHeight < elemTop) {
         elem.classList.add("animate");
       } else {
-        //elem.classList.remove("animate");
+        elem.classList.remove("animate");
       }
     });
   },
@@ -95,6 +96,29 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
- 
 
- 
+var drawer = document.getElementsByClassName("img-drawer_icon");
+var drawer_image = document.getElementsByClassName("img-drawer_icon");
+
+drawer[0].addEventListener("click", Navigator);
+
+function Navigator() {
+  var header = document.getElementsByClassName("header");
+
+  var drawer_toggle = header[0].classList.contains("header-content");
+  console.log(drawer_toggle);
+
+  if (drawer_toggle) {
+    header[0].className = header[0].className.replace(
+      "header-content",
+      "header-active"
+    );
+    drawer_image[0].src = "./resources/Icons/drawer_close_icon.svg";
+  } else {
+    header[0].className = header[0].className.replace(
+      "header-active",
+      "header-content"
+    );
+    drawer_image[0].src = "./resources/Icons/drawer_icon.svg";
+  }
+}

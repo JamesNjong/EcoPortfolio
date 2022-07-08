@@ -49,7 +49,7 @@ $color-white: white;
 //3.2 Uniformly padded sections -> helps quickly define sections with dynamic looks but similar styles for padding and height
 @mixin uniformPaddSection($padd, $ht) {
   padding: $padd 0 $padd 0;
-  min-height: $ht;
+  min-height: fit-content;
 }
 
 //3.3 Uniform button styles for the portfolio -> foundation template for both primary and secondary buttons
@@ -224,10 +224,62 @@ a {
   height: 10px;
 }
 
-//manage image boxes
-.image-container {
-}
+.header-content,
+.header-active {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgb(223, 251, 244);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
 
+  .header-data-basket {
+    @include flexDisplay(space-between, center, 3rem, row);
+
+    .brand {
+      @include flexDisplay(center, center, 0px, column);
+      font-size: 10px;
+    }
+
+    .navigation-items {
+      color: $color-primary !important;
+
+      .navbar-nav {
+        @include flexDisplay(space-around, center, 4px, row);
+      }
+      a {
+        font-family: $arimo-font-family;
+        font-weight: 300;
+        text-decoration: none;
+        color: $color-secondary !important;
+      }
+
+      .active-item {
+        font-family: $montserrat-font-family;
+        font-weight: 700;
+        text-decoration: underline;
+        a {
+          color: primary !important;
+        }
+      }
+      .contactton {
+        margin-left: 2rem;
+        border-radius: 0.3rem;
+        min-width: 100px;
+        background-color: $color-primary;
+        @include flexDisplay(center, center, 0px, column);
+        a {
+          color: white !important;
+        }
+      }
+    }
+    .drawer_iconz {
+      display: none;
+    }
+  }
+}
 // PAGE SECTIONS -> styling for the sections
 
 .feature-content {
@@ -494,6 +546,7 @@ a {
 .faq-content {
   @include flexDisplay(center, center, 10px, column);
   background-color: rgb(255, 255, 255);
+  min-height: 50vh !important;
   .faq-data-basket {
     @include flexDisplay(center, center, 0px, column);
     .acordion-content {
@@ -540,7 +593,7 @@ a {
 }
 
 .contacts-content {
-  background-color: $color-primary;
+  background-color: #83bca9;
   @include flexDisplay(center, center, 20px, column);
   .contacts-data-basket {
     padding: 6rem 0rem 6rem 0rem;
@@ -571,22 +624,23 @@ a {
   .contact-form {
     .tag-forms {
       box-shadow: 0px 0px 10px rgb(241, 243, 244);
-      border-radius: 8px;
-      background-image: linear-gradient(
-        to right bottom,
-        #d9f8d9,
-        #daf8dc,
-        #dcf8de,
-        #ddf8e1,
-        #dff8e3,
-        #dbf8e0,
-        #d6f8dc,
-        #d2f8d9,
-        #c5f8d0,
-        #b8f8c6,
-        #aaf7bd,
-        #9bf7b4
-      );
+      border-radius: 4px;
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   #d9f8d9,
+      //   #daf8dc,
+      //   #dcf8de,
+      //   #ddf8e1,
+      //   #dff8e3,
+      //   #dbf8e0,
+      //   #d6f8dc,
+      //   #d2f8d9,
+      //   #c5f8d0,
+      //   #b8f8c6,
+      //   #aaf7bd,
+      //   #9bf7b4
+      // );
+      background-color: rgb(248, 251, 250);
       label {
         text-align: start;
         padding: 12px 12px 2px 0;
@@ -638,7 +692,7 @@ a {
 }
 
 .footer {
-  background-color: #d9f7ed;
+  background-color: #6ba576;
   min-height: 70vh;
   padding-top: 4rem;
   padding-bottom: 4rem;
