@@ -1,0 +1,244 @@
+@media only screen and (min-width: 480px) and (max-width: 992px) {
+  // Major classes for flexbox content -> flexRowColumn, flexRowColumnReversed, flexRowMaintain
+  //these classes make it easy to manage responsiveness
+
+  .flexRowColumn {
+    @include flexDisplay(space-between, center, 3rem, column);
+  }
+
+  .flexRowColumnReversed {
+    @include flexDisplay(space-between, center, 3rem, column-reverse);
+  }
+
+  .major-div {
+    max-width: 100%;
+    min-width: 100%;
+    @include flexDisplay(center, center, 3px, column);
+    text-align: center;
+  }
+
+  .py-tab {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .bucket {
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem auto;
+  }
+
+  //menu classes
+
+  .header-active {
+    //bottom: 0;
+    .header-data-basket {
+      display: grid;
+      grid-template-areas: "a . b" "c c c" " d d d";
+      grid-template-rows: 1fr 3fr 2fr;
+
+      .brand {
+        grid-area: a;
+        .brand_name {
+          display: none;
+        }
+      }
+
+      .navigation-items {
+        grid-area: c;
+        @include flexDisplay(center, center, 10px, column);
+        .navbar-nav {
+          @include flexDisplay(space-around, start, 10px, row);
+          .nav-item {
+            height: fit-content;
+          }
+        }
+
+        .contactton {
+          margin-left: 0rem;
+          margin-top: 3rem;
+        }
+      }
+      .drawer_iconz {
+        display: inline-block;
+        grid-area: b;
+        @include flexDisplay(center, flex-start, 4px, column);
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  .header-content {
+    .header-data-basket {
+      .navigation-items {
+        display: none;
+      }
+      .drawer_iconz {
+        display: inline-block;
+        grid-area: a;
+        @include flexDisplay(center, flex-start, 4px, column);
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  //end of menu styling
+
+  .home {
+    .home_data_basket {
+      .home-text {
+        min-height: 50vh;
+        max-width: 90%;
+      }
+    }
+  }
+  .feature-content {
+    .feature-data-basket {
+      .feature_basket {
+        .feature_grid {
+          overflow-x: scroll;
+          height: fit-content;
+          overflow-y: hidden;
+          grid-template-rows: 200px 200px 10px 200px 200px 10px;
+          .feature_tag {
+            @include flexDisplay(center, center, 10px, column);
+            max-height: 400px;
+            height: 400px;
+            min-width: 400px;
+          }
+
+          .feature_item {
+            @include flexDisplay(center, start, 10px, column);
+            max-height: 400px;
+            height: 400px;
+            overflow: hidden;
+            min-width: 400px;
+          }
+        }
+      }
+    }
+  }
+  .cto {
+    .howwesolve {
+      margin-top: 2rem;
+    }
+  }
+  .portfolio-content {
+    .portfolio-data-basket {
+      .pfb-header {
+        gap: 10px !important;
+      }
+
+      .portfolio-list {
+        min-width: 100%;
+        overflow-x: scroll;
+        margin-top: 4rem;
+        .portfolio-item {
+          min-width: 450px;
+          height: 600px;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          border: 4px solid rgba(#f2f4f8, 1);
+
+          .portfolio-inner-left {
+            padding: 2rem 2rem 2rem 2rem;
+            @include flexDisplay(space-around, center, 0px, column);
+          }
+          .portfolio-inner-right {
+            max-height: 50%;
+          }
+        }
+      }
+
+      .pfb-header-right {
+        min-height: 10vh;
+      }
+    }
+  }
+
+  .testimonials-content {
+    @include flexDisplay(center, center, 3rem, column);
+    .testimonial-data-basket {
+      overflow-x: scroll;
+      .testim-grid {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        overflow-x: scroll !important;
+
+        .testim-item {
+          min-width: 400px;
+          height: 500px;
+        }
+      }
+    }
+  }
+
+  .faq-content {
+    padding-top: 2rem !important;
+    padding-bottom: 1rem !important;
+    .faq-data-basket {
+      .acordion-content {
+        width: 100%;
+      }
+    }
+  }
+
+  .contacts-content {
+    .cdb-left {
+      .contact_socials {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .contact-form {
+      min-width: 80%;
+      .tag-forms {
+        min-width: 100%;
+        .btn-send {
+          color: $color-extra;
+          width: 250px !important;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .foot-data-basket {
+      .foot-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+        grid-template-areas: "a b" "c c";
+
+        .foot-left {
+          padding-right: 0rem;
+          grid-area: c;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          row-gap: 10px;
+          column-gap: 30px;
+          margin-top: 2rem;
+          h3 {
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+          }
+          .ft-left-rights {
+            margin-top: 1rem;
+          }
+        }
+
+        .foot-center {
+          grid-area: a;
+        }
+
+        .foot-right {
+          grid-area: b;
+        }
+      }
+    }
+  }
+}

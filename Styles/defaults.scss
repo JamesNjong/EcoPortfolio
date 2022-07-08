@@ -1,0 +1,753 @@
+//styles for the portfolio
+
+// 1. Portfolio Fonts : Lato fonts [google fonts]
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script&family=Fira+Code:wght@300&family=Forum&family=Stardos+Stencil:wght@400;700&display=swap");
+
+// monstreat fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+$arimo-font-family: "Arimo", sans-serif; //paragraphs
+$fira-font-family: "Fira Code", monospace; // links
+$montserrat-font-family: "Montserrat", sans-serif; // h1, h2 text
+
+//Magisho fonts
+@font-face {
+  font-family: "Magisho";
+  src: url("./Magisho/Magisho.otf");
+}
+
+// 2. Portfolio Palettes : One dark theme and one light theme [color hunt help]
+
+//main colors
+$color-primary: #6cc57c;
+$color-secondary: #23233c;
+$color-accent: #7f8da0;
+$color-extra: #fdfeff;
+
+//support colors
+$color-shade1: #7f8da0;
+$color-shade2: #d0f0d6;
+$color-shade3: #a7d6e6;
+$color-text: black;
+$color-white: white;
+
+// 3. Reusable modifiables ( mixins)
+
+//3.1 Flex Displays -> helps define flexboxes of any shape and form
+@mixin flexDisplay($justify, $aligns, $gaps, $direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $aligns;
+  gap: $gaps;
+}
+
+.major-div {
+  max-width: 45%;
+}
+
+//3.2 Uniformly padded sections -> helps quickly define sections with dynamic looks but similar styles for padding and height
+@mixin uniformPaddSection($padd, $ht) {
+  padding: $padd 0 $padd 0;
+  min-height: fit-content;
+}
+
+//3.3 Uniform button styles for the portfolio -> foundation template for both primary and secondary buttons
+@mixin myButtons($color, $width) {
+  border: none;
+  border-radius: 0.5rem;
+  background: $color;
+  padding: 7px 10px 7px 10px;
+  width: $width;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+
+  a {
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    max-lines: 1;
+    overflow: hidden;
+    color: $color-extra !important;
+    font-family: $fira-font-family;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    border-radius: 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+//4. Global Objects -> styles for body, all objects and sections
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden;
+
+  //hide scrollbars
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html,
+body {
+  background-color: $color-extra;
+  font-family: $montserrat-font-family;
+  font-weight: 400;
+  color: $color-text;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+section {
+  @include uniformPaddSection(6rem, 100vh);
+  width: 100vw;
+  overflow: hidden;
+}
+
+//class helps to align content on the page so we get uniform left right margins -> used after section or header tags
+.bucket {
+  width: 80%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem auto;
+}
+
+a {
+  color: $color-primary;
+  font-family: $fira-font-family;
+  font-weight: 300;
+
+  &hover {
+    color: $color-secondary;
+  }
+}
+
+//use this class to pain text within paragraphs
+.colored {
+  color: $color-primary;
+}
+
+// Major classes for flexbox content -> flexRowColumn, flexRowColumnReversed, flexRowMaintain
+//these classes make it easy to manage responsiveness
+
+.flexRowColumn {
+  @include flexDisplay(space-between, center, 3rem, row);
+}
+
+.flexRowColumnReversed {
+  @include flexDisplay(space-between, center, 3rem, row);
+}
+
+.flexRowMaintain {
+  @include flexDisplay(space-between, center, 2rem, row);
+  width: fit-content;
+}
+
+// Buttons and small badge styles
+
+.buttonPrimary {
+  @include myButtons($color-primary, 150px);
+}
+
+.buttonSecondary {
+  @include myButtons($color-secondary, 150px);
+}
+
+.buttonBadge {
+  border: none;
+  border-radius: 0.3rem;
+  background: #fff;
+  padding: 7px 10px 7px 10px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 1rem 1rem 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
+
+  a {
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    color: $color-secondary !important;
+    font-family: $montserrat-font-family;
+    font-weight: 300;
+    margin: 0 auto;
+  }
+}
+
+.buttonOutline {
+  border: 1px solid rgb(3, 3, 3);
+  border-radius: 0.3rem;
+  padding: 3px 5px 3px 5px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0rem 1rem 0rem;
+
+  a {
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    color: white;
+    color: $color-secondary !important;
+    font-family: $fira-font-family;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0 auto;
+  }
+}
+
+.buttonSecondary-flow {
+  @include myButtons($color-secondary, fit-content);
+}
+
+// space bar to provide padding below the fixed header
+.space-bar {
+  width: 100%;
+  height: 10px;
+}
+
+.header-content,
+.header-active {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgb(223, 251, 244);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+
+  .header-data-basket {
+    @include flexDisplay(space-between, center, 3rem, row);
+
+    .brand {
+      @include flexDisplay(center, center, 0px, column);
+      font-size: 10px;
+    }
+
+    .navigation-items {
+      color: $color-primary !important;
+
+      .navbar-nav {
+        @include flexDisplay(space-around, center, 4px, row);
+      }
+      a {
+        font-family: $arimo-font-family;
+        font-weight: 300;
+        text-decoration: none;
+        color: $color-secondary !important;
+      }
+
+      .active-item {
+        font-family: $montserrat-font-family;
+        font-weight: 700;
+        text-decoration: underline;
+        a {
+          color: primary !important;
+        }
+      }
+      .contactton {
+        margin-left: 2rem;
+        border-radius: 0.3rem;
+        min-width: 100px;
+        background-color: $color-primary;
+        @include flexDisplay(center, center, 0px, column);
+        a {
+          color: white !important;
+        }
+      }
+    }
+    .drawer_iconz {
+      display: none;
+    }
+  }
+}
+// PAGE SECTIONS -> styling for the sections
+
+.feature-content {
+  .feature-data-basket {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    .feature_basket {
+      .feature_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 150px 150px 20px 150px 150px 20px;
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-areas:
+          "a c e"
+          "a c e"
+          "b . e"
+          "b d f"
+          "b d f"
+          ". d .";
+        width: 100%;
+        margin-bottom: 6rem;
+
+        .feature_tag {
+          @include flexDisplay(center, start, 0px, column);
+          grid-area: a;
+          max-height: fit-content;
+        }
+
+        .feature_item {
+          border: none;
+          border-radius: 1px;
+          padding: 2rem 2rem 2rem 2rem;
+          background-color: #fff;
+          box-shadow: 0px 0px 10px rgb(237, 237, 237);
+          max-height: 360px;
+          height: 360px;
+          overflow: hidden;
+        }
+
+        #fi_versatile {
+          grid-area: c;
+          margin-top: 0px;
+          background-color: #ff878c;
+        }
+        #fi_partnerships {
+          grid-area: b;
+          background-color: #6edafb;
+        }
+        #fi_procedural {
+          grid-area: f;
+          background-color: #05eded;
+        }
+        #fi_communication {
+          grid-area: d;
+          background-color: #ffdd82;
+        }
+        #fi_ambiguity {
+          grid-area: e;
+          background-color: #adc5ff;
+        }
+      }
+    }
+  }
+}
+.cto {
+  background-color: #fff;
+  .howwesolve {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    .hws_action {
+      justify-content: space-around !important;
+      align-items: center !important;
+      gap: 10px !important;
+    }
+  }
+}
+.about-content {
+  background-color: #ffffff;
+
+  .abouttons {
+    margin-top: 2rem;
+  }
+}
+
+.portfolio-content {
+  background-image: linear-gradient(
+    to right bottom,
+    #d9f8d9,
+    #daf8dc,
+    #dcf8de,
+    #ddf8e1,
+    #dff8e3,
+    #dbf8e0,
+    #d6f8dc,
+    #d2f8d9,
+    #c5f8d0,
+    #b8f8c6,
+    #aaf7bd,
+    #9bf7b4
+  );
+
+  .portfolio-data-basket {
+    .pfb-header {
+      gap: 10px !important;
+    }
+    .pfd-mobile {
+      overflow-x: scroll;
+    }
+    .portfolio-list {
+      gap: 10px !important;
+      min-width: 100%;
+      overflow-x: scroll;
+      margin-top: 4rem;
+      offset-position: 30% 50%;
+      .portfolio-item {
+        gap: 1px !important;
+        min-width: 600px;
+        height: 300px;
+        background-color: $color-white;
+        margin: 10px;
+        transition: all ease-in-out 0.3s;
+        border: 1px solid rgba(#f2f4f8, 1);
+        box-shadow: 0 0 0 rgba(239, 252, 249, 0), 0 0 0 rgba(239, 252, 249, 0);
+
+        .portfolio-inner-right {
+          width: 100%;
+          height: 100%;
+          .img-holder {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        .portfolio-inner-left {
+          padding: 2rem 0rem 2rem 2rem;
+          @include flexDisplay(space-around, start, 0px, column);
+        }
+        &:hover {
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          border: 4px solid rgba(#f2f4f8, 1);
+        }
+      }
+    }
+
+    .pfb-header-right {
+      .pfb-header-right-categories {
+        .cat-item {
+          cursor: pointer;
+          p {
+            font-family: Magisho;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $color-shade1;
+            @include flexDisplay(center, center, 0px, column);
+            box-shadow: 0 2px 10px rgba(237, 249, 249, 0.1),
+              0 0 5px rgba(237, 249, 249, 0.1);
+
+            &:hover {
+              background-color: $color-primary;
+            }
+          }
+          .active-item {
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.testimonials-content {
+  @include flexDisplay(center, center, 10px, column);
+  min-height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+  .testimonial-data-basket {
+    .testim-talkbar {
+      @include flexDisplay(space-around, center, 30px, column);
+      overflow: hidden;
+      margin-bottom: 3rem;
+      h2,
+      p {
+        width: 80%;
+        text-align: center;
+      }
+    }
+    .testim-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "a b c"
+        "d e f";
+      gap: 15px;
+      overflow: hidden;
+
+      .testim-item {
+        @include flexDisplay(center, center, 0px, column);
+        overflow: hidden;
+        height: 360px;
+        .testim-item-inner {
+          border: none;
+          height: 100%;
+          padding: 2rem 2rem 2rem 2rem;
+          background-image: linear-gradient(
+            to right bottom,
+            #a6e7ab,
+            #a0e7a5,
+            #9ae7a0,
+            #94e69a,
+            #8ee694,
+            #8ae690,
+            #86e68d,
+            #82e689,
+            #7fe787,
+            #7de884,
+            #7ae982,
+            #77ea7f
+          );
+          overflow: hidden;
+
+          .ti-position {
+            max-lines: 1;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+
+    .testimonial-scroll-container {
+    }
+
+    #ti-1 {
+      grid-area: a;
+      overflow: hidden;
+    }
+    #ti-2 {
+      grid-area: b;
+      overflow: hidden;
+    }
+    #ti-3 {
+      grid-area: c;
+      overflow: hidden;
+    }
+    #ti-4 {
+      grid-area: d;
+      overflow: hidden;
+    }
+    #ti-5 {
+      grid-area: e;
+      overflow: hidden;
+    }
+    #ti-6 {
+      grid-area: f;
+      overflow: hidden;
+    }
+  }
+}
+
+.faq-content {
+  @include flexDisplay(center, center, 10px, column);
+  background-color: rgb(255, 255, 255);
+  min-height: 50vh !important;
+  .faq-data-basket {
+    @include flexDisplay(center, center, 0px, column);
+    .acordion-content {
+      width: 90%;
+      margin-top: 4rem;
+    }
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+      background-color: $color-primary;
+      color: #fff;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      font-family: $fira-font-family;
+
+      &:hover {
+        background-color: $color-shade2;
+        margin: 10px auto;
+        color: #123;
+      }
+    }
+
+    .active {
+      background-color: $color-shade2;
+      color: #123;
+    }
+
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+      transition: all 0.4s ease-out;
+      &:hover {
+        margin: 5px auto;
+      }
+    }
+  }
+}
+
+.contacts-content {
+  background-color: #83bca9;
+  @include flexDisplay(center, center, 20px, column);
+  .contacts-data-basket {
+    padding: 6rem 0rem 6rem 0rem;
+    gap: 10px !important;
+  }
+
+  .cdb-left {
+    width: 100%;
+    p {
+      width: 100%;
+    }
+    .cdb-left-rule {
+      width: 40%;
+    }
+    .good-talk {
+      font-weight: 900;
+      font-size: 26px;
+    }
+
+    .contact_socials {
+      width: fit-content;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .contact-form {
+    .tag-forms {
+      box-shadow: 0px 0px 10px rgb(241, 243, 244);
+      border-radius: 4px;
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   #d9f8d9,
+      //   #daf8dc,
+      //   #dcf8de,
+      //   #ddf8e1,
+      //   #dff8e3,
+      //   #dbf8e0,
+      //   #d6f8dc,
+      //   #d2f8d9,
+      //   #c5f8d0,
+      //   #b8f8c6,
+      //   #aaf7bd,
+      //   #9bf7b4
+      // );
+      background-color: rgb(248, 251, 250);
+      label {
+        text-align: start;
+        padding: 12px 12px 2px 0;
+        display: inline-block;
+        color: rgb(0, 15, 45);
+      }
+      ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(110, 110, 110);
+        opacity: 0.5;
+      }
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 4px;
+        border: 1px solid rgb(36, 36, 36);
+        border-radius: 8px;
+        resize: none;
+        background: none;
+        margin-bottom: 1rem;
+        height: 40px;
+        color: rgb(0, 0, 0);
+      }
+      textarea {
+        width: 100%;
+        padding: 4px;
+        border: 1px solid rgb(36, 36, 36);
+        border-radius: 8px;
+        resize: none;
+        background: none;
+        margin-bottom: 1rem;
+        height: 100px;
+        color: rgb(0, 0, 0);
+      }
+      input[type="text"],
+      select,
+      textarea {
+        &:focus {
+          decoration: none;
+        }
+      }
+
+      .btn-send {
+        color: $color-extra;
+        width: 150px !important;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #6ba576;
+  min-height: 70vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  .foot-data-basket {
+    .foot-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 10px;
+
+      .foot-left {
+        padding-right: 4rem;
+
+        h3 {
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+        }
+        .ft-left-socials {
+          a {
+            text-decoration: none;
+          }
+        }
+        .ft-left-rights {
+          margin-top: 3rem;
+        }
+      }
+
+      .foot-center {
+        a {
+          color: black;
+          text-decoration: none;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+
+      .foot-right {
+        a {
+          color: black;
+          text-decoration: none;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "./responsives/phone.scss";
+
+@import "./responsives/tablet.scss";
+@import "./responsives/largeMonitors.scss";
+@import "about.scss";
+@import "animations.scss";

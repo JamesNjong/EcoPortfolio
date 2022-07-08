@@ -1,0 +1,541 @@
+@import "constants.scss";
+@import "about.scss";
+
+@import "animations.scss";
+
+.header-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: $color-extra;
+  z-index: 100;
+  transition: all 0.4s ease-out;
+  .header-data-basket {
+    @include flexDisplay(space-between, center, 30px, row);
+    color: black !important;
+    width: 100%;
+
+    .button_contact {
+      @include myButtons($color-primary, fit-content);
+    }
+  }
+}
+
+.home {
+  padding-top: 6rem;
+  height: 100vh;
+  .home_data_basket {
+    @include flexDisplay(space-between, center, 30px, row);
+    height: fit-content;
+    max-height: 100%;
+    overflow-y: hidden;
+    .image-container {
+      height: 100%;
+      width: 50%;
+      max-width: 50%;
+      overflow-y: hidden;
+      .home_header_img {
+        margin-top: 6rem;
+        transform: scale(3);
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .home-text {
+      width: 50%;
+      max-width: 50%;
+    }
+
+    .home_buttons {
+      width: fit-content;
+      gap: 20px !important;
+
+      a:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+}
+
+.service-content {
+  background-color: #fff;
+
+  .service-item {
+    margin-top: 4rem;
+
+    .service-item-hch {
+      font-weight: 700;
+      font-family: $montserrat-font-family;
+    }
+  }
+}
+
+.feature-content {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #e8efff;
+  .feature-data-basket {
+    @include flexDisplay(center, center, 0px, column);
+
+    .howwesolve {
+      margin-top: 200px;
+      .hws_action {
+        justify-content: space-around !important;
+        align-items: center !important;
+        gap: 10px !important;
+      }
+    }
+
+    .feature_grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 150px 150px 20px 150px 150px 20px;
+      row-gap: 20px;
+      column-gap: 20px;
+      grid-template-areas:
+        "a c e"
+        "a c e"
+        "b . e"
+        "b d f"
+        "b d f"
+        ". d .";
+      width: 100%;
+      margin-bottom: 6rem;
+
+      .feature_tag {
+        @include flexDisplay(center, start, 0px, column);
+        grid-area: a;
+        max-height: fit-content;
+      }
+
+      .feature_item {
+        border: none;
+        border-radius: 1px;
+        padding: 2rem 2rem 2rem 2rem;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgb(237, 237, 237);
+        max-height: 360px;
+        height: 360px;
+        overflow: hidden;
+      }
+
+      #fi_versatile {
+        grid-area: c;
+        margin-top: 0px;
+        background-color: #ff878c;
+      }
+      #fi_partnerships {
+        grid-area: b;
+        background-color: #6edafb;
+      }
+      #fi_procedural {
+        grid-area: f;
+        background-color: #05eded;
+      }
+      #fi_communication {
+        grid-area: d;
+        background-color: #ffdd82;
+      }
+      #fi_ambiguity {
+        grid-area: e;
+        background-color: #adc5ff;
+      }
+    }
+  }
+}
+
+.portfolio-content {
+  min-height: 100vh;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: linear-gradient(
+    to right bottom,
+    #d9f8d9,
+    #daf8dc,
+    #dcf8de,
+    #ddf8e1,
+    #dff8e3,
+    #dbf8e0,
+    #d6f8dc,
+    #d2f8d9,
+    #c5f8d0,
+    #b8f8c6,
+    #aaf7bd,
+    #9bf7b4
+  );
+  .portfolio-data-basket {
+    .pfb-header {
+      width: fit-content;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: space-around;
+      align-items: end;
+
+      .pfb-header-right {
+        width: fit-content;
+        .pfb-header-right-categories {
+          width: fit-content;
+          @include flexDisplay(space-around, center, 10px, row);
+          .cat-item {
+            cursor: pointer;
+            p {
+              font-family: Magisho;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              background-color: $color-shade1;
+              @include flexDisplay(center, center, 0px, column);
+              box-shadow: 0 2px 10px rgba(237, 249, 249, 0.1),
+                0 0 5px rgba(237, 249, 249, 0.1);
+
+              &:hover {
+                background-color: $color-primary;
+              }
+            }
+            .active-item {
+              background-color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+
+    .portfolio-list {
+      min-width: 100%;
+      display: flex;
+      flex-direction: row;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      margin-top: 4rem;
+      offset-position: 30% 50%;
+      .portfolio-item {
+        min-width: 600px;
+        height: 300px;
+        background-color: #fff;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        transition: ease-in-out 0.3s;
+        border: 1px solid rgba(#f2f4f8, 1);
+        box-shadow: 0 0 0 rgba(239, 252, 249, 0), 0 0 0 rgba(239, 252, 249, 0);
+
+        .portfolio-inner-right {
+          .img-holder {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        .portfolio-inner-left {
+          padding: 2rem 2rem 2rem 2rem;
+          text-align: end;
+          @include flexDisplay(space-around, flex-end, 0px, column);
+        }
+        &:hover {
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          border: 4px solid rgba(#f2f4f8, 1);
+        }
+      }
+    }
+  }
+}
+
+.about-content {
+  background-color: #fff;
+  min-height: 100vh;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  .about-data-basket {
+    .about_snippet {
+      max-width: 40%;
+
+      .about_buttons {
+        @include flexDisplay(space-between, center, 20px, row);
+        width: fit-content;
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+.testimonials-content {
+  @include flexDisplay(center, center, 10px, column);
+  min-height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  overflow: hidden;
+  .testimonial-data-basket {
+    @include flexDisplay(space-around, start, 30px, column);
+    overflow: hidden;
+    .testim-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "a b c"
+        "d e f";
+      gap: 15px;
+      overflow: hidden;
+    }
+
+    .testim-item {
+      @include flexDisplay(center, center, 0px, column);
+      overflow: hidden;
+      height: 360px;
+      .testim-item-inner {
+        border: none;
+        height: 100%;
+        padding: 2rem 2rem 2rem 2rem;
+        background-image: linear-gradient(
+          to right bottom,
+          #a6e7ab,
+          #a0e7a5,
+          #9ae7a0,
+          #94e69a,
+          #8ee694,
+          #8ae690,
+          #86e68d,
+          #82e689,
+          #7fe787,
+          #7de884,
+          #7ae982,
+          #77ea7f
+        );
+        overflow: hidden;
+
+        .ti-position {
+          max-lines: 1;
+          overflow: hidden;
+        }
+      }
+    }
+    #ti-1 {
+      grid-area: a;
+      overflow: hidden;
+    }
+    #ti-2 {
+      grid-area: b;
+      overflow: hidden;
+    }
+    #ti-3 {
+      grid-area: c;
+      overflow: hidden;
+    }
+    #ti-4 {
+      grid-area: d;
+      overflow: hidden;
+    }
+    #ti-5 {
+      grid-area: e;
+      overflow: hidden;
+    }
+    #ti-6 {
+      grid-area: f;
+      overflow: hidden;
+    }
+  }
+}
+
+.faq-content {
+  .faq-data-basket {
+    @include flexDisplay(center, center, 0px, column);
+    .acordion-content {
+      width: 70%;
+    }
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+      background-color: $color-primary;
+      color: #fff;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      font-family: $fira-font-family;
+
+      &:hover {
+        background-color: $color-shade2;
+        margin: 10px auto;
+        color: #123;
+      }
+    }
+
+    .active {
+      background-color: $color-shade2;
+      color: #123;
+    }
+
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+      transition: all 0.4s ease-out;
+      &:hover {
+        margin: 5px auto;
+      }
+    }
+  }
+}
+
+.contacts-content {
+  background-color: $color-primary;
+  @include flexDisplay(center, center, 20px, column);
+  .contacts-data-basket {
+    padding: 6rem 0rem 6rem 0rem;
+  }
+  .cdb-right {
+    min-width: 40%;
+  }
+  .cdb-left {
+    p {
+      width: 70%;
+    }
+    .cdb-left-rule {
+      width: 40%;
+    }
+    .good-talk {
+      font-weight: 900;
+      font-size: 26px;
+    }
+
+    .contact_socials {
+      width: fit-content;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .contact-form {
+    .tag-forms {
+      box-shadow: 0px 0px 10px rgb(241, 243, 244);
+      border-radius: 8px;
+      background-image: linear-gradient(
+        to right bottom,
+        #d9f8d9,
+        #daf8dc,
+        #dcf8de,
+        #ddf8e1,
+        #dff8e3,
+        #dbf8e0,
+        #d6f8dc,
+        #d2f8d9,
+        #c5f8d0,
+        #b8f8c6,
+        #aaf7bd,
+        #9bf7b4
+      );
+      label {
+        text-align: start;
+        padding: 12px 12px 2px 0;
+        display: inline-block;
+        color: rgb(0, 15, 45);
+      }
+      ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(110, 110, 110);
+        opacity: 0.5;
+      }
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 4px;
+        border: 1px solid rgb(36, 36, 36);
+        border-radius: 8px;
+        resize: none;
+        background: none;
+        margin-bottom: 1rem;
+        height: 40px;
+        color: rgb(0, 0, 0);
+      }
+      textarea {
+        width: 100%;
+        padding: 4px;
+        border: 1px solid rgb(36, 36, 36);
+        border-radius: 8px;
+        resize: none;
+        background: none;
+        margin-bottom: 1rem;
+        height: 100px;
+        color: rgb(0, 0, 0);
+      }
+      input[type="text"],
+      select,
+      textarea {
+        &:focus {
+          decoration: none;
+        }
+      }
+
+      .btn-send {
+        color: $color-extra;
+        width: 150px !important;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #d5e2bb;
+  min-height: 70vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  .foot-data-basket {
+    .foot-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 20px;
+
+      .foot-left {
+        padding-right: 4rem;
+
+        h3 {
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+        }
+        .ft-left-socials {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+
+      .foot-center {
+        a {
+          color: black;
+          text-decoration: none;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+
+      .foot-right {
+        a {
+          color: black;
+          text-decoration: none;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "./responsives/phone.scss";
+
+@import "./responsives/tablet.scss";
+@import "./responsives/largeMonitors.scss";
