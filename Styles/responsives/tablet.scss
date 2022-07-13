@@ -96,11 +96,13 @@
   .feature-content {
     .feature-data-basket {
       .feature_basket {
-        .feature_grid {
+        .feature_grid { 
           overflow-x: scroll;
-          height: fit-content;
-          overflow-y: hidden;
-          grid-template-rows: 200px 200px 10px 200px 200px 10px;
+          grid-template-columns: repeat(6, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+          column-gap: 10px;
+          grid-template-areas: "a c b e d f";
+          margin-bottom: 0rem;
           .feature_tag {
             @include flexDisplay(center, center, 10px, column);
             max-height: 400px;

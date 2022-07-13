@@ -6,15 +6,7 @@
 // monstreat fonts
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 
-$arimo-font-family: "Arimo", sans-serif; //paragraphs
-$fira-font-family: "Fira Code", monospace; // links
-$montserrat-font-family: "Montserrat", sans-serif; // h1, h2 text
-
-//Magisho fonts
-@font-face {
-  font-family: "Magisho";
-  src: url("./Magisho/Magisho.otf");
-}
+$heebo-font-family: "Heebo", sans-serif; //paragraphs
 
 // 2. Portfolio Palettes : One dark theme and one light theme [color hunt help]
 
@@ -72,7 +64,6 @@ $color-white: white;
     max-lines: 1;
     overflow: hidden;
     color: $color-extra !important;
-    font-family: $fira-font-family;
     margin: 0 auto;
   }
 
@@ -90,7 +81,7 @@ $color-white: white;
   text-decoration: none;
   list-style: none;
   overflow-x: hidden;
-
+  font-family: $heebo-font-family;
   //hide scrollbars
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -102,7 +93,6 @@ $color-white: white;
 html,
 body {
   background-color: $color-extra;
-  font-family: $montserrat-font-family;
   font-weight: 400;
   color: $color-text;
   scroll-snap-align: start;
@@ -125,7 +115,6 @@ section {
 
 a {
   color: $color-primary;
-  font-family: $fira-font-family;
   font-weight: 300;
 
   &hover {
@@ -133,6 +122,9 @@ a {
   }
 }
 
+.magisho {
+  font-weight: 800;
+}
 //use this class to pain text within paragraphs
 .colored {
   color: $color-primary;
@@ -183,7 +175,6 @@ a {
     text-align: center;
     align-self: center;
     color: $color-secondary !important;
-    font-family: $montserrat-font-family;
     font-weight: 300;
     margin: 0 auto;
   }
@@ -207,7 +198,6 @@ a {
     align-self: center;
     color: white;
     color: $color-secondary !important;
-    font-family: $fira-font-family;
     font-weight: 300;
     font-size: 12px;
     margin: 0 auto;
@@ -250,14 +240,12 @@ a {
         @include flexDisplay(space-around, center, 4px, row);
       }
       a {
-        font-family: $arimo-font-family;
         font-weight: 300;
         text-decoration: none;
         color: $color-secondary !important;
       }
 
       .active-item {
-        font-family: $montserrat-font-family;
         font-weight: 700;
         text-decoration: underline;
         a {
@@ -282,6 +270,10 @@ a {
 }
 // PAGE SECTIONS -> styling for the sections
 
+.home_data_basket {
+  min-height: 70vh;
+}
+
 .feature-content {
   .feature-data-basket {
     margin-top: 4rem;
@@ -303,6 +295,9 @@ a {
         width: 100%;
         margin-bottom: 6rem;
 
+        .feature-scroll-prompt {
+          display: none;
+        }
         .feature_tag {
           @include flexDisplay(center, start, 0px, column);
           grid-area: a;
@@ -432,7 +427,7 @@ a {
         .cat-item {
           cursor: pointer;
           p {
-            font-family: Magisho;
+            font-weight: 800;
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -564,7 +559,7 @@ a {
       border: none;
       outline: none;
       transition: 0.4s;
-      font-family: $fira-font-family;
+      font-weight: 300;
 
       &:hover {
         background-color: $color-shade2;
@@ -702,6 +697,7 @@ a {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 10px;
+      transition: all 0.7s ease-in-out;
 
       .foot-left {
         padding-right: 4rem;
@@ -726,7 +722,8 @@ a {
           text-decoration: none;
 
           &:hover {
-            color: $color-primary;
+            font-weight: 500;
+            font-size: 20px;
           }
         }
       }
@@ -737,10 +734,16 @@ a {
           text-decoration: none;
 
           &:hover {
-            color: $color-primary;
+            font-weight: 500;
+            font-size: 20px;
           }
         }
       }
+    }
+    .foot-lable {
+      font-weight: 800;
+      opacity: 0.4;
+      font-size: 20px;
     }
   }
 }
@@ -749,5 +752,27 @@ a {
 
 @import "./responsives/tablet.scss";
 @import "./responsives/largeMonitors.scss";
-@import "about.scss";
 @import "animations.scss";
+
+// about page content
+
+.about-experience-contents {
+  .experience-data-basket {
+    .work-places {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid $color-primary;
+      column-gap: 1px !important;
+      .work-place-item {
+        cursor: pointer;
+        min-width: 70px;
+        padding: 5px 5px 5px 5px;
+      }
+      .work-place-item:hover,
+      .work-place-item__tab--selected {
+        background-color: $color-primary;
+        color: white;
+      }
+    }
+  }
+}

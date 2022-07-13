@@ -92,18 +92,28 @@
     }
   }
   .feature-content {
+    height: 80vh !important;
     .feature-data-basket {
+      margin-top: 0rem;
+      margin-bottom: 0rem;
       .feature_basket {
+        overflow-x: scroll;
         .feature_grid {
           overflow-x: scroll;
-          height: fit-content;
-          overflow-y: hidden;
-          grid-template-rows: 200px 200px 10px 200px 200px 10px;
+          grid-template-columns: repeat(6, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+          column-gap: 10px;
+          grid-template-areas: "a c b e d f";
+          margin-bottom: 0rem;
+          .feature-scroll-prompt {
+            display: inline-block;
+            font-size: 10px;
+          }
           .feature_tag {
             @include flexDisplay(center, center, 10px, column);
             max-height: 400px;
             height: 400px;
-            min-width: 400px;
+            min-width: 80vw;
           }
 
           .feature_item {
@@ -111,7 +121,8 @@
             max-height: 400px;
             height: 400px;
             overflow: hidden;
-            min-width: 400px;
+            min-width: 80vw;
+            border-radius: 8px;
           }
         }
       }
@@ -132,8 +143,9 @@
         min-width: 100%;
         overflow-x: scroll;
         margin-top: 4rem;
+        gap: 4px !important;
         .portfolio-item {
-          min-width: 450px;
+          min-width: 80vw;
           height: 600px;
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
           border-radius: 8px;
@@ -209,32 +221,41 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         row-gap: 10px;
-        grid-template-areas: "a b" "c c";
+        grid-template-areas: "a a" "b b" "c c";
 
         .foot-left {
           padding-right: 0rem;
           grid-area: c;
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          grid-template-areas: "a b" "c c" "d d";
           row-gap: 10px;
           column-gap: 30px;
           margin-top: 2rem;
+          place-items: center;
           h3 {
             margin-top: 0rem;
             margin-bottom: 0rem;
           }
           .ft-left-rights {
-            margin-top: 1rem;
+            grid-area: d;
+          }
+          .ft-left-socials {
+            grid-area: c;
+            margin: 0 auto;
           }
         }
 
         .foot-center {
           grid-area: a;
+          @include flexDisplay(space-around, top, 10px, row);
         }
 
         .foot-right {
           grid-area: b;
+          @include flexDisplay(center, center, 10px, column);
+          text-align: center;
         }
       }
     }

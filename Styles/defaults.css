@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script&family=Fira+Code:wght@300&family=Forum&family=Stardos+Stencil:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
-@font-face {
-  font-family: "Magisho";
-  src: url("./Magisho/Magisho.otf");
-}
 .major-div {
   max-width: 45%;
 }
@@ -14,10 +10,9 @@
   text-decoration: none;
   list-style: none;
   overflow-x: hidden;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+  font-family: "Heebo", sans-serif;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 *::-webkit-scrollbar {
   display: none;
@@ -26,7 +21,6 @@
 html,
 body {
   background-color: #fdfeff;
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: black;
   scroll-snap-align: start;
@@ -51,11 +45,14 @@ section {
 
 a {
   color: #6cc57c;
-  font-family: "Fira Code", monospace;
   font-weight: 300;
 }
 ahover {
   color: #23233c;
+}
+
+.magisho {
+  font-weight: 800;
 }
 
 .colored {
@@ -110,7 +107,6 @@ ahover {
   max-lines: 1;
   overflow: hidden;
   color: #fdfeff !important;
-  font-family: "Fira Code", monospace;
   margin: 0 auto;
 }
 .buttonPrimary:hover {
@@ -139,7 +135,6 @@ ahover {
   max-lines: 1;
   overflow: hidden;
   color: #fdfeff !important;
-  font-family: "Fira Code", monospace;
   margin: 0 auto;
 }
 .buttonSecondary:hover {
@@ -170,7 +165,6 @@ ahover {
   text-align: center;
   align-self: center;
   color: #23233c !important;
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   margin: 0 auto;
 }
@@ -197,7 +191,6 @@ ahover {
   align-self: center;
   color: white;
   color: #23233c !important;
-  font-family: "Fira Code", monospace;
   font-weight: 300;
   font-size: 12px;
   margin: 0 auto;
@@ -226,7 +219,6 @@ ahover {
   max-lines: 1;
   overflow: hidden;
   color: #fdfeff !important;
-  font-family: "Fira Code", monospace;
   margin: 0 auto;
 }
 .buttonSecondary-flow:hover {
@@ -281,14 +273,12 @@ ahover {
 }
 .header-content .header-data-basket .navigation-items a,
 .header-active .header-data-basket .navigation-items a {
-  font-family: "Arimo", sans-serif;
   font-weight: 300;
   text-decoration: none;
   color: #23233c !important;
 }
 .header-content .header-data-basket .navigation-items .active-item,
 .header-active .header-data-basket .navigation-items .active-item {
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-decoration: underline;
 }
@@ -317,6 +307,10 @@ ahover {
   display: none;
 }
 
+.home_data_basket {
+  min-height: 70vh;
+}
+
 .feature-content .feature-data-basket {
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -331,6 +325,9 @@ ahover {
   grid-template-areas: "a c e" "a c e" "b . e" "b d f" "b d f" ". d .";
   width: 100%;
   margin-bottom: 6rem;
+}
+.feature-content .feature-data-basket .feature_basket .feature_grid .feature-scroll-prompt {
+  display: none;
 }
 .feature-content .feature-data-basket .feature_basket .feature_grid .feature_tag {
   display: flex;
@@ -450,7 +447,7 @@ ahover {
   cursor: pointer;
 }
 .portfolio-content .portfolio-data-basket .pfb-header-right .pfb-header-right-categories .cat-item p {
-  font-family: Magisho;
+  font-weight: 800;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -578,7 +575,7 @@ ahover {
   border: none;
   outline: none;
   transition: 0.4s;
-  font-family: "Fira Code", monospace;
+  font-weight: 300;
 }
 .faq-content .faq-data-basket .accordion:hover {
   background-color: #d0f0d6;
@@ -703,6 +700,7 @@ ahover {
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 10px;
        column-gap: 10px;
+  transition: all 0.7s ease-in-out;
 }
 .footer .foot-data-basket .foot-grid .foot-left {
   padding-right: 4rem;
@@ -722,14 +720,21 @@ ahover {
   text-decoration: none;
 }
 .footer .foot-data-basket .foot-grid .foot-center a:hover {
-  color: #6cc57c;
+  font-weight: 500;
+  font-size: 20px;
 }
 .footer .foot-data-basket .foot-grid .foot-right a {
   color: black;
   text-decoration: none;
 }
 .footer .foot-data-basket .foot-grid .foot-right a:hover {
-  color: #6cc57c;
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer .foot-data-basket .foot-lable {
+  font-weight: 800;
+  opacity: 0.4;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -740,7 +745,6 @@ ahover {
     align-items: center;
     gap: 3rem;
   }
-
   .flexRowColumnReversed {
     display: flex;
     flex-direction: column-reverse;
@@ -748,7 +752,6 @@ ahover {
     align-items: center;
     gap: 3rem;
   }
-
   .major-div {
     max-width: 100%;
     min-width: 100%;
@@ -759,19 +762,16 @@ ahover {
     gap: 3px;
     text-align: center;
   }
-
   .py-tab {
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
-
   .bucket {
     width: 95%;
     max-width: 95%;
     margin: 0 auto;
     padding: 2rem auto;
   }
-
   .header-active {
     bottom: 0;
   }
@@ -816,7 +816,6 @@ ahover {
     gap: 4px;
     padding-left: 2rem;
   }
-
   .header-content .header-data-basket .navigation-items {
     display: none;
   }
@@ -830,19 +829,32 @@ ahover {
     gap: 4px;
     padding-left: 2rem;
   }
-
   .home .home_data_basket .home-text {
     min-height: 50vh;
     max-width: 90%;
   }
-
+  .feature-content {
+    height: 80vh !important;
+  }
+  .feature-content .feature-data-basket {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .feature-content .feature-data-basket .feature_basket {
+    overflow-x: scroll;
+  }
   .feature-content .feature-data-basket .feature_basket .feature_grid {
     overflow-x: scroll;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    overflow-y: hidden;
-    grid-template-rows: 200px 200px 10px 200px 200px 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    grid-template-areas: "a c b e d f";
+    margin-bottom: 0rem;
+  }
+  .feature-content .feature-data-basket .feature_basket .feature_grid .feature-scroll-prompt {
+    display: inline-block;
+    font-size: 10px;
   }
   .feature-content .feature-data-basket .feature_basket .feature_grid .feature_tag {
     display: flex;
@@ -852,7 +864,7 @@ ahover {
     gap: 10px;
     max-height: 400px;
     height: 400px;
-    min-width: 400px;
+    min-width: 80vw;
   }
   .feature-content .feature-data-basket .feature_basket .feature_grid .feature_item {
     display: flex;
@@ -863,13 +875,12 @@ ahover {
     max-height: 400px;
     height: 400px;
     overflow: hidden;
-    min-width: 400px;
+    min-width: 80vw;
+    border-radius: 8px;
   }
-
   .cto .howwesolve {
     margin-top: 2rem;
   }
-
   .portfolio-content .portfolio-data-basket .pfb-header {
     gap: 10px !important;
   }
@@ -877,9 +888,10 @@ ahover {
     min-width: 100%;
     overflow-x: scroll;
     margin-top: 4rem;
+    gap: 4px !important;
   }
   .portfolio-content .portfolio-data-basket .portfolio-list .portfolio-item {
-    min-width: 450px;
+    min-width: 80vw;
     height: 600px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -899,7 +911,6 @@ ahover {
   .portfolio-content .portfolio-data-basket .pfb-header-right {
     min-height: 10vh;
   }
-
   .testimonials-content {
     display: flex;
     flex-direction: column;
@@ -920,7 +931,6 @@ ahover {
     min-width: 400px;
     height: 500px;
   }
-
   .faq-content {
     padding-top: 2rem !important;
     padding-bottom: 1rem !important;
@@ -928,7 +938,6 @@ ahover {
   .faq-content .faq-data-basket .acordion-content {
     width: 100%;
   }
-
   .contacts-content .cdb-left .contact_socials {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -943,36 +952,52 @@ ahover {
     color: #fdfeff;
     width: 250px !important;
   }
-
   .footer .foot-data-basket .foot-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 10px;
-    grid-template-areas: "a b" "c c";
+    grid-template-areas: "a a" "b b" "c c";
   }
   .footer .foot-data-basket .foot-grid .foot-left {
     padding-right: 0rem;
     grid-area: c;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "a b" "c c" "d d";
     row-gap: 10px;
     -moz-column-gap: 30px;
          column-gap: 30px;
     margin-top: 2rem;
+    place-items: center;
   }
   .footer .foot-data-basket .foot-grid .foot-left h3 {
     margin-top: 0rem;
     margin-bottom: 0rem;
   }
   .footer .foot-data-basket .foot-grid .foot-left .ft-left-rights {
-    margin-top: 1rem;
+    grid-area: d;
+  }
+  .footer .foot-data-basket .foot-grid .foot-left .ft-left-socials {
+    grid-area: c;
+    margin: 0 auto;
   }
   .footer .foot-data-basket .foot-grid .foot-center {
     grid-area: a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+    gap: 10px;
   }
   .footer .foot-data-basket .foot-grid .foot-right {
     grid-area: b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 992px) {
@@ -983,7 +1008,6 @@ ahover {
     align-items: center;
     gap: 3rem;
   }
-
   .flexRowColumnReversed {
     display: flex;
     flex-direction: column-reverse;
@@ -991,7 +1015,6 @@ ahover {
     align-items: center;
     gap: 3rem;
   }
-
   .major-div {
     max-width: 100%;
     min-width: 100%;
@@ -1002,19 +1025,16 @@ ahover {
     gap: 3px;
     text-align: center;
   }
-
   .py-tab {
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
-
   .bucket {
     width: 80%;
     max-width: 80%;
     margin: 0 auto;
     padding: 2rem auto;
   }
-
   .header-active .header-data-basket {
     display: grid;
     grid-template-areas: "a . b" "c c c" " d d d";
@@ -1060,7 +1080,6 @@ ahover {
     gap: 4px;
     padding-left: 2rem;
   }
-
   .header-content .header-data-basket .navigation-items {
     display: none;
   }
@@ -1074,19 +1093,18 @@ ahover {
     gap: 4px;
     padding-left: 2rem;
   }
-
   .home .home_data_basket .home-text {
     min-height: 50vh;
     max-width: 90%;
   }
-
   .feature-content .feature-data-basket .feature_basket .feature_grid {
     overflow-x: scroll;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    overflow-y: hidden;
-    grid-template-rows: 200px 200px 10px 200px 200px 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    grid-template-areas: "a c b e d f";
+    margin-bottom: 0rem;
   }
   .feature-content .feature-data-basket .feature_basket .feature_grid .feature_tag {
     display: flex;
@@ -1109,11 +1127,9 @@ ahover {
     overflow: hidden;
     min-width: 400px;
   }
-
   .cto .howwesolve {
     margin-top: 2rem;
   }
-
   .portfolio-content .portfolio-data-basket .pfb-header {
     gap: 10px !important;
   }
@@ -1143,7 +1159,6 @@ ahover {
   .portfolio-content .portfolio-data-basket .pfb-header-right {
     min-height: 10vh;
   }
-
   .testimonials-content {
     display: flex;
     flex-direction: column;
@@ -1164,7 +1179,6 @@ ahover {
     min-width: 400px;
     height: 500px;
   }
-
   .faq-content {
     padding-top: 2rem !important;
     padding-bottom: 1rem !important;
@@ -1172,7 +1186,6 @@ ahover {
   .faq-content .faq-data-basket .acordion-content {
     width: 100%;
   }
-
   .contacts-content .cdb-left .contact_socials {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -1187,7 +1200,6 @@ ahover {
     color: #fdfeff;
     width: 250px !important;
   }
-
   .footer .foot-data-basket .foot-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1223,7 +1235,6 @@ ahover {
   body {
     background-color: aqua;
   }
-
   .flexRowColumn {
     display: flex;
     flex-direction: column;
@@ -1231,7 +1242,6 @@ ahover {
     align-items: center;
     gap: 3rem;
   }
-
   .flexRowColumnReversed {
     display: flex;
     flex-direction: column-reverse;
@@ -1239,7 +1249,6 @@ ahover {
     align-items: center;
     gap: 3rem;
   }
-
   .flexRowMaintain {
     display: flex;
     flex-direction: row;
@@ -1251,127 +1260,6 @@ ahover {
     width: fit-content;
   }
 }
-.about-image-container {
-  width: 500px;
-  height: 500px;
-  overflow: hidden;
-}
-.about-image-container img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-  overflow: hidden;
-}
-
-.about-profile-content {
-  background-color: #fff;
-  min-height: 100vh;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.about-experience-content {
-  min-height: 100vh;
-  padding: 6rem 0px 6rem 0px;
-}
-.about-experience-content .experience-data-basket .exp-header {
-  margin-bottom: 3rem;
-}
-.about-experience-content .experience-data-basket .exp-list {
-  min-width: 100%;
-  display: flex;
-  flex-direction: row;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  grid-gap: 2rem 1rem;
-  transition: ease-in-out 0.3s;
-  margin-bottom: 3rem;
-}
-.about-experience-content .experience-data-basket .exp-list .exp-item {
-  border: 1px solid #e8eef9;
-  border-radius: none;
-  padding: 2rem 2rem 2rem 2rem;
-  min-width: 400px;
-}
-.about-experience-content .experience-data-basket .exp-list .exp-item .exp-bullets {
-  padding-left: 0px;
-}
-.about-experience-content .experience-data-basket .exp-list .exp-item .exp-bullets .exp-bullet-item {
-  padding-left: 0px;
-  margin-left: 0px;
-}
-.about-experience-content .experience-data-basket .exp-list .exp-item .exp-bullets .exp-bullet-item ::before {
-  content: "=>";
-  color: #6cc57c;
-}
-.about-experience-content .experience-data-basket .exp-list .exp-item:hover {
-  background-color: #fff;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
-  border: 4px solid #f2f4f8;
-}
-
-.about-education-content {
-  min-height: 150vh;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: rgb(231, 248, 244);
-}
-.about-education-content .education-data-basket .educ-left .educ-left-item {
-  margin-bottom: 2rem;
-}
-.about-education-content .education-data-basket .educ-left .educ-left-item .eli-degree {
-  padding: 0px 0px 0px 0px;
-  margin-bottom: 0px;
-}
-
-.linkedin-badges {
-  min-height: 100vh;
-  background-color: #f4fbf9;
-}
-.linkedin-badges .lb-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.certifications-content {
-  min-height: 100vh;
-  background-color: #fafafa;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-.certifications-content .cdb-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 0rem 3rem 0rem;
-  min-width: 100%;
-  gap: 30px 20px;
-}
-.certifications-content .cdb-list .cdb-list-item {
-  background-color: #fdfeff;
-  padding: 1rem 3rem 1rem 2rem;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
-}
-.certifications-content .cdb-list .cdb-list-item .cdb-list-item-course {
-  padding: 0px 0px 0px 0px;
-  margin: 0px auto;
-}
-.certifications-content .cdb-list .cdb-list-item .cdb-list-item-platform {
-  padding: 0px 0px 0px 0px;
-  margin: 0px auto;
-  font-weight: 400;
-}
-.certifications-content .cdb-list .cdb-list-item .cdb-list-item-date {
-  padding: 0px 0px 0px 0px;
-  margin: 0px auto;
-  color: #5a7d89;
-}
-
 /* ==========================================================================
 Loading Animation System by Neale Van Fleet from Rogue Amoeba
 ========================================================================== */
@@ -1831,4 +1719,22 @@ Loading Animation System by Neale Van Fleet from Rogue Amoeba
 .delay-15 {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+}
+
+.about-experience-contents .experience-data-basket .work-places {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #6cc57c;
+  -moz-column-gap: 1px !important;
+       column-gap: 1px !important;
+}
+.about-experience-contents .experience-data-basket .work-places .work-place-item {
+  cursor: pointer;
+  min-width: 70px;
+  padding: 5px 5px 5px 5px;
+}
+.about-experience-contents .experience-data-basket .work-places .work-place-item:hover,
+.about-experience-contents .experience-data-basket .work-places .work-place-item__tab--selected {
+  background-color: #6cc57c;
+  color: white;
 }/*# sourceMappingURL=defaults.css.map */

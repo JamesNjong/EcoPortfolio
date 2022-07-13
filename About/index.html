@@ -28,57 +28,47 @@
 <header class="header-content">
   <div class="bucket">
     
+   
     <div class="header-data-basket">
       <!-- Brand -->
-          <div class="brand d-lg-block d-none">
-            <div> <a href="../index.html"><img src="../resources/Icons/brand.svg" width="40"  alt="name-logo" class="img-fluid brand-img"></a> </div>
-          </div>
+      <div class="brand">
+        <div> <a href="../index.html"><img src="../resources/Icons/brand.svg" width="60"  alt="name-logo" class="img-fluid brand-img"> </a></div>
+        <small class="brand_name">James J. Njong</small>
+      </div>
 
-        <nav class="navbar navbar-expand-md navbar-light">
+      <div class="navigation-items">
+        <ul class="navbar-nav  justify-content-end align-items-md-end">
+                           
 
-          <!-- Toggler/collapsable Button -->
-          <button class="navbar-toggler collapsed d-flex d-lg-none d-md-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                              
-              <span class="toggler-icon top-bar"></span>
-                              
-              <span class="toggler-icon middle-bar"></span>
-                              
-              <span class="toggler-icon bottom-bar"></span>
-                          
-          </button>
+          <li class="nav-item" ><a onclick="highlighter(event)" href="#services" class="nav-item-link px-2" >Profile <a></li>
 
-          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <li class="nav-item" ><a onclick="highlighter(event)" href="#features" class="nav-item-link px-2">Experience <a></li>
 
-              <ul class="navbar-nav  justify-content-end align-items-md-end">
-                                  
-                  <li class="nav-item " ><a onclick="highlighter(event)" href="#home" class="nav-link active-item px-2" >Home <a></li>
+          <li class="nav-item" ><a onclick="highlighter(event)" href="#portfolio" class="nav-item-link px-2">Background <a></li>
 
-                  <li class="nav-item " ><a onclick="highlighter(event)" href="#profile" class="nav-link px-2" >Profile <a></li>
+          <li class="nav-item dropdown" >
+            <a onclick="highlighter(event)" href="#about" class="nav-item-link px-2">Certifications  
+          </a> 
+          </li> 
 
-                  <li class="nav-item " ><a onclick="highlighter(event)" href="#experience" class="nav-link px-2" >Experience <a></li>
+          <li class="nav-item contactton"> <a href="#contacts" class="nav-item-link px-2">Skills</a>    </li>  
+                                    
+        </ul>
+      </div>
 
-                  <li class="nav-item" ><a onclick="highlighter(event)" href="#background" class="nav-link px-2" >Background <a></li>
-
-                  <li class="nav-item" ><a onclick="highlighter(event)" href="#certifications" class="nav-link px-2">Certifications <a></li>
-
-                                  
-              </ul>
-                
-          </div> 
-
-          <div class="buttonSecondary-flow"><a href="#hardskills">Hard Skills</a></div> 
-      </nav>
-
-      <!-- Navbar links -->
+      <div class="drawer_iconz">
+        <img src="./resources/Icons/drawer_icon.svg" alt="drawer icon" width="30" class="img-fluid img-drawer_icon"> 
+      </div>
+ 
 
     </div>
-
   </div>
 </header> 
 
 
 <main>
 
+<div class="space-bar"></div>
 
 <section class="home" id="home">
 
@@ -97,7 +87,7 @@
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reprehenderit quas earum sint sequi quasi et. Aliquam, commodi! Velit, repellendus.</p>
 
    <div class="learnmore buttonSecondary">
-     <a href="#">Learn More</a>
+     <a href="#profile">Learn More</a>
     </div> 
 
   </div>
@@ -113,113 +103,103 @@
 
 <div class="bucket">
  <div class="about-data-basket">
-  <div class="twoGrid">
-   <div class="about-profile ">
-   <h2 class="magisho">I’m a <span class="colored">versatile</span> problem solver with excellent communication skills.</h2> 
-   <small class="paragraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias neque hic ex, esse consequatur, iste numquam facilis a ullam architecto veniam atque iusto! Quas quis quaerat dignissimos voluptatem maxime. Fugiat cum officiis quae quidem veritatis inventore quasi voluptas eligendi illum laboriosam repudiandae similique non temporibus ullam, adipisci recusandae beatae expedita dolorem. Corrupti odit labore aspernatur molestias ullam! Saepe quisquam, numquam perspiciatis, facere beatae voluptates possimus eum dolorem facilis cumque dolorum ducimus amet et a odio repudiandae sed repellat, commodi magnam esse nemo. Non illo asperiores voluptates, culpa qui est expedita perferendis incidunt commodi minus repellat debitis maxime maiores dolorem.</small>
-  </div>
+  <div class="flexRowColumn">
 
-  <div class="about-image-container">
-   <img src="../resources/about_profile.png" alt="home " class="img-fluid">
-  </div>
+   <div class="about-profile major-div">
+    <h2 class="magisho">I’m a <span class="colored">versatile</span> problem solver with excellent communication skills.</h2> 
+    <small class="paragraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates, repudiandae necessitatibus tempora ab, labore nostrum aliquid eius odio at fugit natus porro magnam itaque, beatae assumenda. Aliquid, quas, soluta doloremque alias temporibus ratione blanditiis ad magnam, totam iusto facilis.</small>
+    </div>
+
+    <div class=" major-div">
+    <img src="../resources/about_profile.png" alt="image" class="img-fluid">
+    </div>
+
   </div>
  </div>
 </div>
 
 </section>
 
+<section class="about-experience-contents" id="experience">
+  <div class="bucket">
+    <div class="experience-data-basket flexRowColumn">
+      <div class="major-div">
+        <img src="../resources/home_about.png" alt="about experience icon" class="img-fluid p-4">
+      </div>      
 
+      <div class="major-div">
+        <h2 class="magisho">Places I have worked.</h2>
 
-<section class="about-experience-content" id="experience">
- <div class="bucket">
-  <div class="experience-data-basket">
+        <div class="work-places flexRowMaintain">
+          <small class="work-place-item work-place-item_tab--selected" onclick="tabExperience(event, 'aims-work-panel')">AIMS</small>
+          <small class="work-place-item work-place-item__tab--selected" onclick="tabExperience(event, 'wazahub-work-panel')">WaZaHub</small>
+          <small class="work-place-item" onclick="tabExperience(event, 'youkaris-work-panel')">Youkaris</small>
+          <small class="work-place-item" onclick="tabExperience(event, 'hellenkriss-work-panel')">HellenKriss</small>
+        </div>
 
-   <div class="twoGrid">
-       <div class="exp-header">
-        <h2 class="magisho">Lorem ipsum dolor sit amet consectetur.</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, veritatis!</p>
-       </div>
-       <div class="exp-icons">
-        <img src="../resources/Icons/about_experience.svg" width="200" alt="about experience icon" class="img-fluid p-4">
-       </div>
-   </div>
+        <div class="work-panel" id="aims-work-panel">
+          <h6 class="exp-item-header-role">Junior Manager | Cooperative Education</h6>
+          <small class="exp-item-header-date">February 2020-Present</small>
+          <hr class="col-4">
+          <ul class="exp-bullets">
+            <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p> </li>
+            <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
+            <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
+          </ul>
+        </div>
+        <div class="work-panel d-none" id="wazahub-work-panel">
+          <h6 class="exp-item-header-role">Software Developer | Frontend Android</h6>
+          <small class="exp-item-header-date">November 2019-February 2020</small>
+          <hr class="col-4">
+          <ul class="exp-bullets">
+            <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p> </li>
+            <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
+            <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
+          </ul>
+        </div>
+        <div class="work-panel d-none" id="youkaris-work-panel">
+          <h6 class="exp-item-header-role">Freelancer | Java and Android Development</h6>
+          <small class="exp-item-header-date">May 2017-February 2020</small>
+          <hr class="col-4">
+          <ul class="exp-bullets">
+            <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p> </li>
+            <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
+            <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
+          </ul>
+        </div>
+        <div class="work-panel d-none" id="hellenkriss-work-panel">
+          <h6 class="exp-item-header-role">Radio Presenter | News and Entertainment</h6>
+          <small class="exp-item-header-date">April 2012-July 2012</small>
+          <hr class="col-4">
+          <ul class="exp-bullets">
+            <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p> </li>
+            <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
+            <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
+          </ul>
+        </div>
+      </div>
 
-   <div class="exp-list">
-
-    <div class="exp-item">
-     <div class="exp-item-header">
-      <h4 class="exp-item-header-org magisho">AIMS-Cameroon</h4>
-      <h6 class="exp-item-header-role">Junior Manager | Cooperative Education</h6>
-      <small class="exp-item-header-date">February 2020-Present</small>
-      <hr class="col-6">
-     </div>
-     <ul class="exp-bullets">
-      <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p> </li>
-      <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
-      <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
-     </ul>
     </div>
-
-    <div class="exp-item">
-     <div class="exp-item-header">
-      <h4 class="exp-item-header-org magisho">WaZaHub</h4>
-      <h6 class="exp-item-header-role">Software Developer | Frontend Android</h6>
-      <small class="exp-item-header-date">November 2019-February 2020</small>
-      <hr class="col-6">
-     </div>
-     <ul class="exp-bullets">
-      <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
-      <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
-      <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
-     </ul>
-    </div>
-
-    <div class="exp-item">
-     <div class="exp-item-header">
-      <h4 class="exp-item-header-org magisho">Youkaris</h4>
-      <h6 class="exp-item-header-role">Freelancer | Java and Android Development</h6>
-      <small class="exp-item-header-date">May 2017-February 2020</small>
-      <hr class="col-6">
-     </div>
-     <ul class="exp-bullets">
-      <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
-      <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
-      <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p> </li>
-     </ul>
-    </div>
-
-    <div class="exp-item">
-     <div class="exp-item-header">
-      <h4 class="exp-item-header-org magisho">HellenKriss</h4>
-      <h6 class="exp-item-header-role">Radio Presenter | News and Entertainment</h6>
-      <small class="exp-item-header-date">April 2012-July 2012</small>
-      <hr class="col-6">
-     </div>
-     <ul class="exp-bullets">
-      <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
-      <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
-      <li class="exp-bullet-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nobis ad eveniet, sit iste atque ut dolore illo odit aut!</p></li>
-     </ul>
-    </div>
-
-   </div>
-
   </div>
- </div>
 </section>
 
+ 
 
 <section class="linkedin-badges" id="hardskills">
  <div class="bucket">
-  <div class="skills-data-basket">
-   <h2 class="magisho col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-   <p class="des col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. At impedit cupiditate magnam ipsam veniam? Totam quia laboriosam modi! Ab, non.</p>
-   <div class="lb-list py-4">
+  <div class="skills-data-basket flexRowColumn">
+   
+  <div class="major-div">
+    <h2 class="magisho">With a mastery of more than the fundamentals,</h2>
+   <p class="des">I am confortable with the tools, frameworks and systems that help drive the outcomes that matter to your team.</p>
+  </div> 
+   
+   <div class="lb-list major-div">
    <div class="buttonBadge"><a href="#">Android</a></div> 
    <div class="buttonBadge"><a href="#">Project Management</a></div> 
     <div class="buttonBadge"><a href="#">C</a></div> <div class="buttonBadge"><a href="#">Data Modelling</a></div><div class="buttonBadge"><a href="#">Java</a></div> <div class="buttonBadge"><a href="#">HTML</a></div> <div class="buttonBadge"><a href="#">SASS</a></div> <div class="buttonBadge"><a href="#">Bootstrap</a></div> 
-     <div class="buttonBadge"><a href="#">Kotlin</a></div> <div class="buttonBadge"><a href="#">Python</a></div>  <div class="buttonBadge"><a href="#">Django</a></div> <div class="buttonBadge"><a href="#">Spring Boot</a></div> <div class="buttonBadge"><a href="#">Flutter</a></div> <div class="buttonBadge"><a href="#">Dart</a></div> <div class="buttonBadge"><a href="#">SQL</a></div> <div class="buttonBadge"><a href="#">Firebase</a></div> <div class="buttonBadge"><a href="#">Problem Solving</a></div> <div class="buttonBadge"><a href="#">Excel</a></div> <div class="buttonBadge"><a href="#">C#</a></div> <div class="buttonBadge"><a href="#">Data Wranggling</a></div>
-    <div class="buttonBadge"><a href="#">Financial Modelling</a></div> <div class="buttonBadge"><a href="#">Ratio Analysis</a></div> <div class="buttonBadge"><a href="#">React JS</a></div> <div class="buttonBadge"><a href="#"> UI/UX</a></div>
+     <div class="buttonBadge"><a href="#">Kotlin</a></div> <div class="buttonBadge"><a href="#">CSS</a></div><div class="buttonBadge"><a href="#">Python</a></div> <div class="buttonBadge"><a href="#">Financial Modelling</a></div> <div class="buttonBadge"><a href="#">SQL</a></div> <div class="buttonBadge"><a href="#">Firebase</a></div> <div class="buttonBadge"><a href="#">Problem Solving</a></div> <div class="buttonBadge"><a href="#"> Adobe XD</a></div> <div class="buttonBadge"><a href="#">Excel</a></div> <div class="buttonBadge"><a href="#">Data Wranggling</a></div>
+     <div class="buttonBadge"><a href="#">Ratio Analysis</a></div> <div class="buttonBadge"><a href="#">React JS</a></div> 
     <div class="buttonBadge"><a href="#">Strategic Planning</a></div> 
    </div>
   </div>
@@ -230,32 +210,32 @@
 <section class=" about-education-content" id="background">
 <div class="bucket"><div class="education-data-basket">
  
- <div class="flexRowToColumn">
-  <div class="educ-left">
+ <div class="flexRowColumn">
+  <div class="educ-left major-div">
 
    <h2 class="magisho">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
    <p class="rec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur deleniti magnam!</p>
    <hr class="col-8"/>
    <div class="educ-left-item">
-    <p class="eli-degree magisho">PgD. Business and Management</p>
-    <small class="ed-item-school tag-2 highlight">ESMT Berlin - (July-August 2020)</small>
+    <h5 class="eli-degree">PgD. Business and Management</h5>
+    <p class="ed-item-school tag-2 highlight">ESMT Berlin - (July-August 2020)</p>
    </div>
    <div class="educ-left-item">
-    <p class="eli-degree magisho">MSc. Applied Mathematics</p>
-    <small class="ed-item-school tag-2 highlight">AIMS-Cameroon - (October 2018-July 2019)</small>
+    <h5 class="eli-degree">MSc. Applied Mathematics</h5>
+    <p class="ed-item-school tag-2 highlight">AIMS-Cameroon - (October 2018-July 2019)</p>
    </div>
    <div class="educ-left-item">
-    <p class="eli-degree magisho">MSc. Pure Mathematics</p>
-    <small class="ed-item-school tag-2 highlight">University of Buea - (October 2015-December 2018)</small>
+    <h5 class="eli-degree">MSc. Pure Mathematics</h5>
+    <p class="ed-item-school tag-2 highlight">University of Buea - (October 2015-December 2018)</p>
    </div>
    <div class="educ-left-item">
-    <p class="eli-degree magisho">BSc. Mathematics with Computer Sciences</p>
-    <small class="ed-item-school tag-2 highlight">University of Buea - (October 2012-August 2015)</small>
+    <h5 class="eli-degree ">BSc. Mathematics with Computer Sciences</h5>
+    <p class="ed-item-school tag-2 highlight">University of Buea - (October 2012-August 2015)</p>
    </div>      
    
   </div>
 
-  <div class="educ-right image-container">
+  <div class="educ-right major-div">
    <img src="../resources/about_edu.svg" alt="about education image" class="img-fluid">
   </div>
  </div>
@@ -267,91 +247,72 @@
 <section class="certifications-content" id="certifications">
  <div class="bucket">
   <div class="certification-data-basket">
-   <h2 class="magisho text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-
-   <div class="cdb-list">
-    
-    <div class="cdb-list-item">
-     <h6 class="cdb-list-item-course magisho">Financial Analyst Certification</h6>
-     <p class="cdb-list-item-platform">LinkedIn Learning</p>
-     <small class="cdb-list-item-date">January 2022 | No Expiry Date</small>
-    </div>
-
-    
-    <div class="cdb-list-item">
-     <h6 class="cdb-list-item-course magisho">Project Management Certification</h6>
-     <p class="cdb-list-item-platform">LinkedIn Learning</p>
-     <small class="cdb-list-item-date">November 2021 | No Expiry Date</small>
-    </div>
-
-    
-    <div class="cdb-list-item">
-     <h6 class="cdb-list-item-course magisho">Responsive Web Design</h6>
-     <p class="cdb-list-item-platform">FreeCode Camp</p>
-     <small class="cdb-list-item-date">January 2022 | No Expiry Date</small>
-    </div>  
-    
-    <div class="cdb-list-item">
-     <h6 class="cdb-list-item-course magisho">MARAG, General Management Training</h6>
-     <p class="cdb-list-item-platform">MARGA Business Simulations GbmH</p>
-     <small class="cdb-list-item-date">August 2019 | No Expiry Date</small>
-    </div>
-
-
-    <div class="cdb-list-item">
-     <h6 class="cdb-list-item-course magisho">CSS Essential Training</h6>
-     <p class="cdb-list-item-platform">LinkedIn Learning</p>
-     <small class="cdb-list-item-date">January 2022 | No Expiry Date</small>
-    </div>
-    
-    <div class="cdb-list-item">
-     <h6 class="cdb-list-item-course magisho">HTML Essential Training</h6>
-     <p class="cdb-list-item-platform">LinkedIn Learning</p>
-     <small class="cdb-list-item-date">December 2022 | No Expiry Date</small>
-    </div>
-
-
-    
-    <div class="cdb-list-item">
-     <h6 class="cdb-list-item-course magisho">Become a Digital Marketing Specialist</h6>
-     <p class="cdb-list-item-platform">LinkedIn Learning</p>
-     <small class="cdb-list-item-date">July 2022 | No Expiry Date</small>
-    </div>      
-    
-   
-    <div class="cdb-list-item">
-     <h6 class="cdb-list-item-course magisho">Strategic Planning Foundations</h6>
-     <p class="cdb-list-item-platform">LinkedIn Learning</p>
-     <small class="cdb-list-item-date">October 2021 | No Expiry Date</small>
-    </div>
+   <h2 class="magisho ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
  
-    
-    <div class="cdb-list-item">
-     <h6 class="cdb-list-item-course magisho">Becoming a Sales Representative</h6>
-     <p class="cdb-list-item-platform">LinkedIn Learning</p>
-     <small class="cdb-list-item-date">July 2022 | No Expiry Date</small>
-    </div>
+   <table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Certification</th>
+      <th scope="col">Platform</th>
+      <th scope="col">Expiry Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">January 2022</th>
+      <td>Financial Analyst Certification</td>
+      <td>LinkedIN Learning</td>
+      <td>No Expiry</td>
+    </tr>
+    <tr>
+      <th scope="row">November 2021</th>
+      <td>Project Management Certification</td>
+      <td>LinkedIN Learning</td>
+      <td>No Expiry</td>
+    </tr> 
+    <tr>
+      <th scope="row">January 2022</th>
+      <td>Responsive Web Design</td>
+      <td>FreeCodeCamp</td>
+      <td>No Expiry</td>
+    </tr> 
+    <tr>
+      <th scope="row">August 2019</th>
+      <td>MARGA, General Management Training</td>
+      <td>MARGA Business Simulations, GbmH</td>
+      <td>No Expiry</td>
+    </tr>
+    <tr>
+      <th scope="row">January 2022</th>
+      <td>CSS Essential Training</td>
+      <td>LinkedIN Learning</td>
+      <td>No Expiry</td>
+    </tr>
+
+    <tr>
+      <th scope="row">December 2021</th>
+      <td>HTML Essential Training</td>
+      <td>LinkedIN Learning</td>
+      <td>No Expiry</td>
+    </tr> 
+
+    <tr>
+      <th scope="row">October 2021</th>
+      <td>Strategic Planning Foundations</td>
+      <td>LinkedIN Learning</td>
+      <td>No Expiry</td>
+    </tr> 
+    <tr>
+      <th scope="row">January 2022</th>
+      <td>JavaScript Algorithms and Data Structures</td>
+      <td>FreeCodeCamp</td>
+      <td>No Expiry</td>
+    </tr>                    
+  </tbody>
+</table>
 
 
-    
-    <div class="cdb-list-item">
-     <h6 class="cdb-list-item-course magisho">JavaScript Algorithms and Data Structures</h6>
-     <p class="cdb-list-item-platform">FreeCode Camp</p>
-     <small class="cdb-list-item-date">January 2022 | No Expiry Date</small>
-    </div>
-
-
-    <div class="cdb-list-item">
-     <h6 class="cdb-list-item-course magisho">Presenting Technical Information with Stories</h6>
-     <p class="cdb-list-item-platform">LinkedIn Learning</p>
-     <small class="cdb-list-item-date">November 2021 | No Expiry Date</small>
-    </div>
-    
-
-
-
-
-   </div>
   </div>
  </div>
 </section>
@@ -418,6 +379,6 @@
 
 
 <!-- Custom js file-->
-<script src="../script.js"></script> 
+<script src="./scripta.js"></script> 
 </body>
 </html>
