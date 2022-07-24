@@ -1,0 +1,89 @@
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  // LAYOUTS
+  .flexRowColumn {
+    @include flexDisplay(space-between, center, 3rem, column);
+  }
+
+  .flexRowColumnReversed {
+    @include flexDisplay(space-between, center, 3rem, column-reverse);
+  }
+
+  .flexRowMaintain {
+    @include flexDisplay(space-between, center, 2rem, row);
+  }
+
+  // BUTTONS
+
+  .buttonPrimary {
+    @include myButtons($color-primary, fit-content, 0px);
+  }
+
+  .buttonSecondary {
+    @include myButtons($color-secondary, fit-content, 0px);
+    min-width: fit-content !important;
+  }
+
+  .buttonBadge {
+    @include myButtons($color-secondary, fit-content, 0px);
+  }
+
+  .buttonOutline {
+    @include myButtons(none, fit-content, 1px);
+  }
+
+  .buttonLight {
+    @include myButtons($color-light, fit-content, 1px);
+    padding: 2px 5px 2px 5px !important;
+  }
+
+  .buttonExtra {
+    @include myButtons($color-primary, fit-content, 0px);
+    a {
+      font-size: 1rem;
+      font-weight: 200;
+    }
+  }
+
+  // STANDARD CLASSES AND REUSABLES
+
+  .bucket {
+    width: 98%;
+    max-width: 98%;
+  }
+
+  .major-div {
+    max-width: 100%;
+  }
+
+  .heading-1 {
+    font-size: 40px;
+  }
+
+  .heading-2 {
+    font-size: 30px;
+  }
+  .heading-3 {
+    font-size: 20px;
+  }
+  .heading-4 {
+    font-size: 18px;
+  }
+  .heading-5 {
+    font-weight: 500;
+  }
+
+  // SETTINGS
+}
+* {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  font-weight: 400;
+  background-color: aqua;
+}
+
+.spaciously {
+  min-height: 100px;
+}

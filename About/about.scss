@@ -1,0 +1,432 @@
+// 1. Portfolio Fonts : Montserrat fonts [from google fonts]
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$my-font-family: "Montserrat", sans-serif;
+
+// 2. Portfolio Colors and gradients
+
+$color-primary: #0078d4;
+$color-secondary: #51b0f8;
+$color-dark: #000000;
+$color-light: #fff;
+$header-bg: #fbfbfb;
+$foter-bg: #313131;
+
+$primary-gradient: linear-gradient(
+  to top,
+  #0078d4,
+  #0078d4,
+  #0078d4,
+  #0078d4,
+  #0078d4,
+  #4281d7,
+  #5f8bdb,
+  #7695de,
+  #a3c2f7,
+  #c4e2ee,
+  #e0f0f9,
+  #ffffff
+);
+
+// MIXINS
+
+@mixin flexDisplay($justify, $aligns, $gaps, $direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $aligns;
+  gap: $gaps;
+}
+
+@mixin myButtons($color, $width, $boda) {
+  border: $boda solid $color-primary;
+  border-radius: 3px;
+  background: $color;
+  padding: 7px 10px 7px 10px;
+  width: $width;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+
+  a {
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    max-lines: 1;
+    overflow: hidden;
+    color: white !important;
+    margin: 0 auto;
+    font-weight: 200;
+  }
+
+  &:hover {
+    border-bottom-right-radius: 4rem;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+}
+
+@mixin unipad($pad) {
+  padding: $pad $pad $pad $pad;
+}
+
+@mixin unimag($pad) {
+  margin: $pad $pad $pad $pad;
+}
+// LAYOUTS
+.flexRowColumn {
+  @include flexDisplay(space-between, center, 3rem, row);
+}
+
+.flexRowColumnReversed {
+  @include flexDisplay(space-between, center, 3rem, row);
+}
+
+.flexRowMaintain {
+  @include flexDisplay(space-between, center, 2rem, row);
+}
+
+// BUTTONS
+
+.buttonPrimary {
+  @include myButtons($color-primary, fit-content, 0px);
+}
+
+.buttonSecondary {
+  @include myButtons($color-secondary, fit-content, 0px);
+  min-width: 150px !important;
+}
+
+.buttonBadge {
+  @include myButtons($color-secondary, fit-content, 0px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttonOutline {
+  @include myButtons(none, fit-content, 1px);
+  a {
+    color: $color-primary !important;
+  }
+}
+
+.buttonLight {
+  @include myButtons($color-light, fit-content, 1px);
+  padding: 2px 10px 2px 10px !important;
+  a {
+    color: $color-primary !important;
+  }
+}
+
+.buttonExtra {
+  @include myButtons($color-primary, 300px, 0px);
+  a {
+    font-size: 1.2rem;
+    font-weight: 200;
+    align-self: center;
+    text-decoration: none;
+  }
+}
+
+// STANDARD CLASSES AND REUSABLES
+
+.bucket {
+  width: 80%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem auto;
+}
+
+.major-div {
+  max-width: 45%;
+}
+.text-primary{
+  color: $color-primary !important;
+}
+
+.heading-1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.heading-2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+.heading-3 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.heading-4 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.heading-5 {
+  font-weight: 700;
+  @include unipad(0);
+  @include unimag(0);
+}
+
+// SETTINGS
+* {
+  //hide scrollbars
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html,
+body {
+  font-weight: 400;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  font-family: $my-font-family;
+}
+section {
+  width: 100vw;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.spaciously {
+  min-height: 200px;
+}
+
+.about-image-container {
+  border-radius: 3rem;
+  img {
+    border-radius: 3rem;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 40vh;
+  }
+}
+// SPECIFICS
+.header-content,
+.header-active {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+
+  .header-data-basket {
+    @include flexDisplay(space-between, center, 3rem, row);
+
+    .brand {
+      @include flexDisplay(center, center, 0px, column);
+      font-size: 10px;
+    }
+
+    .navigation-items {
+      color: $color-primary !important;
+
+      .navbar-nav {
+        @include flexDisplay(space-around, center, 4px, row);
+      }
+      a {
+        font-weight: 300;
+        text-decoration: none;
+        color: $color-secondary !important;
+      }
+
+      .active-item { 
+        text-decoration: underline;
+        a {
+          color: $color-primary !important;
+          font-weight: 700;
+        }
+      }
+      
+    }
+    .drawer_iconz {
+      display: none;
+    }
+  }
+}
+
+.home {
+  .home-data-basket {
+    min-height: 100vh;
+    @include flexDisplay(space-between, center, 3rem, row);
+  }
+}
+
+.profile {
+  background-color: $color-secondary;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  color: $color-light;
+  .bucket {
+    height: 100%;
+    @include flexDisplay(center, center, 40px, column);
+  }
+  .profile-data-basket {
+    height: 100%;
+    margin-top: 10px;
+    @include unipad(30px);
+    @include flexDisplay(center, center, 40px, column);
+
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 20%;
+      border: 4px solid $color-light;
+      background-color: $color-primary;
+      object-fit: cover;
+      object-position: center;
+    }
+    .content {
+      @include flexDisplay(center, center, 10px, column);
+      max-height: 25vh;
+      text-align: center;
+      margin: 10px auto;
+
+      p {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+.background {
+  .bucket {
+    height: 100vh;
+  }
+  .exp-data-basket {
+    height: 100vh;
+    @include flexDisplay(space-between, center, 1rem, row);
+    .about-image-container {
+      img {
+        object-fit: cover;
+        object-position: top center;
+        width: 45vw;
+        height: 50vh;
+      }
+    }
+  }
+}
+
+.experience {
+  max-height: 70vh !important;
+  background-color: #a3c2f7c1;
+  .bucket {
+    max-height: 70vh;
+  }
+  .bgd-data-basket {
+    height: 100vh;
+    @include flexDisplay(space-between, center, 1rem, row);
+    .about-image-container {
+      img {
+        object-fit: cover;
+        object-position: top center;
+        width: 45vw;
+        height: 50vh;
+      }
+    }
+  }
+}
+.certifications-content {
+  .certification-data-basket {
+    min-height: 100vh;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    @include flexDisplay(center, none, 0px, column);
+  }
+}
+
+.volunteering {
+  height: 70vh !important;
+  background-color: #a3c0f7c1;
+  .bucket {
+    height: 70vh;
+  }
+  .exp-data-basket {
+    height: 100vh;
+    @include flexDisplay(space-between, center, 3rem, row);
+    .about-image-container {
+      img {
+        object-fit: cover;
+        object-position: top center;
+        width: 40vw;
+        height: 50vh;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $foter-bg;
+  min-height: 70vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: $color-light;
+
+  .foot-data-basket {
+    .foot-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 10px;
+      transition: all 0.7s ease-in-out;
+
+      .foot-left {
+        padding-right: 4rem;
+
+        h3 {
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+        }
+        .ft-left-socials {
+          a {
+            text-decoration: none;
+          }
+        }
+        .ft-left-rights {
+          margin-top: 3rem;
+        }
+      }
+
+      .foot-center {
+        margin-left: 4rem;
+        a {
+          color: $color-light;
+          text-decoration: none;
+
+          &:hover {
+            font-weight: 500;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .foot-right {
+        margin-left: 4rem;
+        a {
+          color: $color-light;
+          text-decoration: none;
+
+          &:hover {
+            font-weight: 500;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .foot-lable {
+      font-weight: 700;
+      opacity: 0.6;
+      font-size: 20px;
+    }
+  }
+}
+
+@import "../styles_animations/animations.scss";

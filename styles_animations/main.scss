@@ -1,0 +1,704 @@
+// 1. Portfolio Fonts : Montserrat fonts [from google fonts]
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$my-font-family: "Montserrat", sans-serif;
+
+// 2. Portfolio Colors and gradients
+
+$color-primary: #0078d4;
+$color-secondary: #51b0f8;
+$color-dark: #000000;
+$color-light: #fff;
+$header-bg: #fbfbfb;
+$foter-bg: #313131;
+
+$primary-gradient: linear-gradient(
+  to top,
+  #0078d4,
+  #0078d4,
+  #0078d4,
+  #0078d4,
+  #0078d4,
+  #4281d7,
+  #5f8bdb,
+  #7695de,
+  #a3c2f7,
+  #c4e2ee,
+  #e0f0f9,
+  #ffffff
+);
+
+// MIXINS
+
+@mixin flexDisplay($justify, $aligns, $gaps, $direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $aligns;
+  gap: $gaps;
+}
+
+@mixin myButtons($color, $width, $boda) {
+  border: $boda solid $color-primary;
+  border-radius: 3px;
+  background: $color;
+  padding: 7px 10px 7px 10px;
+  width: $width;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+
+  a {
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    max-lines: 1;
+    overflow: hidden;
+    color: white !important;
+    margin: 0 auto;
+    font-weight: 200;
+  }
+
+  &:hover {
+    border-bottom-right-radius: 4rem;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+}
+
+@mixin unipad($pad) {
+  padding: $pad $pad $pad $pad;
+}
+
+@mixin unimag($pad) {
+  margin: $pad $pad $pad $pad;
+}
+// LAYOUTS
+.flexRowColumn {
+  @include flexDisplay(space-between, center, 3rem, row);
+}
+
+.flexRowColumnReversed {
+  @include flexDisplay(space-between, center, 3rem, row);
+}
+
+.flexRowMaintain {
+  @include flexDisplay(space-between, center, 2rem, row);
+}
+
+// BUTTONS
+
+.buttonPrimary {
+  @include myButtons($color-primary, fit-content, 0px);
+}
+
+.buttonSecondary {
+  @include myButtons($color-secondary, fit-content, 0px);
+  min-width: 150px !important;
+}
+
+.buttonBadge {
+  @include myButtons($color-secondary, fit-content, 0px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttonOutline {
+  @include myButtons(none, fit-content, 1px);
+  a {
+    color: $color-primary !important;
+  }
+}
+
+.buttonLight {
+  @include myButtons($color-light, fit-content, 1px);
+  padding: 2px 10px 2px 10px !important;
+  a {
+    color: $color-primary !important;
+  }
+}
+
+.buttonExtra {
+  @include myButtons($color-primary, 300px, 0px);
+  a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    align-self: center;
+    text-decoration: none;
+  }
+}
+
+// STANDARD CLASSES AND REUSABLES
+
+.bucket {
+  width: 80%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem auto;
+}
+
+.major-div {
+  max-width: 45%;
+}
+
+.heading-1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.heading-2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+.heading-3 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.heading-4 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.heading-5 {
+  font-weight: 500;
+  @include unipad(0);
+  @include unimag(0);
+}
+
+// SETTINGS
+* {
+  //hide scrollbars
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html,
+body {
+  font-weight: 400;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  font-family: $my-font-family;
+}
+section {
+  width: 100vw;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.spaciously {
+  min-height: 200px;
+}
+
+// SPECIFICS
+
+header {
+  background-color: $header-bg;
+  position: fixed;
+  min-width: 100vw;
+  padding: 10px 0px 10px 0px;
+  z-index: 20;
+  .header-data-basket {
+    overflow-x: hidden;
+    width: 100%;
+    .brand {
+      @include flexDisplay(center, center, 5px, row);
+      small {
+        font-weight: 900;
+        padding-top: 10px;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../Resources/res_home_header.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+
+  .home-data-basket {
+    min-height: 90vh;
+    display: grid;
+    grid-template-rows: 80vh 20vh;
+
+    .home-db-top {
+      min-height: 70%;
+      @include flexDisplay(space-between, start, 0, column);
+      padding: 2rem 0rem 2rem 0rem;
+      color: white;
+
+      h1 {
+        font-weight: 600;
+      }
+    }
+
+    .home-db-bottom {
+      min-height: 100%;
+      position: relative;
+      .home-db-bottom_back {
+        min-height: 100%;
+        background-color: white;
+        max-width: 95%;
+        width: 95%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      .home-db-bottom_front {
+        position: absolute;
+        min-height: 100%;
+        padding-top: 2rem !important;
+        padding-bottom: 3rem !important;
+        left: 0;
+        right: 0;
+        color: black;
+
+        .home-db-bottom_front-pitch {
+          @include flexDisplay(space-between, none, 1rem, row);
+          min-width: 100%;
+          align-self: center;
+          .left,
+          .right {
+            min-width: 30%;
+          }
+
+          .left {
+            width: 60% !important;
+          }
+
+          .right {
+            @include flexDisplay(center, flex-end, 0px, column);
+            padding-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.services {
+  min-height: 100vh;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  .service-data-basket {
+    min-height: 100vh;
+
+    .service-db_container {
+      position: relative;
+      .service-db_back_image {
+        position: absolute;
+        left: 150px;
+        right: -50px;
+        top: 20vh;
+      }
+
+      .service-db_front_copy {
+        position: absolute;
+        bottom: -10;
+        top: 30vh;
+        left: 0;
+        right: 0;
+
+        .pitch {
+          min-height: 100vh;
+          border: none;
+          border-radius: 0;
+          max-width: 50%;
+          padding-top: 4rem;
+          padding-right: 3rem;
+          background-color: white;
+
+          h2 {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.jobs {
+  background-color: $color-primary;
+  padding-top: 6rem !important;
+  padding-bottom: 6rem;
+  color: $color-light;
+  .jobs-data-basket {
+    .skill-blocks {
+      padding: 2rem 2rem 2rem 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.features {
+  background-size: 100vw 98vh;
+  margin-bottom: 4rem !important;
+  padding-top: 4rem;
+  height: fit-content;
+  .features-data-basket {
+    min-height: 100%;
+  }
+  .feature-bucket {
+    @include flexDisplay(center, center, 10px, column);
+    .feature_tag {
+      @include flexDisplay(center, center, 10px, column);
+      max-width: 80%;
+      text-align: center;
+    }
+
+    .feature_grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 30px;
+      column-gap: 30px;
+      .feature_item {
+        @include unimag(10px);
+        @include flexDisplay(center, center, 10px, column);
+        text-align: center;
+        .fi_icon {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 2rem;
+        }
+
+        .fi_title {
+          font-weight: 600;
+          width: 100%;
+        }
+        .fi_content {
+          max-width: 80%;
+          display: -webkit-box;
+          -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+.cto {
+  margin-top: 0;
+  padding-top: 0 !important;
+  min-height: 100vh;
+  .cto-data-basket {
+    min-height: 100vh;
+
+    .cto-db_container {
+      position: relative;
+      .cto-db_back_image {
+        position: absolute;
+        left: 0px;
+        right: 250px;
+        top: 4rem;
+        background-color: $color-secondary;
+      }
+
+      .cto-db_front_copy {
+        position: absolute;
+        bottom: -10;
+        top: 30vh;
+        left: 40vw;
+        right: 0px;
+        background-color: $color-primary;
+
+        .pitch {
+          @include flexDisplay(center, flex-end, 2rem, column);
+          min-height: 70vh;
+          border: none;
+          border-radius: 0;
+          padding: 2rem 3rem 2rem 2rem;
+          color: white;
+          text-align: end;
+
+          h2 {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+.portfolio-content {
+  margin-top: 6rem;
+  padding-top: 1rem;
+  color: black;
+  .portfolio-data-basket {
+    .pfb-header {
+      gap: 10px !important;
+    }
+    .pfd-mobile {
+      overflow-x: scroll;
+    }
+    .portfolio-list {
+      gap: 10px !important;
+      min-width: 100%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      margin-top: 4rem;
+      offset-position: 30% 50%;
+      .portfolio-item {
+        gap: 1px !important;
+        min-width: 600px;
+        height: 300px;
+        background-color: white;
+        margin: 10px;
+        transition: all ease-in-out 0.3s;
+        border: 1px solid rgba($color-secondary, 1);
+        box-shadow: 0 0 0 rgba(239, 252, 249, 0), 0 0 0 rgba(239, 252, 249, 0);
+
+        .portfolio-inner-right {
+          width: 100%;
+          height: 100%;
+          .img-holder {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        .portfolio-inner-left {
+          padding: 2rem 0rem 2rem 2rem;
+          @include flexDisplay(space-around, start, 5px, column);
+        }
+        &:hover {
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          border: 4px solid rgba($color-secondary, 1);
+        }
+      }
+    }
+
+    .pfb-header-right {
+      .pfb-header-right-categories {
+        .cat-item {
+          cursor: pointer;
+          p {
+            font-weight: 800;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $color-secondary;
+            color: $color-dark;
+            @include flexDisplay(center, center, 0px, column);
+            box-shadow: 0 2px 10px rgba(237, 249, 249, 0.1),
+              0 0 5px rgba(237, 249, 249, 0.1);
+
+            &:hover {
+              background-color: $color-primary;
+            }
+          }
+          .active-item {
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about {
+  min-height: 100vh;
+  margin-bottom: 4rem;
+  color: black;
+  .about-data-basket {
+    min-height: 100vh;
+
+    .about-db_container {
+      position: relative;
+      .about-db_back_image {
+        position: absolute;
+        left: 40vw;
+        right: 0px;
+        top: 10vh;
+        bottom: 20vh;
+
+        #myCarousel {
+          height: 100vh;
+        }
+      }
+
+      .about-db_front_copy {
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        right: 0;
+        bottom: 20vh;
+
+        .pitch {
+          border: none;
+          border-radius: 0;
+          max-width: 60%;
+          padding-top: 4rem;
+          padding-right: 4rem;
+          padding-bottom: 4rem;
+          background-color: white;
+          color: black;
+          @include flexDisplay(space-around, none, 1rem, column);
+
+          h2 {
+            color: $color-primary;
+            max-width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contacts-content {
+  background-color: $color-primary;
+  color: $color-dark;
+  @include flexDisplay(center, center, 20px, column);
+  .contacts-data-basket {
+    padding: 6rem 0rem 6rem 0rem;
+    gap: 10px !important;
+  }
+
+  .cdb-left {
+    color: white;
+    width: 100%;
+    p {
+      width: 100%;
+    }
+    .cdb-left-rule {
+      width: 40%;
+    }
+    .good-talk {
+      font-weight: 600;
+    }
+
+    .contact_socials {
+      width: fit-content;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .contact-form {
+    .tag-forms {
+      border-radius: 4px;
+      background-color: $color-secondary;
+      label {
+        text-align: start;
+        padding: 12px 12px 2px 0;
+        display: inline-block;
+        color: rgb(0, 15, 45);
+      }
+      ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(6, 6, 6);
+        opacity: 0.7;
+      }
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 4px;
+        border: 1px solid rgb(36, 36, 36);
+        border-radius: 1px;
+        resize: none;
+        background: none;
+        margin-bottom: 1rem;
+        height: 40px;
+        color: rgb(0, 0, 0);
+      }
+      textarea {
+        width: 100%;
+        padding: 4px;
+        border: 1px solid rgb(36, 36, 36);
+        border-radius: 1px;
+        resize: none;
+        background: none;
+        margin-bottom: 1rem;
+        height: 100px;
+        color: rgb(0, 0, 0);
+      }
+      input[type="text"],
+      select,
+      textarea {
+        &:focus {
+          decoration: none;
+        }
+      }
+
+      .btn-send {
+        color: $color-dark;
+        width: 150px !important;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $foter-bg;
+  min-height: 70vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: $color-light;
+
+  .foot-data-basket {
+    .foot-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 10px;
+      transition: all 0.7s ease-in-out;
+
+      .foot-left {
+        padding-right: 4rem;
+
+        h3 {
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+        }
+        .ft-left-socials {
+          a {
+            text-decoration: none;
+          }
+        }
+        .ft-left-rights {
+          margin-top: 3rem;
+        }
+      }
+
+      .foot-center {
+        margin-left: 4rem;
+        a {
+          color: $color-light;
+          text-decoration: none;
+
+          &:hover {
+            font-weight: 500;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .foot-right {
+        margin-left: 4rem;
+        a {
+          color: $color-light;
+          text-decoration: none;
+
+          &:hover {
+            font-weight: 500;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .foot-lable {
+      font-weight: 700;
+      opacity: 0.6;
+      font-size: 20px;
+    }
+  }
+}
+
+@import "animations.scss"; 
